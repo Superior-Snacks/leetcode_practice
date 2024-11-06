@@ -24,4 +24,5 @@ def twoSum(nums, target):
         if check in track:
             print(1)
             return [track[check], current]
-print(twoSum([2,5,7,10], 9))
+        track[number] = check
+print(twoSum([2,7,11,15], 9))
