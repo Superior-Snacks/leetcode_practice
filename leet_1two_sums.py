@@ -11,7 +11,6 @@ class Solution(object):
             if check in track:
                 return [track[check], current]
             
-print("yo")
 def twoSum(nums, target):
     """
     :type nums: List[int]
@@ -20,7 +19,9 @@ def twoSum(nums, target):
     """
     track = {}
     for current, number in enumerate(nums):
+        print(2)
         check = target - number
         if check in track:
+            print(1)
             return [track[check], current]
 print(twoSum([2,5,7,10], 9))
