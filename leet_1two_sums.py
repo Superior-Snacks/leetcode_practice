@@ -11,5 +11,7 @@ def twoSum(nums, target):
         if check in track:
             print(1)
             return [track[check], current]
-        track[number] = check
+        track[number] = current
+
+
 print(twoSum([2,7,11,15], 9))
