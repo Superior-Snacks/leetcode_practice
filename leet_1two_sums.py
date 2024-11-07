@@ -14,4 +14,4 @@ def twoSum(nums, target):
         track[number] = current
 
 
-print(twoSum([2,7,11,15], 9))
+print(twoSum([2,3,4,5,11,6,15], 9))
