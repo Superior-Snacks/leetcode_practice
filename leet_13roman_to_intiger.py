@@ -54,24 +54,24 @@ def romanToInt(s):
                 temp -= rom[i]
                 running += temp
                 temp = 0
-                print(running)
+                print("p1",running)
             elif rom[i] == rom[y]:
                 temp = temp + rom[i]
-                print(temp)
+                print("p2", temp)
             elif rom[y] < rom[i]:
                 running += temp
-                print(running)
+                print("p3",running)
             else:
                 temp += rom[i]
-                print(temp)
+                print("p4",temp)
         else:
             temp += rom[i]
-            print(temp)
+            print("p5",temp)
             first = False
         y = i
         print(y)
     running += temp
-    print(running)
+    print("p6",running)
     return running
 
 
