@@ -1,4 +1,4 @@
-def run():
+def run(strs):
     part = 0
     while True:
         single = set()
@@ -11,4 +11,4 @@ def run():
                 return ""
         part += 1
 
-run()
+print(run(["flower", "flurm", "flare"]))
