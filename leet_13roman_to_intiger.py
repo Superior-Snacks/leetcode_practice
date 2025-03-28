@@ -50,8 +50,9 @@ def romanToInt(s):
         print(rom[i])
         if rom[i] < temp:
             temp += rom[i]
+    return temp
 
 
 print(f"expected:1994 true: {romanToInt("MCMXCIV")}")
 print(f"expected:58 true: {romanToInt("LVIII")}")
-print(f"expected:3 true{romanToInt("III")}")
+print(f"expected:3 true: {romanToInt("III")}")
