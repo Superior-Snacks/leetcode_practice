@@ -69,7 +69,7 @@ def romanToInt(s):
             print("p5",temp)
             first = False
         y = i
-        print(y)
+        print("y",y)
     running += temp
     print("p6",running)
     return running
