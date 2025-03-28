@@ -50,13 +50,13 @@ def romanToInt(s):
     for i in s:
         print(rom[i])
         if not first:
-            if i < y:
+            if rom[i] < rom[y]:
                 temp -= rom[i]
                 running += temp
                 temp = 0
-            elif i == y:
+            elif rom[i] == rom[y]:
                 temp = temp + rom[i]
-            elif y < i:
+            elif y < rom[i]:
                 running += temp
             else:
                 temp += rom[i]
@@ -64,6 +64,7 @@ def romanToInt(s):
             temp += rom[i]
             first = False
         y = i
+    running += temp
     return running
 
 
