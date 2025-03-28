@@ -47,39 +47,7 @@ def romanToInt(s):
     "C" : 100,
     "D" : 500,
     "M" : 1000}
-    group = False
-    for i in s:
-        print(f"number {rom[i]}")
-        if not first:
-            if rom[i] < rom[y]:
-                if group == True:
-                    temp -= rom[i]
-                    group = False
-                else:
-                    temp += rom[i]
-                running += temp
-                temp = 0
-                print("p1",running)
-            elif rom[i] == rom[y]:
-                group = True
-                temp = temp + rom[i]
-                print("p2", temp)
-            elif rom[y] < rom[i]:
-                running += temp + rom[i]
-                temp = 0
-                print("p3",running)
-            else:
-                temp += rom[i]
-                print("p4",temp)
-        else:
-            temp += rom[i]
-            print("p5",temp)
-            first = False
-        y = i
-        print("y",y)
-    running += temp
-    print("p6",running)
-    return running
+    for i in s[::-1]:
 
 
 print(f"expected:1994 true: {romanToInt("MCMXCIV")}")
