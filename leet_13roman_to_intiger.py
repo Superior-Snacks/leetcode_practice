@@ -48,23 +48,30 @@ def romanToInt(s):
     "D" : 500,
     "M" : 1000}
     for i in s:
-        print(rom[i])
+        print(f"number {rom[i]}")
         if not first:
             if rom[i] < rom[y]:
                 temp -= rom[i]
                 running += temp
                 temp = 0
+                print(running)
             elif rom[i] == rom[y]:
                 temp = temp + rom[i]
+                print(temp)
             elif rom[y] < rom[i]:
                 running += temp
+                print(running)
             else:
                 temp += rom[i]
+                print(temp)
         else:
             temp += rom[i]
+            print(temp)
             first = False
         y = i
+        print(y)
     running += temp
+    print(running)
     return running
 
 
