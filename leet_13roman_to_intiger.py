@@ -46,9 +46,18 @@ def romanToInt(s):
     "C" : 100,
     "D" : 500,
     "M" : 1000}
-    for i in s[::-1]:
+    for i in s:
         print(rom[i])
-        temp = temp + rom[i]
+        if i < y:
+            temp - i
+            running += temp
+        elif i == y:
+            temp = temp + rom[i]
+        elif y < i:
+            running += temp
+        else:
+            temp += rom[i]
+        y = i
     return temp
 
 
