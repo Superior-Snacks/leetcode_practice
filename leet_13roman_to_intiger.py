@@ -48,8 +48,7 @@ def romanToInt(s):
     "M" : 1000}
     for i in s[::-1]:
         print(rom[i])
-        if rom[i] < temp:
-            temp += rom[i]
+        temp = temp + rom[i]
     return temp
 
 
