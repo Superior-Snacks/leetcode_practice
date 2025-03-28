@@ -47,12 +47,14 @@ def romanToInt(s):
     "C" : 100,
     "D" : 500,
     "M" : 1000}
+    group = False
     for i in s:
         print(f"number {rom[i]}")
         if not first:
             if rom[i] < rom[y]:
                 if group == True:
                     temp -= rom[i]
+                    group = False
                 else:
                     temp += rom[i]
                 running += temp
