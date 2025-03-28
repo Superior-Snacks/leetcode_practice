@@ -47,6 +47,11 @@ rom = {"I" : 1,
 "M" : 1000}
 def romanToInt(s):
     for i in s[::-1]:
+        print(rom[i])
         if rom[i] < temp:
             temp += rom[i]
-            
+
+
+print(f"expected:1994 true: {romanToInt("MCMXCIV")}")
+print(f"expected:58 true: {romanToInt("LVIII")}")
+print(f"expected:3 true{romanToInt("III")}")
