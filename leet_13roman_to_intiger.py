@@ -56,7 +56,7 @@ def romanToInt(s):
                 temp = 0
             elif rom[i] == rom[y]:
                 temp = temp + rom[i]
-            elif y < rom[i]:
+            elif rom[y] < rom[i]:
                 running += temp
             else:
                 temp += rom[i]
