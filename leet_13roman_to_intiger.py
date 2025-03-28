@@ -51,11 +51,15 @@ def romanToInt(s):
         print(f"number {rom[i]}")
         if not first:
             if rom[i] < rom[y]:
-                temp -= rom[i]
+                if group == True:
+                    temp -= rom[i]
+                else:
+                    temp += rom[i]
                 running += temp
                 temp = 0
                 print("p1",running)
             elif rom[i] == rom[y]:
+                group = True
                 temp = temp + rom[i]
                 print("p2", temp)
             elif rom[y] < rom[i]:
