@@ -37,9 +37,9 @@ Output: 1994
 Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 """
 def romanToInt(s):
-    first = True
-    running = 0
-    temp = 0
+    result = 0
+    prev_value = 0
+    current_value = 0
     rom = {"I" : 1,
     "V" : 5,
     "X" : 10,
@@ -48,7 +48,14 @@ def romanToInt(s):
     "D" : 500,
     "M" : 1000}
     for i in s[::-1]:
+        current_value = rom[i]
 
+        if current_value < prev_value:
+            result -= current_value
+        else:
+            result += current_value
+        prev_value = current_value
+    return result
 
 print(f"expected:1994 true: {romanToInt("MCMXCIV")}")
 print(f"expected:58 true: {romanToInt("LVIII")}")
