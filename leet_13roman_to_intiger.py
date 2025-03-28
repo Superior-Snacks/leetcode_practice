@@ -37,6 +37,7 @@ Output: 1994
 Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 """
 def romanToInt(s):
+    first = True
     running = 0
     temp = 0
     rom = {"I" : 1,
@@ -48,17 +49,22 @@ def romanToInt(s):
     "M" : 1000}
     for i in s:
         print(rom[i])
-        if i < y:
-            temp - i
-            running += temp
-        elif i == y:
-            temp = temp + rom[i]
-        elif y < i:
-            running += temp
+        if not first:
+            if i < y:
+                temp -= rom[i]
+                running += temp
+                temp = 0
+            elif i == y:
+                temp = temp + rom[i]
+            elif y < i:
+                running += temp
+            else:
+                temp += rom[i]
         else:
             temp += rom[i]
+            first = False
         y = i
-    return temp
+    return running
 
 
 print(f"expected:1994 true: {romanToInt("MCMXCIV")}")
