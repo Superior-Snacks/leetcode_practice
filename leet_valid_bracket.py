@@ -19,6 +19,8 @@ def isValid(s):
                     else: # if not valid string bad
                         False
                         print("if not valid string bad")
+                else:
+                    print("na not it")
         else: #if no left means valid string
             print("#if no left means valid string")
             True
