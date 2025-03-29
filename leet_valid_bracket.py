@@ -9,12 +9,16 @@ def isValid(s):
                 if s[i] == l: #find right
                     k = l[s[i]]
                     j = r[i-1]
+                    print("#find right")
                     if k == j: # check if close
                         s = s[:j,k:] #remove valid and conitnue
+                        print("#remove valid and conitnue")
                         break
                     else: # if not valid string bad
                         False
+                        print("if not valid string bad")
         else: #if no left means valid string
+            print("#if no left means valid string")
             True
 print(isValid("()"))
 print(isValid("()[]{}"))
