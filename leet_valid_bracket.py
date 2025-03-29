@@ -15,9 +15,9 @@ def isValid(s):
                     print(j)
                     print("#find right")
                     if m[k] == j: # check if close
-                        s = s[:i-1] + s[i:] #remove valid and conitnue
+                        s = f"{s[:i]}{s[i-1:]}" #remove valid and conitnue
                         print("#remove valid and conitnue")
-                        print(f"string is {s[:i-1]} + {s[i:]}")
+                        print(f"string is {s} , {s[:i-1]} + {s[i:]}")
                         break
                     else: # if not valid string bad
                         print("if not valid string bad")
