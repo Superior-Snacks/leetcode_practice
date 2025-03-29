@@ -20,8 +20,8 @@ def isValid(s):
                         print(f"string is {s}")
                         break
                     else: # if not valid string bad
-                        return False
                         print("if not valid string bad")
+                        return False
                 else:
                     print("na not it")
         else: #if no left means valid string
