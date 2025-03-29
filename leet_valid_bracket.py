@@ -7,7 +7,7 @@ def isValid(s):
         print(s)
         if s:
             for i in range(len(s)):
-                if s[i] == l: #find right
+                if s[i] in l: #find right
                     k = l[s[i]]
                     j = r[i-1]
                     print("#find right")
