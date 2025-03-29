@@ -17,7 +17,7 @@ def isValid(s):
                     if m[k] == j: # check if close
                         s = s[:i-1] + s[i:] #remove valid and conitnue
                         print("#remove valid and conitnue")
-                        print(f"string is {s}")
+                        print(f"string is {s[:i-1]} + {s[i:]}")
                         break
                     else: # if not valid string bad
                         print("if not valid string bad")
