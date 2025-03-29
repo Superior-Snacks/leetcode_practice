@@ -1,6 +1,7 @@
 def isValid(s):
     r = ["(", "[", "{"]
     l = {")":"(", "]":"[", "}":"{"}
+    m = [")", "]", "}"]
     # find first right side
     #go back, remove checked
     while True:
