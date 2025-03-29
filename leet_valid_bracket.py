@@ -9,7 +9,9 @@ def isValid(s):
             for i in range(len(s)):
                 if s[i] in l: #find right
                     k = l[s[i]]
+                    print(k)
                     j = r[i-1]
+                    print(j)
                     print("#find right")
                     if k == j: # check if close
                         s = s[:j] + s[k:] #remove valid and conitnue
