@@ -1,36 +1,22 @@
 def isValid(s):
-    r = ["(", "[", "{"]
-    m = {")":"(", "]":"[", "}":"{"}
-    l = [")", "]", "}"]
-    # find first right side
-    #go back, remove checked
-    while True:
-        print(s)
-        if s:
-            for i in range(len(s)):
-                if s[i] in l: #find right
-                    k = s[i]
-                    print(k)
-                    j = r[i-1]
-                    print(j)
-                    print("#find right")
-                    if m[k] == j: # check if close
-                        s = f"{s[:i]}{s[i-1:]}" #remove valid and conitnue
-                        print("#remove valid and conitnue")
-                        print(f"string is {s} , {s[:i-1]} + {s[i:]}")
-                        break
-                    else: # if not valid string bad
-                        print("if not valid string bad")
-                        return False
-                else:
-                    print("na not it")
-        else: #if no left means valid string
-            print("#if no left means valid string")
-            return True
-print("result ", isValid("()"))
-print("result ", isValid("()[]{}"))
-print("result ", isValid("(]"))
-print("result ", isValid("([])"))
+    stack = []
+    m = {")": "(", "]": "[", "}": "{"}
+    for char in s:
+        if char in "({[":
+            stack.append(char)
+        elif char in ")}]":
+            if not stack or stack[-1] != m[char]:
+                return False
+            stack.pop()
+    return len(stack) == 0
+
+# Test Cases
+print(isValid("()"))      # True
+print(isValid("()[]{}"))  # True
+print(isValid("(]"))      # False
+print(isValid("([])"))    # True
+print(isValid("{[]}"))    # True
+print(isValid("([)]"))    # False
 
 
 """Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
