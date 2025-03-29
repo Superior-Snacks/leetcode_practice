@@ -4,6 +4,7 @@ def isValid(s):
     # find first right side
     #go back, remove checked
     while True:
+        print(s)
         if s:
             for i in range(len(s)):
                 if s[i] == l: #find right
