@@ -13,6 +13,7 @@ def isValid(s):
                     if k == j: # check if close
                         s = s[:j,k:] #remove valid and conitnue
                         print("#remove valid and conitnue")
+                        print(f"string is {s}")
                         break
                     else: # if not valid string bad
                         False
