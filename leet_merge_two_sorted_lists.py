@@ -38,10 +38,10 @@ def print_linked_list(head):
         current = current.next
     print("None")
 
-print("List 1:")
-print_linked_list(list1)
-print("\nList 2:")
-print_linked_list(list2)
+#print("List 1:")
+#print_linked_list(list1)
+#print("\nList 2:")
+#print_linked_list(list2)
 
 class Solution(object):
     def mergeTwoLists(self, list1, list2):
@@ -53,8 +53,8 @@ class Solution(object):
         # Your merging logic will go here
         # You can now work with the 'list1' and 'list2' variables
         # which are the heads of the linked lists you created above.
-        current1 = list1
-        current2 = list2
+        current1 = list1.val
+        current2 = list2.val
         print(current1, current2)
 
         # For now, let's just return None as a placeholder
