@@ -1,4 +1,4 @@
-def mergeTwoLists(self, list1, list2):
+def mergeTwoLists(list1, list2):
     """
     :type list1: Optional[ListNode]
     :type list2: Optional[ListNode]
@@ -17,7 +17,8 @@ def mergeTwoLists(self, list1, list2):
             output.append(list2[i])
             remainder1.append(list1[i])
         else:
-            output.append(remainder1,remainder2)
+            output.append(remainder1)
+            output.append(remainder2)
             remainder1 = []
             remainder2 = []
 
