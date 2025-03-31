@@ -11,7 +11,7 @@ def mergeTwoLists(self, list1, list2):
         if list1[i] < list2[i]:
             output.append(remainder1)
             output.append(list1[i])
-            remainder.append(list2[i])
+            remainder2.append(list2[i])
         elif list2[i] < list1[i]:
             output.append(remainder2)
             output.append(list2[i])
