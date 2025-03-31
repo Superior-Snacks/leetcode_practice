@@ -65,6 +65,7 @@ class Solution(object):
         while True:
             a = a.next
             b = b.next
+            print(a, b)
             if a != None or b != None:
                 if a.val <= b.val:
                     current = ListNode(a.val)
@@ -74,9 +75,7 @@ class Solution(object):
                     current.next = ListNode(a.val)
             else:
                 False
-
-            # For now, let's just return None as a placeholder
-        return 
+            return print_linked_list(head)
 
 # Example of how you might call your mergeTwoLists function:
 solution = Solution()
