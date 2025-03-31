@@ -16,8 +16,8 @@ def create_linked_list(values):
     return head
 
 # Example sorted linked lists you can use:
-list1_values = [1, 2, 2, 4]
-list2_values = [1, 2, 3, 4]
+list1_values = [1, 2, 4]
+list2_values = [1, 3, 4]
 
 list1 = create_linked_list(list1_values)
 list2 = create_linked_list(list2_values)
