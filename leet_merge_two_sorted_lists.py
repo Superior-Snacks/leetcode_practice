@@ -63,6 +63,8 @@ class Solution(object):
             head.next = ListNode(a.val)
         current = head
         while True:
+            a.next
+            b.next
             if a.val <= b.val:
                 current = ListNode(a.val)
                 current.next = ListNode(b.val)
@@ -72,7 +74,7 @@ class Solution(object):
 
 
             # For now, let's just return None as a placeholder
-            return None
+        return 
 
 # Example of how you might call your mergeTwoLists function:
 solution = Solution()
