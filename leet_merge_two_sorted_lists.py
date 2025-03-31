@@ -53,30 +53,7 @@ class Solution(object):
         # Your merging logic will go here
         # You can now work with the 'list1' and 'list2' variables
         # which are the heads of the linked lists you created above.
-        a = list1
-        b = list2
-        if a.val <= b.val:
-            head = ListNode(a.val)
-            head.next = ListNode(b.val)
-        else:
-            head = ListNode(b.val)
-            head.next = ListNode(a.val)
-        current = head
-        while True:
-            a = a.next
-            b = b.next
-            print(a.val, b.val)
-            if a != None or b != None:
-                print(a.val, b.val)
-                if a.val <= b.val:
-                    current = ListNode(a.val)
-                    current.next = ListNode(b.val)
-                else:
-                    current = ListNode(b.val)
-                    current.next = ListNode(a.val)
-            else:
-                False
-            return print_linked_list(head)
+        dummy_head = ListNode()
 
 # Example of how you might call your mergeTwoLists function:
 solution = Solution()
