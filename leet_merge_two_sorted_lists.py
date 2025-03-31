@@ -63,7 +63,6 @@ class Solution(object):
             head.next = ListNode(a.val)
         current = head
         while True:
-            print(a, b)
             if a.val <= b.val:
                 current = ListNode(a.val)
                 current.next = ListNode(b.val)
