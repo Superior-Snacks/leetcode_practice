@@ -65,8 +65,9 @@ class Solution(object):
         while True:
             a = a.next
             b = b.next
-            print(a, b)
+            print(a.val, b.val)
             if a != None or b != None:
+                print(a.val, b.val)
                 if a.val <= b.val:
                     current = ListNode(a.val)
                     current.next = ListNode(b.val)
