@@ -78,5 +78,5 @@ class Solution(object):
 solution = Solution()
 merged_list_head = solution.mergeTwoLists(list1, list2)
 
-#print("\nMerged List:")
-#print_linked_list(merged_list_head)
+print("\nMerged List:")
+print_linked_list(merged_list_head)
