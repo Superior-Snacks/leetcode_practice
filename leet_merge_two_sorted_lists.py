@@ -63,15 +63,17 @@ class Solution(object):
             head.next = ListNode(a.val)
         current = head
         while True:
-            a.next
-            b.next
-            if a.val <= b.val:
-                current = ListNode(a.val)
-                current.next = ListNode(b.val)
+            a = a.next
+            b = b.next
+            if a != None or b != None:
+                if a.val <= b.val:
+                    current = ListNode(a.val)
+                    current.next = ListNode(b.val)
+                else:
+                    current = ListNode(b.val)
+                    current.next = ListNode(a.val)
             else:
-                current = ListNode(b.val)
-                current.next = ListNode(a.val)
-
+                False
 
             # For now, let's just return None as a placeholder
         return 
