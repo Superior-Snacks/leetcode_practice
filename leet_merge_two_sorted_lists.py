@@ -53,6 +53,9 @@ class Solution(object):
         # Your merging logic will go here
         # You can now work with the 'list1' and 'list2' variables
         # which are the heads of the linked lists you created above.
+        current1 = list1
+        current2 = list2
+        print(current1, current2)
 
         # For now, let's just return None as a placeholder
         return None
