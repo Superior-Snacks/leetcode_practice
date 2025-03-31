@@ -12,14 +12,17 @@ def mergeTwoLists(list1, list2):
             output.append(remainder1)
             output.append(list1[i])
             remainder2.append(list2[i])
+            remainder1 = []
         elif list2[i] < list1[i]:
             output.append(remainder2)
             output.append(list2[i])
             remainder1.append(list1[i])
+            remainder2 = []
         else:
             output.append(remainder1)
             output.append(remainder2)
             remainder1 = []
             remainder2 = []
+    return output
 
-mergeTwoLists([1,2,4],[1,3,4])
+print(mergeTwoLists([1,2,4],[1,3,4]))
