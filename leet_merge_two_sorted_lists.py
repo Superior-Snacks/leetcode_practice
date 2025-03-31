@@ -57,6 +57,9 @@ class Solution(object):
         b = list2.val
         print(a, b)
         if a <= b:
+            ...
+        else:
+            ...
 
 
         # For now, let's just return None as a placeholder
