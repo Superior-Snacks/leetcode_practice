@@ -21,6 +21,8 @@ def mergeTwoLists(list1, list2):
         else:
             output.extend(remainder1)
             output.extend(remainder2)
+            output.append(list1[i])
+            output.append(list2[i])
             remainder1 = []
             remainder2 = []
     return output
