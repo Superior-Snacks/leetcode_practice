@@ -56,13 +56,20 @@ class Solution(object):
         a = list1
         b = list2
         if a.val <= b.val:
-        head = ListNode()
+            head = ListNode(a.val)
+            head.next = ListNode(b.val)
+        else:
+            head = ListNode(b.val)
+            head.next = ListNode(a.val)
+        current = head
         while True:
             print(a, b)
             if a.val <= b.val:
-                ...
+                current = ListNode(a.val)
+                current.next = ListNode(b.val)
             else:
-                ...
+                current = ListNode(b.val)
+                current.next = ListNode(a.val)
 
 
             # For now, let's just return None as a placeholder
