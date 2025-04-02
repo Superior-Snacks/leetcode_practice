@@ -48,6 +48,14 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+        result = []
+        k = None
+        for i in nums:
+            if i == k:
+                pass
+            else:
+                result.append(i)
+
 
 nums = [0,0,1,1,1,2,2,3,3,4]
 solution = Solution()
