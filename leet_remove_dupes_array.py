@@ -48,3 +48,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+
+solution = Solution()
+result = solution.removeDuplicates(nums)
+print(result)
