@@ -48,18 +48,15 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        result = []
-        bucket = []
         f = None
-        for i in nums:
-            if i == f:
-                bucket.append(i)
+        i = 0
+        while True:
+            if nums[i] == f:
+                nums[i].pop()
+                print(nums)
             else:
-                result.append(i)
-                f = i
-        k = len(result)
-        nums = result + bucket
-        return k, nums
+                f = nums[i]
+                i += 1
 
 
 nums = [0,0,1,1,1,2,2,3,3,4]
