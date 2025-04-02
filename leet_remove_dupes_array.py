@@ -50,14 +50,16 @@ class Solution(object):
         """
         result = []
         bucket = []
-        k = None
+        f = None
         for i in nums:
-            if i == k:
+            if i == f:
                 bucket.append(i)
             else:
                 result.append(i)
-                k = i
-        return result + bucket
+                f = i
+        k = len(result)
+        nums = result + bucket
+        return k, nums
 
 
 nums = [0,0,1,1,1,2,2,3,3,4]
