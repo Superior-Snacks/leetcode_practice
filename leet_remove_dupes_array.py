@@ -56,6 +56,7 @@ class Solution(object):
             else:
                 result.append(i)
                 k = i
+        return result
 
 
 nums = [0,0,1,1,1,2,2,3,3,4]
