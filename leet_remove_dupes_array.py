@@ -54,12 +54,10 @@ class Solution(object):
         for i in nums:
             if i == k:
                 bucket.append(i)
-                print(f"bucket: {i}")
             else:
                 result.append(i)
                 k = i
-                print(f"list: {i}")
-        return result.append(bucket)
+        return result + bucket
 
 
 nums = [0,0,1,1,1,2,2,3,3,4]
