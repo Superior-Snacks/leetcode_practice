@@ -52,8 +52,11 @@ class Solution(object):
         i = 0
         while True:
             if nums[i] == f:
-                nums.pop(i)
+                p = nums.pop(i)
+                nums.append(p)
                 print(f"pop {nums}")
+            elif nums[i] < f:
+                return f, nums
             else:
                 f = nums[i]
                 i += 1
