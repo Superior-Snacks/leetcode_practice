@@ -56,7 +56,7 @@ class Solution(object):
                 nums.append(p)
                 print(f"pop {nums}")
             elif nums[i] < f:
-                return f, nums
+                return i, nums
             else:
                 f = nums[i]
                 i += 1
