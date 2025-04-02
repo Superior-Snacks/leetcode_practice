@@ -48,7 +48,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        f = None
+        f = -100
         i = 0
         while True:
             if nums[i] == f:
