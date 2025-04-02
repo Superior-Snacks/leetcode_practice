@@ -49,14 +49,15 @@ class Solution(object):
         :rtype: int
         """
         result = []
+        bucket = []
         k = None
         for i in nums:
             if i == k:
-                pass
+                bucket.append(i)
             else:
                 result.append(i)
                 k = i
-        return result
+        return result.extend(bucket)
 
 
 nums = [0,0,1,1,1,2,2,3,3,4]
