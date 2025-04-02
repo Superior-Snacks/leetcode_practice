@@ -48,21 +48,22 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        f = -100
-        i = 0
-        while True:
-            if nums[i] == f:
-                nums.pop(i)
-                print(f"pop {nums}")
-            elif nums[i] < f:
-                return i, nums
-            else:
-                f = nums[i]
-                i += 1
-                print(f"uneqe {nums}")
+        if not nums:
+            return 0
 
+        # Use two pointers:
+        # - 'i' will track the index of the next unique element
+        # - 'j' will iterate through the array
+        i = 0
+        for j in range(1, len(nums)):
+            if nums[j] != nums[i]:
+                i += 1
+                nums[i] = nums[j]
+
+        # 'i + 1' is the number of unique elements
+        return i + 1
 
 nums = [0,0,1,1,1,2,2,3,3,4]
 solution = Solution()
-result = solution.removeDuplicates(nums)
-print(result)
+k = solution.removeDuplicates(nums)
+print(f"k = {k}, nums = {nums[:k]}")
