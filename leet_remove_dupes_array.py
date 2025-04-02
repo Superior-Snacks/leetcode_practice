@@ -52,11 +52,12 @@ class Solution(object):
         i = 0
         while True:
             if nums[i] == f:
-                nums[i].pop()
-                print(nums)
+                nums.pop(i)
+                print(f"pop {nums}")
             else:
                 f = nums[i]
                 i += 1
+                print(f"uneqe {nums}")
 
 
 nums = [0,0,1,1,1,2,2,3,3,4]
