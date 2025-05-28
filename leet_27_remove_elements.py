@@ -10,6 +10,8 @@ def removeElement(nums, val):
         if nums[search] == val:
             nums[search], nums[point] = nums[point], nums[search]
             search += 1
+        else:
+            search += 1
     print(nums, point)
 
 
