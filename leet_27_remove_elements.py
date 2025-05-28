@@ -5,7 +5,6 @@ def removeElement(nums, val):
     while search <= point:
         while 0 <= point and nums[point] == val:
             point -= 1
-        print(nums[search])
         if nums[search] == val:
             nums[search], nums[point] = nums[point], nums[search]
             search += 1
@@ -16,13 +15,9 @@ def removeElement(nums, val):
 
 
 
-print(1)
-removeElement([3,2,2,3], 3)
-print(2)
-removeElement([3,4,8,8], 8)
-print(3)
-removeElement([1,2,3,4,5,6,6,4], 6)
-print(4)
-removeElement([1,1,1,2,2,2,4,4,1], 1)
-print(5)
-removeElement([1,1,1,1], 3)
+
+print(removeElement([3,2,2,3], 3))
+print(removeElement([3,4,8,8], 8))
+print(removeElement([1,2,3,4,5,6,6,4], 6))
+print(removeElement([1,1,1,2,2,2,4,4,1], 1))
+print(removeElement([1,1,1,1], 3))
