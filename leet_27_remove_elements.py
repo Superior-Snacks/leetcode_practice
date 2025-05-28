@@ -1,6 +1,10 @@
 
 def removeElement(nums, val):
     for i in range(len(nums)):
+        if nums[i] == val:
+            print(nums)
+    i += 1
+
 
 
 removeElement([3,2,2,3], 3)
