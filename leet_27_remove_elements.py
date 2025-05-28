@@ -1,5 +1,13 @@
 
 def removeElement(nums, val):
+    search = 0
+    point = nums[-1]
+    while search != point:
+
+
+
+
+
     while True:
         if nums[-1] == val:
             nums.pop()
