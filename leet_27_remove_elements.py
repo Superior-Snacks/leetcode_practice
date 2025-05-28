@@ -5,8 +5,10 @@ def removeElement(nums, val):
     while search <= point:
         while 0 <= point and nums[point] == val:
             point -= 1
-        if nums[search] == val:
+        if nums[search] == val and search < point:
             nums[search], nums[point] = nums[point], nums[search]
+            search += 1
+        elif nums[search] == val:
             search += 1
         else:
             search += 1
