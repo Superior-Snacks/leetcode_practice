@@ -1,0 +1,1 @@
+    def strStr(haystack, needle):
