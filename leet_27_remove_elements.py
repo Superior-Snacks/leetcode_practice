@@ -1,7 +1,6 @@
 
 def removeElement(nums, val):
-    ...
-
+    for i in range(len(nums)):
 
 
 removeElement([3,2,2,3], 3)
