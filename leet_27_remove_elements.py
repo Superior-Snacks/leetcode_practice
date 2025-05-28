@@ -9,15 +9,7 @@ def removeElement(nums, val):
         if nums[search] == val:
             nums[search], nums[point] = nums[point], nums[search]
             search += 1
-
-
-
-
-    while True:
-        if nums[-1] == val:
-            nums.pop()
-        else:
-            False
+    print(nums)
 
 
 
