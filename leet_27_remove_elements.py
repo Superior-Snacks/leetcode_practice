@@ -25,9 +25,3 @@ print(removeElement([3,3], 3))
 print(removeElement([2], 2))
 print(removeElement([], 0))
 print(removeElement([1,2,3,4], 5))
-
-[2], val = 2
-
-[], val = 0
-
-[1,2,3,4], val = 5
