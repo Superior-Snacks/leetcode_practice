@@ -1,9 +1,7 @@
 
 def removeElement(nums, val):
-    for i in range(len(nums)):
-        if nums[i] == val:
-            print(nums, val)
-    i += 1
+    while True:
+        
 
 
 
