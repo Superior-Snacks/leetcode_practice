@@ -1,17 +1,17 @@
 
 def removeElement(nums, val):
     search = 0
-    point = len(nums)
+    point = len(nums) - 1 
     #print(point)
-    while search != point:
-        point -= 1
-        while 0 < point and nums[point] == val:
+    while search <= point:
+        while 0 <= point and nums[point] == val:
             point -= 1
             print("bad")
         print(nums[search])
         if nums[search] == val:
             nums[search], nums[point] = nums[point], nums[search]
             search += 1
+            point -= 1
             print("gotem")
         else:
             search += 1
