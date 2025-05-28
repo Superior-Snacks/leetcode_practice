@@ -16,9 +16,13 @@ def removeElement(nums, val):
 
 
 
-
+print(1)
 removeElement([3,2,2,3], 3)
+print(2)
 removeElement([3,4,8,8], 8)
+print(3)
 removeElement([1,2,3,4,5,6,6,4], 6)
+print(4)
 removeElement([1,1,1,2,2,2,4,4,1], 1)
+print(5)
 removeElement([1,1,1,1], 3)
