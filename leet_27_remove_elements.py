@@ -3,7 +3,8 @@ def removeElement(nums, val):
     while True:
         if nums[-1] == val:
             nums.pop()
-            print(nums)
+        else:
+            False
 
 
 
