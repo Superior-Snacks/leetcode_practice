@@ -1,5 +1,8 @@
 def strStr(haystack, needle):
     for i in haystack:
+        print(i)
+        thread += i
+        if thread == needle[:len(thread)]:
 
 
 
