@@ -1,12 +1,8 @@
 def strStr(haystack, needle):
-    thread = ""
-    for i in haystack:
-        print(i)
-        thread = thread + i
-        if thread != needle[:len(thread)]:
-            thread = i
-
-
+    if needle in haystack:
+        print("yes")
+    else:
+        print("no")
 
 
 
