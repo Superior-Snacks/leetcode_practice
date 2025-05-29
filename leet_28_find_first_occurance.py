@@ -1,8 +1,10 @@
 def strStr(haystack, needle):
+    thread = ""
     for i in haystack:
         print(i)
-        thread += i
-        if thread == needle[:len(thread)]:
+        thread = thread + i
+        if thread != needle[:len(thread)]:
+            thread = i
 
 
 
