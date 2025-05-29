@@ -1,5 +1,5 @@
 def strStr(haystack, needle):
-    ...
+    for i in haystack:
 
 
 
