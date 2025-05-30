@@ -4,6 +4,7 @@ def strStr(haystack, needle):
             if haystack[i] == needle[0]:
                 if haystack[i:i+len(needle)] == needle:
                     return "first", i
+        return "failed", -1
     except:
         return "failed", -1
 
