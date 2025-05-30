@@ -20,3 +20,5 @@ print("no.8", strStr("abc", ""))                   # Optional: could be 0 depend
 print("no.9", strStr("", "a"))                     # Expected: -1 (cannot find anything in empty haystack)
 print("no.10", strStr("abcabcabc", "cab"))         # Expected: 2 (first "cab" starts at index 2)
 print("edge.2", strStr("exactmatch", "exactmatch"))  # Expected: "first", 0
+print("edge.1", strStr("short", "longerneedle"))  # Expected: "failed", -1
+print("edge.3", strStr("", ""))  # Expected: "first", 0
