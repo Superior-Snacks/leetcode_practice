@@ -1,6 +1,6 @@
 def strStr(haystack, needle):
     try:
-        for i in range(len(haystack)):
+        for i in range(len(haystack) - len(needle) + 1):
             if haystack[i] == needle[0]:
                 if haystack[i:i+len(needle)] == needle:
                     return "first", i
