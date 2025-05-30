@@ -19,3 +19,4 @@ print("no.7", strStr("a", "a"))                    # Expected: 0 (same character
 print("no.8", strStr("abc", ""))                   # Optional: could be 0 depending on constraints
 print("no.9", strStr("", "a"))                     # Expected: -1 (cannot find anything in empty haystack)
 print("no.10", strStr("abcabcabc", "cab"))         # Expected: 2 (first "cab" starts at index 2)
+print("edge.2", strStr("exactmatch", "exactmatch"))  # Expected: "first", 0
