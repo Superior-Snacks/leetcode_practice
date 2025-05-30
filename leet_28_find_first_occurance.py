@@ -1,8 +1,5 @@
 def strStr(haystack, needle):
-    if needle in haystack:
-        print("yes")
-    else:
-        print("no")
+    for i in range(haystack):
 
 
 
