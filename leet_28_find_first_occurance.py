@@ -1,12 +1,11 @@
 def strStr(haystack, needle):
-    try:
-        for i in range(len(haystack) - len(needle) + 1):
-            if haystack[i] == needle[0]:
-                if haystack[i:i+len(needle)] == needle:
-                    return "first", i
+    if not needle:
         return "failed", -1
-    except:
-        return "failed", -1
+    for i in range(len(haystack) - len(needle) + 1):
+        if haystack[i] == needle[0]:
+            if haystack[i:i+len(needle)] == needle:
+                return "first", i
+    return "failed", -1
 
 
 
