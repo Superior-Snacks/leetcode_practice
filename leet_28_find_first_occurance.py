@@ -1,7 +1,8 @@
 def strStr(haystack, needle):
     for i in range(len(haystack)):
         if haystack[i] == needle[0]:
-            if 
+            if haystack[i:i+len(needle)] == needle:
+                
 
 
 
