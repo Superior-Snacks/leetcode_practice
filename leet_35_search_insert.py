@@ -2,6 +2,15 @@ def searchInsert( nums, target):
     while True:
         pointerL = 0
         pointerR = len(nums)-1
+        mid = (pointerL + pointerR) // 2
+
+
+
+
+
+
+
+
 
 print(searchInsert([1, 2, 3, 4, 5, 6], 5))  # 4 (found at index 4)
 print(searchInsert([10, 20, 30], 5))       # 0 (smaller than all elements)
