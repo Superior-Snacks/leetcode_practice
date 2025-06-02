@@ -12,4 +12,4 @@ def searchInsert( nums, target):
             place += 1
     return place
 
-print(searchInsert([1,2,3,4,5,6], 5))
+print(searchInsert([1, 2, 3, 4, 5, 6], 5))  # 4 (found at index 4)
