@@ -10,5 +10,6 @@ def searchInsert( nums, target):
             return place
         else:
             place += 1
+    return place
 
 print(searchInsert([1,2,3,4,5,6], 5))
