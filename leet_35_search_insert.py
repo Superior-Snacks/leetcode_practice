@@ -6,14 +6,10 @@ def searchInsert(nums, target):
         print(mid)
         if nums[mid] == target:
             return mid
-        elif mid == -1:
-            return "ur done!"
         elif nums[mid] > target:
             pointerR = mid - 1
         elif nums[mid] < target:
             pointerL = mid + 1
-        else:
-            return mid
 
 
 
