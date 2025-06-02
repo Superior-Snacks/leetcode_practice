@@ -1,16 +1,17 @@
 def searchInsert( nums, target):
-
-
     pointerL = 0
     pointerR = len(nums)-1
     while True:
         mid = (pointerL + pointerR) // 2
+        print(mid)
         if nums[mid] == target:
             return mid
         elif nums[mid] < target:
             pointerR = mid - 1
         elif nums[mid] > target:
             pointerL = mid + 1
+        elif mid == -1:
+            return "ur done!"
         else:
             return mid
 
