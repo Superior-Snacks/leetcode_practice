@@ -5,6 +5,7 @@ def searchInsert( nums, target):
     pointerR = len(nums)-1
     while True:
         mid = (pointerL + pointerR) // 2
+        if mid == target:
 
 
 
