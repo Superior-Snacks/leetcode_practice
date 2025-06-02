@@ -11,6 +11,8 @@ def searchInsert( nums, target):
             pointerR = mid - 1
         elif nums[mid] > target:
             pointerL = mid + 1
+        else:
+            return mid
 
 
 
