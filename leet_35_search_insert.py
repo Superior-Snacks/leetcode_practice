@@ -1,4 +1,4 @@
-def searchInsert( nums, target):
+def searchInsert(nums, target):
     pointerL = 0
     pointerR = len(nums)-1
     while True:
@@ -8,9 +8,9 @@ def searchInsert( nums, target):
             return mid
         elif mid == -1:
             return "ur done!"
-        elif nums[mid] < target:
-            pointerR = mid - 1
         elif nums[mid] > target:
+            pointerR = mid - 1
+        elif nums[mid] < target:
             pointerL = mid + 1
         else:
             return mid
