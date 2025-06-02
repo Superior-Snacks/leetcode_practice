@@ -13,3 +13,5 @@ def searchInsert( nums, target):
     return place
 
 print(searchInsert([1, 2, 3, 4, 5, 6], 5))  # 4 (found at index 4)
+print(searchInsert([10, 20, 30], 5))       # 0 (smaller than all elements)
+print(searchInsert([1, 3, 5, 7], 6))        # 3 (between 5 and 7)
