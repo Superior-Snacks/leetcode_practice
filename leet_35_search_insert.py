@@ -17,3 +17,9 @@ print(searchInsert([10, 20, 30], 5))       # 0 (smaller than all elements)
 print(searchInsert([1, 3, 5, 7], 6))        # 3 (between 5 and 7)
 print(searchInsert([1, 3, 5, 7], 10))       # 4 (larger than all)
 print(searchInsert([5, 10, 15], 5))         # 0
+print(searchInsert([5, 10, 15], 15))        # 2
+print(searchInsert([10], 5))               # 0
+print(searchInsert([10], 15))              # 1
+print(searchInsert([10], 10))              # 0
+print(searchInsert([2, 4, 6, 8], 3))        # 1
+print(searchInsert([], 5))                 # 0
