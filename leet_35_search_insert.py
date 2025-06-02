@@ -22,3 +22,16 @@ print(searchInsert([10], 15))              # 1
 print(searchInsert([10], 10))              # 0
 print(searchInsert([2, 4, 6, 8], 3))        # 1
 print(searchInsert([], 5))                 # 0
+
+def derepitSearchInsert( nums, target):
+    place = 0
+    current = None
+    while place < len(nums):
+        current = nums[place]
+        if current == target:
+            return place
+        elif current > target:
+            return place
+        else:
+            place += 1
+    return place
