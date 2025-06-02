@@ -1,7 +1,7 @@
 def searchInsert( nums, target):
     place = 0
     current = None
-    while place > len(nums):
+    while place < len(nums):
         print(1)
         current = nums[place]
         if current == target:
