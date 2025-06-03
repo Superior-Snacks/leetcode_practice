@@ -1,7 +1,7 @@
 def lengthOfLastWord(s):
     count = 0
     for i in range(len(s) - 1, -1, -1):
-        print(s[i])
+        #print(s[i])
         if allowed(s[i]):
             count += 1
         elif not allowed(s[i]) and count == 0:
