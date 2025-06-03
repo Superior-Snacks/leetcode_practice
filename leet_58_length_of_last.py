@@ -10,14 +10,6 @@ def lengthOfLastWord(s):
     return count
 
 
-def allowed(x):
-    
-    if x.lower() in ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']:
-        return True
-    else:
-        return False
-
-
 print(lengthOfLastWord("Hello World"))  # Expected: 5
 print(lengthOfLastWord("   fly me   to   the moon  "))  # Expected: 4
 print(lengthOfLastWord("Hello"))  # Expected: 5
