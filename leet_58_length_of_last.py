@@ -1,6 +1,7 @@
 def lengthOfLastWord(self, s):
     ...
-
+    for i in range(len(s), -1):
+        print(i)
 
 
 print(lengthOfLastWord("Hello World"))  # Expected: 5
