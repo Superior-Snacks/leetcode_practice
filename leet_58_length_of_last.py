@@ -13,3 +13,5 @@ print(lengthOfLastWord("yes"))  # Expected: 3
 print(lengthOfLastWord("word before    final"))  # Expected: 5
 print(lengthOfLastWord("           word"))  # Expected: 4
 print(lengthOfLastWord("a " * 9999 + "end"))  # Expected: 3
+print(lengthOfLastWord("     "))  # Behavior undefined per constraints, should never occur.
+print(lengthOfLastWord("MiXeDCaSe"))  # Expected: 9
