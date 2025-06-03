@@ -3,9 +3,7 @@ def lengthOfLastWord(s):
     for i in range(len(s) - 1, -1, -1):
         if s[i].isalpha():
             count += 1
-        elif not s[i].isalpha() and count == 0:
-            continue
-        elif not s[i].isalpha():
+        elif count > 0:
             return count
     return count
 
