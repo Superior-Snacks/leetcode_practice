@@ -6,7 +6,7 @@ def lengthOfLastWord(s):
             count += 1
         elif not allowed(s[i]) and count == 0:
             continue
-        else:
+        elif not allowed(s[i]):
             return count
     return count
 
