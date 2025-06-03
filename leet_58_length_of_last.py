@@ -1,4 +1,4 @@
-def lengthOfLastWord(self, s):
+def lengthOfLastWord(s):
     ...
     for i in range(len(s), -1):
         print(i)
