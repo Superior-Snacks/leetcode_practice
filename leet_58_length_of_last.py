@@ -1,11 +1,11 @@
 def lengthOfLastWord(s):
     count = 0
     for i in range(len(s) - 1, -1, -1):
-        if allowed(s[i]):
+        if s[i].isalpha():
             count += 1
-        elif not allowed(s[i]) and count == 0:
+        elif not s[i].isalpha() and count == 0:
             continue
-        elif not allowed(s[i]):
+        elif not s[i].isalpha():
             return count
     return count
 
