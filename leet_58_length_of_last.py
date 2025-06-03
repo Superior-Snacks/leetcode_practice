@@ -1,6 +1,6 @@
 def lengthOfLastWord(s):
     print(s)
-    for i in s:
+    for i in range(s,-1):
         print(i)
 
 
