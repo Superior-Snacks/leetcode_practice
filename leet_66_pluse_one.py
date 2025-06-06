@@ -4,6 +4,7 @@ def plusOne(digits):
             digits[i] = 0
         elif i != 9:
             digits[i] += 1
+            return digits
 
 
 
