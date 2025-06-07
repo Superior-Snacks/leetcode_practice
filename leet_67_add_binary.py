@@ -4,7 +4,20 @@ def addBinary(a, b):
 
 
 
-
+print(addBinary("0", "0"), "=> 0")
+print(addBinary("1", "0"), "=> 1")
+print(addBinary("1", "1"), "=> 10")
+print(addBinary("101", "1"), "=> 110")
+print(addBinary("11", "1"), "=> 100")
+print(addBinary("1", "111"), "=> 1000")
+print(addBinary("1111", "1"), "=> 10000")
+print(addBinary("111", "111"), "=> 1110")
+a = "1" * 10  # 10 ones
+b = "1"
+# 1111111111 + 1 = 10000000000 (a 1 followed by ten 0s)
+print(addBinary(a, b), "=> 10000000000")
+print(addBinary("000", "000"), "=> 0")
+print(addBinary("0001", "0010"), "=> 11")
 """
 Given two binary strings a and b, return their sum as a binary string.
 
