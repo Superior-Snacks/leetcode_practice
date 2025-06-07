@@ -1,4 +1,4 @@
-def addBinary(self, a, b):
+def addBinary(a, b):
     ...
 
 
