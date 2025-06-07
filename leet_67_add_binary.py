@@ -1,4 +1,6 @@
 def addBinary(a, b):
+    count = 0
+    while (count < len(a)) and (count < len(b)):
     return a, b
 
 
