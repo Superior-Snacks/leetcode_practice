@@ -1,7 +1,8 @@
 def addBinary(a, b):
     count = 0
-    a.reverse()
-    while (count < len(a)) and (count < len(b)):
+    i = len(a) - 1
+    j = len(b) - 1
+    while i and j > 0:
         count += 1
 
 
