@@ -8,7 +8,6 @@ def addBinary(a, b):
 
 """
 how to calc binary, start from back if 1 + 1 leave 0 carry over 1 elif 1 + 0 leave 1 carry over none
-if carry over 1 + 1 leave 1 carry over 1 if 1 + 0 leave 1 carry none if 
 """
 print(addBinary("0", "0"), "=> 0")
 print(addBinary("1", "0"), "=> 1")
