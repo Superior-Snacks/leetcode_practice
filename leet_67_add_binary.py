@@ -4,9 +4,7 @@ def addBinary(a, b):
     result = None
     
     while True:
-    
-
-
+        if a[i] + b[j]:
 
 """
 how to calc binary, start from back if 1 + 1 leave 0 carry over 1 elif 1 + 0 leave 1 carry over none
