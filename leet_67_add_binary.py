@@ -7,6 +7,11 @@ def addBinary(a, b):
     while True:
         if carry + a[i] + b[j] == 3:
             #leave 1 carry 1
+            ...
+        elif carry + a[i] + b[j] == 2:
+            # leave 0 carry 1
+            ...
+        elif carry + a[i] + b[j] ==
 
 """
 how to calc binary, start from back if 1 + 1 leave 0 carry over 1 elif 1 + 0 leave 1 carry over none
