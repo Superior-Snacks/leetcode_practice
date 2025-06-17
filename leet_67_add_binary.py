@@ -23,7 +23,8 @@ def addBinary(a, b):
         j -= 1
 
     if i >= 0:
-        i += 1
+        if carry == 0:
+            i += 1
         while carry != 0 and i >= 0:
             if carry + int(a[i]) == 2:
                 result = "0" + result
@@ -42,7 +43,8 @@ def addBinary(a, b):
         else:
             result = "1" + result
     elif j >= 0:
-        j += 1
+        if carry == 0:
+            j += 1
         while carry != 0 and j >= 0:
             if carry + int(b[j]) == 2:
                 result = "0" + result
