@@ -17,6 +17,8 @@ def addBinary(a, b):
         elif carry + a[i] + b[j] == 0:
             #leave 0 carry 0
             ...
+        else:
+            print("how the hell did you get here?!")
 
 """
 how to calc binary, start from back if 1 + 1 leave 0 carry over 1 elif 1 + 0 leave 1 carry over none
