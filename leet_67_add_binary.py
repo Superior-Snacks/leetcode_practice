@@ -69,7 +69,7 @@ def addBinary(a, b):
             result = b[:j] + result
         else:
             result = "1" + result
-    print("result: {result}")
+    print(f"result: {result}")
     return result
 
 """
