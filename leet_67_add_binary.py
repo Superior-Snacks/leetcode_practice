@@ -41,11 +41,13 @@ def addBinary(a, b):
                 print("leave 1 carry 0")
                 result = "1" + result
                 carry = 0
+                i += 1
                 print(result)
             elif carry + int(a[i]) == 0:
                 print("leave 0 carry 0")
                 result = "0" + result
                 carry = 0
+                i += 1
                 print(result)
             else:
                 print("how the hell did you get here?!")
@@ -70,11 +72,13 @@ def addBinary(a, b):
                 print("leave 1 carry 0")
                 result = "1" + result
                 carry = 0
+                j += 1
                 print(result)
             elif carry + int(b[j]) == 0:
                 print("leave 0 carry 0")
                 result = "0" + result
                 carry = 0
+                j += 1
                 print(result)
             else:
                 print("how the hell did you get here?!")
