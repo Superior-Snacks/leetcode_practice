@@ -2,6 +2,8 @@ def addBinary(a, b):
     carry = 0
     i = len(a) - 1
     j = len(b) - 1
+    print(i)
+    print(j)
     result = ""
     
     while (i > 0) and (j > 0):
