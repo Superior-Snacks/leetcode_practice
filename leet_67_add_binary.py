@@ -4,7 +4,7 @@ def addBinary(a, b):
     j = len(b) - 1
     result = ""
     
-    while (i > 0) or (j > 0):
+    while (i > 0) and (j > 0):
         if carry + int(a[i]) + int(b[j]) == 3:
             #leave 1 carry 1
             result = "1" + result
