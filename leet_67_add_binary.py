@@ -23,8 +23,6 @@ def addBinary(a, b):
         j -= 1
 
     if i >= 0:
-        if carry == 0:
-            i += 1
         while carry != 0 and i >= 0:
             if carry + int(a[i]) == 2:
                 result = "0" + result
@@ -39,12 +37,10 @@ def addBinary(a, b):
                 print("how the hell did you get here?!")
             i -= 1
         if carry == 0:
-            result = a[:i] + result
+            result = a[:i+1] + result
         else:
             result = "1" + result
     elif j >= 0:
-        if carry == 0:
-            j += 1
         while carry != 0 and j >= 0:
             if carry + int(b[j]) == 2:
                 result = "0" + result
@@ -59,7 +55,7 @@ def addBinary(a, b):
                 print("how the hell did you get here?!")
             j -= 1
         if carry == 0:
-            result = b[:j] + result
+            result = b[:j+1] + result
         else:
             result = "1" + result
     elif carry == 1:
@@ -94,6 +90,17 @@ print(addBinary("000", "000"), "=> 0 or 000")
 print(addBinary("0001", "0010"), "=> 11 or 0011")
 print(addBinary("100", "110010"), "=> 110110")  # Output: "110110"
 print(addBinary("1010", "1011"), "=> 10101")
+
+a =
+"101111"
+b =
+"10"
+
+Use Testcase
+Output
+"10001"
+Expected
+"110001"
 """
 Given two binary strings a and b, return their sum as a binary string.
 
