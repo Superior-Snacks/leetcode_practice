@@ -2,12 +2,12 @@ def addBinary(a, b):
     carry = 0
     i = len(a) - 1
     j = len(b) - 1
-    result = None
+    result = ""
     
     while (i < 0) or (j < 0):
         if carry + a[i] + b[j] == 3:
             #leave 1 carry 1
-            result += "1"
+            result = "1" + result
             carry = 1
         elif carry + a[i] + b[j] == 2:
             # leave 0 carry 1
