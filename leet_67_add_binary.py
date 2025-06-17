@@ -118,8 +118,8 @@ a = "1" * 10  # 10 ones
 b = "1"
 # 1111111111 + 1 = 10000000000 (a 1 followed by ten 0s)
 #print(addBinary(a, b), "=> 10000000000")
-print(addBinary("000", "000"), "=> 0")
-print(addBinary("0001", "0010"), "=> 11")
+print(addBinary("000", "000"), "=> 0 or 000")
+print(addBinary("0001", "0010"), "=> 11 or 0011")
 """
 Given two binary strings a and b, return their sum as a binary string.
 
