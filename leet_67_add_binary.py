@@ -6,24 +6,25 @@ def addBinary(a, b):
     
     while (i > 0) and (j > 0):
         if carry + int(a[i]) + int(b[j]) == 3:
-            #leave 1 carry 1
+            print("leave 1 carry 1")
             result = "1" + result
             carry = 1
         elif carry + int(a[i]) + int(b[j]) == 2:
-            # leave 0 carry 1
+            print("leave 0 carry 1")
             result = "0" + result
             carry = 1
         elif carry + int(a[i]) + int(b[j]) == 1:
-            #leave 1 carry 0
+            print("leave 1 carry 0")
             result = "1" + result
             carry = 0
         elif carry + int(a[i]) + int(b[j]) == 0:
-            #leave 0 carry 0
+            print("leave 0 carry 0")
             result = "0" + result
             carry = 0
         else:
             print("how the hell did you get here?!")
-        print(f"result: {result}")
+    print(f"result: {result}")
+    return result
 
 """
 how to calc binary, start from back if 1 + 1 leave 0 carry over 1 elif 1 + 0 leave 1 carry over none
