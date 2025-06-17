@@ -23,6 +23,7 @@ def addBinary(a, b):
         j -= 1
 
     if i >= 0:
+        i += 1
         while carry != 0 and i >= 0:
             if carry + int(a[i]) == 2:
                 result = "0" + result
@@ -30,11 +31,9 @@ def addBinary(a, b):
             elif carry + int(a[i]) == 1:
                 result = "1" + result
                 carry = 0
-                i += 1
             elif carry + int(a[i]) == 0:
                 result = "0" + result
                 carry = 0
-                i += 1
             else:
                 print("how the hell did you get here?!")
             i -= 1
@@ -44,6 +43,7 @@ def addBinary(a, b):
         else:
             result = "1" + result
     elif j >= 0:
+        j += 1
         while carry != 0 and j >= 0:
             if carry + int(b[j]) == 2:
                 result = "0" + result
@@ -51,15 +51,14 @@ def addBinary(a, b):
             elif carry + int(b[j]) == 1:
                 result = "1" + result
                 carry = 0
-                j += 1
             elif carry + int(b[j]) == 0:
                 result = "0" + result
                 carry = 0
-                j += 1
             else:
                 print("how the hell did you get here?!")
             j -= 1
         if carry == 0:
+            print(result, "and", b[:j])
             result = b[:j] + result
         else:
             result = "1" + result
