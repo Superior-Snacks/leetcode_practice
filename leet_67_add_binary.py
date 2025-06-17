@@ -5,19 +5,19 @@ def addBinary(a, b):
     result = ""
     
     while (i > 0) or (j > 0):
-        if carry + a[i] + b[j] == 3:
+        if carry + int(a[i]) + int(b[j]) == 3:
             #leave 1 carry 1
             result = "1" + result
             carry = 1
-        elif carry + a[i] + b[j] == 2:
+        elif carry + int(a[i]) + int(b[j]) == 2:
             # leave 0 carry 1
             result = "0" + result
             carry = 1
-        elif carry + a[i] + b[j] == 1:
+        elif carry + int(a[i]) + int(b[j]) == 1:
             #leave 1 carry 0
             result = "1" + result
             carry = 0
-        elif carry + a[i] + b[j] == 0:
+        elif carry + int(a[i]) + int(b[j]) == 0:
             #leave 0 carry 0
             result = "0" + result
             carry = 0
