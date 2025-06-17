@@ -30,6 +30,25 @@ def addBinary(a, b):
     print(f"result: {result}")
     if i >= 0:
         result = a[:i] + result
+        while carry != 0:
+            if carry + int(a[i]) + int(b[j]) == 3:
+                print("leave 1 carry 1")
+                result = "1" + result
+                carry = 1
+            elif carry + int(a[i]) + int(b[j]) == 2:
+                print("leave 0 carry 1")
+                result = "0" + result
+                carry = 1
+            elif carry + int(a[i]) + int(b[j]) == 1:
+                print("leave 1 carry 0")
+                result = "1" + result
+                carry = 0
+            elif carry + int(a[i]) + int(b[j]) == 0:
+                print("leave 0 carry 0")
+                result = "0" + result
+                carry = 0
+            else:
+                print("how the hell did you get here?!")
     if j >= 0:
         result = b[:j] + result
     return result
