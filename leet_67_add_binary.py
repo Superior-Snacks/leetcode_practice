@@ -44,6 +44,7 @@ def addBinary(a, b):
                 carry = 0
             else:
                 print("how the hell did you get here?!")
+            i -= 1
         result = a[:i] + result
     if j >= 0:
         while carry != 0:
@@ -61,6 +62,7 @@ def addBinary(a, b):
                 carry = 0
             else:
                 print("how the hell did you get here?!")
+            j -= 1
         result = b[:j] + result
     return result
 
@@ -80,7 +82,7 @@ print(addBinary("0", "0"), "=> 0")
 print(addBinary("1", "0"), "=> 1")
 print(addBinary("1", "1"), "=> 10")
 print(addBinary("101", "1"), "=> 110")
-print(addBinary("11", "1"), "=> 100")
+#print(addBinary("11", "1"), "=> 100")
 print(addBinary("1", "111"), "=> 1000")
 print(addBinary("1111", "1"), "=> 10000")
 #print(addBinary("111", "111"), "=> 1110")
