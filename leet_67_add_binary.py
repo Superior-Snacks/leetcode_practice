@@ -83,7 +83,7 @@ def addBinary(a, b):
             result = "1" + result
             print(result)
     elif carry == 1:
-        
+        result = "1" + result
     print(f"result: {result}")
     return result
 
