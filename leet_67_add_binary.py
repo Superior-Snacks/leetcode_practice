@@ -11,7 +11,7 @@ def addBinary(a, b):
             carry = 1
         elif carry + a[i] + b[j] == 2:
             # leave 0 carry 1
-            result += "0"
+            result = "0" + result
             carry = 1
         elif carry + a[i] + b[j] == 1:
             #leave 1 carry 0
