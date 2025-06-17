@@ -51,9 +51,12 @@ def addBinary(a, b):
                 print("how the hell did you get here?!")
             i -= 1
         if carry == 0:
+            print("zero")
+            print(a[:i])
             result = a[:i] + result
             print(result)
         else:
+            print("one")
             result = "1" + result
             print(result)
     elif j >= 0:
