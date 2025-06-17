@@ -39,6 +39,7 @@ def addBinary(a, b):
                 print("how the hell did you get here?!")
             i -= 1
         if carry == 0:
+            print(result, "and", a[:i])
             result = a[:i] + result
         else:
             result = "1" + result
