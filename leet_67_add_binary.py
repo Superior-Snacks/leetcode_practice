@@ -30,6 +30,8 @@ def addBinary(a, b):
     print(f"result: {result}")
     if i >= 0:
         result = a[:i] + result
+    if j >= 0:
+        result = b[:j] + result
     return result
 
 """
