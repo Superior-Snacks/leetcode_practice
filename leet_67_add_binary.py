@@ -27,7 +27,6 @@ def addBinary(a, b):
             print("how the hell did you get here?!")
         i -= 1
         j -= 1
-    print(f"result: {result}")
     if i >= 0:
         while carry != 0 and i >= 0:
             if carry + int(a[i]) == 2:
@@ -70,6 +69,7 @@ def addBinary(a, b):
             result = b[:j] + result
         else:
             result = "1" + result
+    print("result: {result}")
     return result
 
 """
