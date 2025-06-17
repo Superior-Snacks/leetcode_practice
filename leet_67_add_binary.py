@@ -39,7 +39,7 @@ def addBinary(a, b):
                 print("leave 1 carry 0")
                 result = "1" + result
                 carry = 0
-            elif carry + int(a[i]) + int(b[j]) == 0:
+            elif carry + int(b[j]) == 0:
                 print("leave 0 carry 0")
                 result = "0" + result
                 carry = 0
