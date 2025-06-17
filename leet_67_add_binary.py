@@ -7,7 +7,8 @@ def addBinary(a, b):
     while (i < 0) or (j < 0):
         if carry + a[i] + b[j] == 3:
             #leave 1 carry 1
-            ...
+            result += "1"
+            carry = 1
         elif carry + a[i] + b[j] == 2:
             # leave 0 carry 1
             ...
