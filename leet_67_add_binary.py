@@ -6,7 +6,7 @@ def addBinary(a, b):
     print(j)
     result = ""
     
-    while (i > 0) and (j > 0):
+    while (i >= 0) and (j >= 0):
         if carry + int(a[i]) + int(b[j]) == 3:
             print("leave 1 carry 1")
             result = "1" + result
@@ -25,6 +25,8 @@ def addBinary(a, b):
             carry = 0
         else:
             print("how the hell did you get here?!")
+        i -= 1
+        j -= 1
     print(f"result: {result}")
     return result
 
