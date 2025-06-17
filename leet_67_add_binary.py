@@ -4,7 +4,7 @@ def addBinary(a, b):
     j = len(b) - 1
     result = ""
     
-    while (i < 0) or (j < 0):
+    while (i > 0) or (j > 0):
         if carry + a[i] + b[j] == 3:
             #leave 1 carry 1
             result = "1" + result
@@ -23,6 +23,7 @@ def addBinary(a, b):
             carry = 0
         else:
             print("how the hell did you get here?!")
+        print(f"result: {result}")
 
 """
 how to calc binary, start from back if 1 + 1 leave 0 carry over 1 elif 1 + 0 leave 1 carry over none
