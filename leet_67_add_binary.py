@@ -15,10 +15,12 @@ def addBinary(a, b):
             carry = 1
         elif carry + a[i] + b[j] == 1:
             #leave 1 carry 0
-            ...
+            result = "1" + result
+            carry = 0
         elif carry + a[i] + b[j] == 0:
             #leave 0 carry 0
-            ...
+            result = "0" + result
+            carry = 0
         else:
             print("how the hell did you get here?!")
 
