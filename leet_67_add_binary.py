@@ -93,6 +93,7 @@ print(addBinary(a, b), "=> 10000000000")
 print(addBinary("000", "000"), "=> 0 or 000")
 print(addBinary("0001", "0010"), "=> 11 or 0011")
 print(addBinary("100", "110010"), "=> 110110")  # Output: "110110"
+print(addBinary("1010", "1011"), "=> 10101")
 """
 Given two binary strings a and b, return their sum as a binary string.
 
