@@ -6,25 +6,17 @@ def addBinary(a, b):
     
     while (i >= 0) and (j >= 0):
         if carry + int(a[i]) + int(b[j]) == 3:
-            print("leave 1 carry 1")
             result = "1" + result
             carry = 1
-            print(result)
         elif carry + int(a[i]) + int(b[j]) == 2:
-            print("leave 0 carry 1")
             result = "0" + result
             carry = 1
-            print(result)
         elif carry + int(a[i]) + int(b[j]) == 1:
-            print("leave 1 carry 0")
             result = "1" + result
             carry = 0
-            print(result)
         elif carry + int(a[i]) + int(b[j]) == 0:
-            print("leave 0 carry 0")
             result = "0" + result
             carry = 0
-            print(result)
         else:
             print("how the hell did you get here?!")
         i -= 1
@@ -33,65 +25,45 @@ def addBinary(a, b):
     if i >= 0:
         while carry != 0 and i >= 0:
             if carry + int(a[i]) == 2:
-                print("leave 0 carry 1")
                 result = "0" + result
                 carry = 1
-                print(result)
             elif carry + int(a[i]) == 1:
-                print("leave 1 carry 0")
                 result = "1" + result
                 carry = 0
                 i += 1
-                print(result)
             elif carry + int(a[i]) == 0:
-                print("leave 0 carry 0")
                 result = "0" + result
                 carry = 0
                 i += 1
-                print(result)
             else:
                 print("how the hell did you get here?!")
             i -= 1
         if carry == 0:
-            print("zero")
-            print(a[:i])
             result = a[:i] + result
-            print(result)
         else:
-            print("one")
             result = "1" + result
-            print(result)
     elif j >= 0:
         while carry != 0 and j >= 0:
             if carry + int(b[j]) == 2:
-                print("leave 0 carry 1")
                 result = "0" + result
                 carry = 1
-                print(result)
             elif carry + int(b[j]) == 1:
-                print("leave 1 carry 0")
                 result = "1" + result
                 carry = 0
                 j += 1
-                print(result)
             elif carry + int(b[j]) == 0:
-                print("leave 0 carry 0")
                 result = "0" + result
                 carry = 0
                 j += 1
-                print(result)
             else:
                 print("how the hell did you get here?!")
             j -= 1
         if carry == 0:
             result = b[:j] + result
-            print(result)
         else:
             result = "1" + result
-            print(result)
     elif carry == 1:
         result = "1" + result
-    print(f"result: {result}")
     return result
 
 """
