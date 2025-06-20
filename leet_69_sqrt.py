@@ -6,7 +6,7 @@ def mySqrt(x):
     while l <= r:
         m = (l + r) // 2
         if m * m == x:
-            return int(m)
+            return m
         elif m * m < x:
             l = m + 1
         else:
