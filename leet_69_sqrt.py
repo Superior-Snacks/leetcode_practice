@@ -1,8 +1,8 @@
 def mySqrt(x):
-    if x < 2:
-        return x
     l = 0
     r = x
+    if x < 2:
+        return x
     while l <= r:
         m = (l + r) // 2
         if m * m == x:
