@@ -1,4 +1,6 @@
 def mySqrt(x):
+    l = 0
+    r = x
     root = 0
     while root * root <= x:
         root += 1
