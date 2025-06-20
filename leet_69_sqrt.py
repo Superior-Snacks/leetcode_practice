@@ -1,12 +1,12 @@
 def mySqrt(x):
+    if x < 2:
+        return x
     l = 0
     r = x
-
     while l <= r:
         m = (l + r) // 2
-
         if (m * m >= x) and (m * m <= x + 1):
-            return int(m)
+            return int(m) - 1
         elif m * m < x:
             l = m + 1
         else:
