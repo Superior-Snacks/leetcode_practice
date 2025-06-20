@@ -5,8 +5,15 @@ def mySqrt(x):
     while l <= r:
         m = (l + r) // 2
 
-        if (m * m >= x) and (m * m <= x+1):
+        if (m * m >= x) and (m * m <= x + 1):
             return int(m)
+        elif m * m < x:
+            l = m + 1
+        else:
+            r = m - 1
+    return r
+
+            
 
 print("input 0:", mySqrt(0), "expected answer 0")               # edge: lowest input
 print("input 1:", mySqrt(1), "expected answer 1")               # edge: small input
