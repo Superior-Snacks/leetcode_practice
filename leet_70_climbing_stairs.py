@@ -1,5 +1,16 @@
 def climbStairs(n):
     ...
+
+
+print("n = 1:", climbStairs(1), "expected 1")
+print("n = 2:", climbStairs(2), "expected 2")
+print("n = 3:", climbStairs(3), "expected 3")
+print("n = 4:", climbStairs(4), "expected 5")
+print("n = 5:", climbStairs(5), "expected 8")
+print("n = 10:", climbStairs(10), "expected 89")
+print("n = 20:", climbStairs(20), "expected 10946")
+print("n = 30:", climbStairs(30), "expected 1346269")
+print("n = 45:", climbStairs(45), "expected 1836311903")
 """
 You are climbing a staircase. It takes n steps to reach the top.
 
