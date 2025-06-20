@@ -1,10 +1,6 @@
 def mySqrt(x):
     l = 0
     r = x
-    root = 0
-    while root * root <= x:
-        root += 1
-    return int(root) - 1
 
 
 print("input 0:", mySqrt(0), "expected answer 0")               # edge: lowest input
