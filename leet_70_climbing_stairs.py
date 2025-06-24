@@ -3,7 +3,6 @@ def climbStairs(n):
     ways = 0
     while count < n:
         count += 1
-
     return count
 
 print("n = 1:", climbStairs(1), "expected 1")
