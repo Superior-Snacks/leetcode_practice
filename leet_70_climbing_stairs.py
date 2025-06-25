@@ -2,7 +2,7 @@ def climbStairs(n):
     count = -1
     step = 0
     done = False
-    while count <= n:
+    while count < n:
         count += 1
         step = count
         while step < n:
