@@ -7,7 +7,6 @@ def climbStairs(n):
         step = count
         while step < n:
             step += 2
-        
     return count
 
 print("n = 1:", climbStairs(1), "expected 1")
