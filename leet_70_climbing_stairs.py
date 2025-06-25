@@ -1,8 +1,4 @@
 def climbStairs(n):
-    count = 0
-    ways = 0
-    while count < n:
-        for i in range(count)
 
 print("n = 1:", climbStairs(1), "expected 1")
 print("n = 2:", climbStairs(2), "expected 2")
