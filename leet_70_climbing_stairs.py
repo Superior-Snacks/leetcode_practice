@@ -1,11 +1,14 @@
 def climbStairs(n):
     count = 0
     step = 0
-    while True:
+    done = False
+    while not done:
         count += 1
         step = count
         while step < n:
             step += 2
+        
+    return count
 
 print("n = 1:", climbStairs(1), "expected 1")
 print("n = 2:", climbStairs(2), "expected 2")
