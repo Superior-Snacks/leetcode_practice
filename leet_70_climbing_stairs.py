@@ -1,5 +1,5 @@
 def climbStairs(n):
-    count = 0
+    count = -1
     step = 0
     done = False
     while count <= n:
