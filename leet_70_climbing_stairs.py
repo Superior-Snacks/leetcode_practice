@@ -1,4 +1,5 @@
 def climbStairs(n):
+    ...
 
 print("n = 1:", climbStairs(1), "expected 1")
 print("n = 2:", climbStairs(2), "expected 2")
