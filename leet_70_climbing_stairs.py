@@ -11,7 +11,6 @@ print("n = 20:", climbStairs(20), "expected 10946")
 print("n = 30:", climbStairs(30), "expected 1346269")
 print("n = 45:", climbStairs(45), "expected 1836311903")
 """
-fibonachi?
 You are climbing a staircase. It takes n steps to reach the top.
 
 Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
