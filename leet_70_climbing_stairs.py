@@ -1,4 +1,5 @@
 def climbStairs(n):
+    count = 0
     f0 = 1
     f1 = 1
     while count < n:
