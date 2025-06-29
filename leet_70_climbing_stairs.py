@@ -9,7 +9,10 @@ def climbStairs(n):
         f1 = fnow
         #print(f0,f1)
         #print(fnow)
-    return fnow
+    if fnow:
+        return fnow
+    else:
+        return "ERROR INVALID NUMBER"
 
 
 print("n = 0:", climbStairs(0), "expected ERROR")
