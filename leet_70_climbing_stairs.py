@@ -1,12 +1,14 @@
 def climbStairs(n):
     count = 0
-    f0 = 1
+    f0 = 0
     f1 = 1
     while count < n:
         count += 1
         fnow = f1 + f0
-        f1 = fnow
         f0 = f1
+        f1 = fnow
+        #print(f0,f1)
+        #print(fnow)
     return fnow
 
 
