@@ -3,6 +3,11 @@ def climbStairs(n):
     f0 = 1
     f1 = 1
     while count < n:
+        count += 1
+        fnow = f1 + f0
+        f1 = fnow
+        f0 = f1
+    return fnow
 
 
 
