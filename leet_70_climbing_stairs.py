@@ -12,7 +12,7 @@ def climbStairs(n):
     return fnow
 
 
-
+print("n = 0:", climbStairs(0), "expected ERROR")
 print("n = 1:", climbStairs(1), "expected 1")
 print("n = 2:", climbStairs(2), "expected 2")
 print("n = 3:", climbStairs(3), "expected 3")
