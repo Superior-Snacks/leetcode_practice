@@ -4,7 +4,25 @@ class ListNode(object):
          self.val = val
          self.next = next
 
+# Create linked list from list
+def build_linked_list(values):
+    if not values:
+        return None
+    head = ListNode(values[0])
+    current = head
+    for val in values[1:]:
+        current.next = ListNode(val)
+        current = current.next
+    return head
 
+# Convert linked list to list
+def linked_list_to_list(head):
+    result = []
+    current = head
+    while current:
+        result.append(current.val)
+        current = current.next
+    return result
 
 class Solution(object):
     def deleteDuplicates(self, head):
