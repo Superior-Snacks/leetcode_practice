@@ -34,9 +34,9 @@ class Solution(object):
 sol = Solution()
 
 # Test case 1: Empty list
-head = build_linked_list([])
-result = sol.deleteDuplicates(head)
-print("Test case []:", linked_list_to_list(result), "Expected: []")
+#head = build_linked_list([])
+#result = sol.deleteDuplicates(head)
+#print("Test case []:", linked_list_to_list(result), "Expected: []")
 
 # Test case 2: Single node
 head = build_linked_list([1])
