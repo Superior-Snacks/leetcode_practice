@@ -27,8 +27,9 @@ def linked_list_to_list(head):
 class Solution(object):
     def deleteDuplicates(self, head):
         current = head
-        while current:
-            
+        for i in range(10):
+            next = current.next
+            print(next)
 
 sol = Solution()
 
