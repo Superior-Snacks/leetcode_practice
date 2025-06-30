@@ -33,6 +33,8 @@ class Solution(object):
                 current = current.next
                 next_value = current.val
                 print(next_value)
+            else:
+                break
 
 sol = Solution()
 
