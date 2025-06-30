@@ -28,8 +28,9 @@ class Solution(object):
     def deleteDuplicates(self, head):
         current = head
         for i in range(10):
-            next = current.next
-            print(next)
+            current = current.next
+            next_value = current.val
+            print(next_value)
 
 sol = Solution()
 
