@@ -64,6 +64,6 @@ result = sol.deleteDuplicates(head)
 print("Test case [1, 1, 2, 3, 3, 4, 4, 4, 5]:", linked_list_to_list(result), "Expected: [1, 2, 3, 4, 5]")
 
 # Test case 6: Duplicates at the end
-#head = build_linked_list([1, 2, 3, 4, 4])
-#result = sol.deleteDuplicates(head)
-#print("Test case [1, 2, 3, 4, 4]:", linked_list_to_list(result), "Expected: [1, 2, 3, 4]")
+head = build_linked_list([1, 2, 3, 4, 4])
+result = sol.deleteDuplicates(head)
+print("Test case [1, 2, 3, 4, 4]:", linked_list_to_list(result), "Expected: [1, 2, 3, 4]")
