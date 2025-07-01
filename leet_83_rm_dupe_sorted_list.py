@@ -35,6 +35,7 @@ class Solution(object):
                 print(next_value)
             else:
                 break
+        return current.val
 
 sol = Solution()
 
