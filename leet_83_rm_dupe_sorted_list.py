@@ -30,6 +30,8 @@ class Solution(object):
         print(current.val)
         while True:
             if current.next:
+                possible = current.next
+                if possible.val == current.val:
                 current = current.next
                 next_value = current.val
                 print(next_value)
