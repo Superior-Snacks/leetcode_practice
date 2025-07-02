@@ -37,8 +37,6 @@ class Solution(object):
                     ...
                 else:
                     current.next = possible.next
-                    next_value = current.val
-                    print(next_value)
             else:
                 print(current.val)
                 break
