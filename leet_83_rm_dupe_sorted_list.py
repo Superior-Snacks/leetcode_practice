@@ -30,7 +30,6 @@ class Solution(object):
         possible = head
         print(current.val)
         while True:
-
             if possible.next:
                 possible = possible.next
                 if possible.val == current.val:
@@ -38,8 +37,8 @@ class Solution(object):
                 else:
                     current.next = possible.next
             else:
-                print(current.val)
                 break
+        return current
 
 sol = Solution()
 
