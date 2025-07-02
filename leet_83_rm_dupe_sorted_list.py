@@ -34,6 +34,8 @@ class Solution(object):
             if possible.next:
                 possible = possible.next
                 if possible.val == current.val:
+                    ...
+                else:
                     current = current.next
                     next_value = current.val
                     print(next_value)
