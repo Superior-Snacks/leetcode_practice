@@ -31,7 +31,7 @@ class Solution(object):
         print(current.val)
         while True:
 
-            if current.next:
+            if possible.next:
                 possible = current.next
                 if possible.val != current.val:
                     current = current.next
