@@ -1,5 +1,7 @@
-def merge(self, nums1, m, nums2, n):
-    ...
+def merge(nums1, m, nums2, n):
+    print("starto")
+
+
 
 # Example 1
 nums1 = [1,2,3,0,0,0]
