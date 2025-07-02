@@ -33,7 +33,7 @@ class Solution(object):
             if possible.next:
                 possible = possible.next
                 if possible.val == current.val:
-                    ...
+                    continue
                 else:
                     current.next = possible.next
                     print(current.val)
