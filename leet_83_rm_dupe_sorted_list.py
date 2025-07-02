@@ -28,6 +28,8 @@ class Solution(object):
     def deleteDuplicates(self, head):
         current = head
         while current and current.next:
+            if current.val == current.next.val:
+                print("idiot")
 
 sol = Solution()
 
