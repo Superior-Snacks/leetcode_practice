@@ -32,7 +32,7 @@ class Solution(object):
         while True:
 
             if possible.next:
-                possible = current.next
+                possible = possible.next
                 if possible.val != current.val:
                     current = current.next
                     next_value = current.val
