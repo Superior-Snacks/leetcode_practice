@@ -36,9 +36,9 @@ class Solution(object):
                     ...
                 else:
                     current.next = possible.next
+                    print(current.val)
             else:
                 break
-        return current
 
 sol = Solution()
 
