@@ -24,6 +24,7 @@ nums1 = [0]
 m = 0
 nums2 = [1]
 n = 1
+merge(nums1, m, nums2, n)
 print(f"input: [0], [1] => {nums1}, expected: [1]")
 
 # Example 4
@@ -31,6 +32,7 @@ nums1 = [4,5,6,0,0,0]
 m = 3
 nums2 = [1,2,3]
 n = 3
+merge(nums1, m, nums2, n)
 print(f"input: [4,5,6,0,0,0], [1,2,3] => {nums1}, expected: [1,2,3,4,5,6]")
 
 # Example 5
@@ -38,6 +40,7 @@ nums1 = [2,0]
 m = 1
 nums2 = [1]
 n = 1
+merge(nums1, m, nums2, n)
 print(f"input: [2,0], [1] => {nums1}, expected: [1,2]")
 
 # Example 6
@@ -45,6 +48,7 @@ nums1 = [1,2,4,5,6,0]
 m = 5
 nums2 = [3]
 n = 1
+merge(nums1, m, nums2, n)
 print(f"input: [1,2,4,5,6,0], [3] => {nums1}, expected: [1,2,3,4,5,6]")
 
 # Example 7
@@ -52,6 +56,7 @@ nums1 = [0,0,0]
 m = 0
 nums2 = [2,5,6]
 n = 3
+merge(nums1, m, nums2, n)
 print(f"input: [0,0,0], [2,5,6] => {nums1}, expected: [2,5,6]")
 
 # Example 8
@@ -59,6 +64,7 @@ nums1 = [1,2,3,0,0,0,0]
 m = 3
 nums2 = [4,5,6,7]
 n = 4
+merge(nums1, m, nums2, n)
 print(f"input: [1,2,3,0,0,0,0], [4,5,6,7] => {nums1}, expected: [1,2,3,4,5,6,7]")
 
 # Example 9
