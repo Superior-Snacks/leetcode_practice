@@ -9,6 +9,7 @@ def merge(nums1, m, nums2, n):
         l1 = m -1
         l2 = -1
         for i in range(m + n - 1, -1, -1):
+            print(nums1)
             if nums2[l2] > nums1[l1]:
                 nums1[i] = nums2[l2]
                 l2 -= -1
