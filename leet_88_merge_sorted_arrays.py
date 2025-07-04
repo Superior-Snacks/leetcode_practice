@@ -7,7 +7,7 @@ def merge(nums1, m, nums2, n):
     elif m > 0:
         #here real code, go from back m + n check last n1[:m] v n2
         l1 = m -1
-        l2 = -1
+        l2 = n -1
         for i in range(m + n - 1, -1, -1):
             if l1 < 0:
                 nums1[i] = nums2[l2]
