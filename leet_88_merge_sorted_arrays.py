@@ -1,25 +1,20 @@
 def merge(nums1, m, nums2, n):
     if m > 0 and n == 0:
-        print(nums1)
+        return nums1
     elif n > 0 and m == 0:
         nums1 = nums2
-        print(nums1)
     elif m > 0:
-        #here real code, go from back m + n check last n1[:m] v n2
         l1 = m -1
         l2 = n -1
         for i in range(m + n - 1, -1, -1):
             if l2 < 0:
                 break
-            print(nums1[l1])
-            print(l2)
             if l1 >= 0 and nums1[l1] > nums2[l2]:
                 nums1[i] = nums1[l1]
                 l1 -= 1
             else:
                 nums1[i] = nums2[l2]
                 l2 -= 1
-            print(nums1)
     return nums1
 
 
