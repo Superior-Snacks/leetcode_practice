@@ -1,5 +1,4 @@
 def merge(nums1, m, nums2, n):
-    print("starto")
     if m > 0:
         combine = sorted(nums1)
         print(combine)
