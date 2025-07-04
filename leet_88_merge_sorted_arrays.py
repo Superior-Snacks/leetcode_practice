@@ -1,7 +1,8 @@
 def merge(nums1, m, nums2, n):
     if m > 0:
-        combine = sorted(nums1)
-        print(combine)
+        nums1 = sorted(nums1)
+        print(nums1)
+
 
 
 # Example 1
