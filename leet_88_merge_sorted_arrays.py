@@ -14,7 +14,7 @@ def merge(nums1, m, nums2, n):
                 nums1[i] = nums2[l2]
             elif nums1[l1] > nums2[l2]:
                 l1 -= 1
-                nums1[i] = nums1[l1]
+                nums1[i] = nums1[l1]:
 
 
     return nums1
