@@ -5,6 +5,7 @@ def merge(nums1, m, nums2, n):
         nums1 = nums2
         print(nums1)
     elif m > 0:
+        #here real code
         nums1 = sorted(nums1[:m] + nums2)
         print(nums1)
     return nums1
