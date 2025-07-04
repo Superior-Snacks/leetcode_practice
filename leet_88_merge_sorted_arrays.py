@@ -2,8 +2,10 @@ def merge(nums1, m, nums2, n):
     if m > 0:
         nums1 = sorted(nums1[:m-1] + nums2)
         print(nums1)
-    elif n > 0:
-        nums1 = sorted(nums1[:m-1] + nums2)
+    elif m > 0 and n == 0:
+        print(nums1)
+    elif n > 0 and m == 0:
+        nums1 = nums2
         print(nums1)
     return nums1
 
