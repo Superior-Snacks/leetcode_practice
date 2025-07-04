@@ -2,7 +2,8 @@ def merge(nums1, m, nums2, n):
     if m > 0 and n == 0:
         return nums1
     elif n > 0 and m == 0:
-        nums1 = nums2
+        for i in range(n):
+            nums1[i] = nums2[i]
     elif m > 0:
         l1 = m -1
         l2 = n -1
