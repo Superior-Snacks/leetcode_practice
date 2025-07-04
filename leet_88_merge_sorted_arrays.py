@@ -12,10 +12,10 @@ def merge(nums1, m, nums2, n):
             if l1 < 0:
                 nums1[i] = nums2[l2]
                 l2 -= 1
-            if l2 > 0:
+            if l2 + n == 0:
                 break
             print(nums1[l1])
-            print(nums2[l2])
+            print(l2)
             if nums2[l2] > nums1[l1]:
                 nums1[i] = nums2[l2]
                 l2 -= 1
