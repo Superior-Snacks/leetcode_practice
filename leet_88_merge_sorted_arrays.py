@@ -13,13 +13,13 @@ def merge(nums1, m, nums2, n):
             print(nums2[l2])
             if nums2[l2] > nums1[l1]:
                 nums1[i] = nums2[l2]
-                l2 -= -1
+                l2 -= 1
             elif nums1[l1] > nums2[l2]:
                 nums1[i] = nums1[l1]
-                l1 -= -1
+                l1 -= 1
             else:
                 nums1[i] = nums1[l1]
-                l1 -= -1
+                l1 -= 1
             print(nums1)
     return nums1
 
