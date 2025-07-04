@@ -6,7 +6,7 @@ def merge(nums1, m, nums2, n):
         print("error")
         print(nums1)
     elif m > 0:
-        nums1 = sorted(nums1[:m-1] + nums2)
+        nums1 = sorted(nums1[:m] + nums2)
         print(nums1)
     return nums1
 
@@ -81,6 +81,7 @@ nums1 = [2,2,3,0,0,0]
 m = 3
 nums2 = [1,5,6]
 n = 3
+merge(nums1, m, nums2, n)
 print(f"input: [2,2,3,0,0,0], [1,5,6] => {nums1}, expected: [1,2,2,3,5,6]")
 
 # Example 10
@@ -88,6 +89,7 @@ nums1 = [-1,0,0,3,3,3,0,0,0]
 m = 6
 nums2 = [1,2,2]
 n = 3
+merge(nums1, m, nums2, n)
 print(f"input: [-1,0,0,3,3,3,0,0,0], [1,2,2] => {nums1}, expected: [-1,0,0,1,2,2,3,3,3]")
 """
 You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, 
