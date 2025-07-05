@@ -4,7 +4,7 @@ class TreeNode(object):
         self.val = val
         self.left = left
         self.right = right
-def inorderTraversal(self, root):
+def inorderTraversal(root):
     ...
 
 
