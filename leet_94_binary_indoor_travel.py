@@ -5,8 +5,8 @@ class TreeNode(object):
         self.left = left
         self.right = right
 def inorderTraversal(root):
-    ...
-
+    while True:
+        ...
 
 
 # Example 1
