@@ -7,7 +7,6 @@ class TreeNode(object):
 
 def inorderTraversal(root):
     order = []
-    while True:
         
 
 
