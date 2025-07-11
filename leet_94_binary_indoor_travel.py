@@ -6,8 +6,9 @@ class TreeNode(object):
         self.right = right
 
 def inorderTraversal(root):
+    order = []
     while True:
-        print(root)
+        
 
 
 # Example 1
