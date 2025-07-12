@@ -7,6 +7,11 @@ class TreeNode(object):
 tree = TreeNode(1)
 tree.left = TreeNode(2)
 tree.right = TreeNode(3)
+tree.left.left = TreeNode(4)
+tree.left.right = TreeNode(5)
+tree.right.left = None
+tree.right.right = TreeNode(8)
+tree.left.left = None
 def inorderTraversal(root):
     order = []
         
