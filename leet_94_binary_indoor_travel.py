@@ -13,6 +13,9 @@ tree.right.left = None
 tree.right.right = TreeNode(8)
 tree.left.left.left = None
 tree.left.left.right = None
+tree.left.right.left = TreeNode(6)
+tree.left.right.right = TreeNode(7)
+tree.right.right.left = TreeNode(9)
 def inorderTraversal(root):
     order = []
         
