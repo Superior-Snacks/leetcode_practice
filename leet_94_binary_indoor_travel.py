@@ -5,6 +5,8 @@ class TreeNode(object):
         self.left = left
         self.right = right
 tree = TreeNode(1)
+tree.left = TreeNode(2)
+tree.right = TreeNode(3)
 def inorderTraversal(root):
     order = []
         
