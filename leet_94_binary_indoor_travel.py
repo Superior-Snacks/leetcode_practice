@@ -15,7 +15,7 @@ tree.right.right = None
 
 def inorderTraversal(root):
     order = []
-    print(tree.val)
+    print(tree.right.left.val)
         
 
 
