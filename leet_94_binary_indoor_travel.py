@@ -7,7 +7,7 @@ class TreeNode(object):
 
 def inorderTraversal(root):
     order = []
-    print(tree.right.right.left.val)
+    print(tree.val)
         
 
 
