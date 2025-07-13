@@ -5,6 +5,14 @@ class TreeNode(object):
         self.left = left
         self.right = right
 
+tree = TreeNode(1)
+tree.left = None
+tree.right = TreeNode(2)
+tree.left.left = None
+tree.left.right = None
+tree.right.left = TreeNode(3)
+tree.right.right = None
+
 def inorderTraversal(root):
     order = []
     print(tree.val)
