@@ -20,10 +20,10 @@ def inorderTraversal(root):
 
 
 # Example 1
-#print("Case 1:", inorderTraversal([1, None, 2, 3]), "Expected: [1, 3, 2]")
+print("Case 1:", inorderTraversal([1, None, 2, 3]), "Expected: [1, 3, 2]")
 
 # Example 2
-print("Case 2:", inorderTraversal([1, 2, 3, 4, 5, None, 8, None, None, 6, 7, 9]), "Expected: [4, 2, 6, 5, 7, 1, 3, 9, 8]")
+#print("Case 2:", inorderTraversal([1, 2, 3, 4, 5, None, 8, None, None, 6, 7, 9]), "Expected: [4, 2, 6, 5, 7, 1, 3, 9, 8]")
 """
 tree = TreeNode(1)
 tree.left = TreeNode(2)
