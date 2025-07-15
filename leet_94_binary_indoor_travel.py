@@ -12,7 +12,8 @@ tree.right.left = TreeNode(3)
 
 def inorderTraversal(root):
     order = []
-    length = len(root)
+    length = len(root).bit_length() - 1
+    print(length)
         
 
 
