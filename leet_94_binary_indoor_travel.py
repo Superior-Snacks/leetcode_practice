@@ -13,6 +13,7 @@ tree.right.left = TreeNode(3)
 def inorderTraversal(root):
     order = []
     print(tree.right.left.val)
+    length = len(root)
         
 
 
