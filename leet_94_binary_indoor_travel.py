@@ -19,7 +19,7 @@ def inorderTraversal(root):
     #Right child index: 2 * i + 2
     while True:
         count = 0
-        for i in 
+        for i in range(3):
 
 
 
