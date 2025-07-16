@@ -15,6 +15,7 @@ def inorderTraversal(root):
     length = len(root).bit_length() - 1
     #go down left to right reverse when done
     while True:
+        count = 0
 
 
 
