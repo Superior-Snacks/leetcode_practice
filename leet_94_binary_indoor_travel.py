@@ -19,7 +19,6 @@ def inorderTraversal(root):
     #Left child index: 2 * i + 1
     #Right child index: 2 * i + 2
     while count < 10:
-        count = 0
         for i in range(length):
             print(i)
         count += 1
