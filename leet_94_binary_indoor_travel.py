@@ -17,7 +17,7 @@ def inorderTraversal(root):
     #For node at index i:
     #Left child index: 2 * i + 1
     #Right child index: 2 * i + 2
-    while True:
+    while count < 10:
         count = 0
         for i in range(length):
             print(i)
