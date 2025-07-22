@@ -20,8 +20,7 @@ def inorderTraversal(root):
     while True:
         count = 0
         for i in range(length):
-            ...
-
+            print(i)
 
 # Example 1
 print("Case 1:", inorderTraversal([1, None, 2, 3]), "Expected: [1, 3, 2]")
