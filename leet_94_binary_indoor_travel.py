@@ -11,6 +11,7 @@ tree.right = TreeNode(2)
 tree.right.left = TreeNode(3)
 
 def inorderTraversal(root):
+    count = 0
     order = []
     length = len(root).bit_length() - 1
     #go down left to right reverse when done
