@@ -20,7 +20,10 @@ def inorderTraversal(root):
     #Right child index: 2 * i + 2
     while count < 10:
         for i in range(1, length + 1):
-            print(root[2 * i + 1])
+            try:
+                print(root[2 * i + 1])
+            except:
+                continue
         count += 1
 
 # Example 1
