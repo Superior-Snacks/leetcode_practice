@@ -13,14 +13,15 @@ tree.right.left = TreeNode(3)
 def inorderTraversal(root):
     count = 0
     order = []
-    length = len(root).bit_length() - 1
+    indx = len(root).bit_length() - 1
+    length = len(root)
     print(f"length: {length}")
     #go down left to right reverse when done
     #For node at index i:
     #Left child index: 2 * i + 1
     #Right child index: 2 * i + 2
     while count < 10:
-        for i in range(1, length + 1):
+        for i in range(length):
             print(f"i : {i}")
             print(f"calck left child{2 * i + 1}")
             print(f"calck right chold {2 * i + 2}")
