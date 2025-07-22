@@ -14,6 +14,7 @@ def inorderTraversal(root):
     count = 0
     order = []
     length = len(root).bit_length() - 1
+    print(f"length: {length}")
     #go down left to right reverse when done
     #For node at index i:
     #Left child index: 2 * i + 1
