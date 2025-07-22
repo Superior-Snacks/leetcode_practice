@@ -21,7 +21,8 @@ def inorderTraversal(root):
     while count < 10:
         for i in range(1, length + 1):
             print(f"i : {i}")
-            print(f"calck {2 * i + 1}")
+            print(f"calck left child{2 * i + 1}")
+            print(f"calck right chold {2 * i + 2}")
             try:
                 print(root[2 * i + 1])
             except:
