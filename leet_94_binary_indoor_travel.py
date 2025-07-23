@@ -1,41 +1,42 @@
-# Definition for a binary tree node.
 from collections import deque
-
+# Definition for a binary tree node.
 class TreeNode(object):
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
 
-def build_tree(arr):
-    if not arr:
-        return None
+class Solution(object):
 
-    root = TreeNode(arr[0])
-    queue = deque([root])
-    i = 1
+    def build_tree(self, arr):
+        if not arr:
+            return None
+        root = TreeNode(arr[0])
+        queue = deque([root])
+        i = 1
+        while queue and i < len(arr):
+            node = queue.popleft()
+            if node:
+                if i < len(arr):
+                    left_val = arr[i]
+                    node.left = TreeNode(left_val) if left_val is not None else None
+                    queue.append(node.left)
+                    i += 1
+                if i < len(arr):
+                    right_val = arr[i]
+                    node.right = TreeNode(right_val) if right_val is not None else None
+                    queue.append(node.right)
+                    i += 1
+        return root
 
-    while queue and i < len(arr):
-        node = queue.popleft()
-        if node:
-            if i < len(arr):
-                left_val = arr[i]
-                node.left = TreeNode(left_val) if left_val is not None else None
-                queue.append(node.left)
-                i += 1
-            if i < len(arr):
-                right_val = arr[i]
-                node.right = TreeNode(right_val) if right_val is not None else None
-                queue.append(node.right)
-                i += 1
+    def _traverse(self, root):
+        if not root:
+            return []
+        return self._traverse(root.left) + [root.val] + self._traverse(root.right)
 
-    return root
-
-def inorderTraversal(root):
-    if not root:
-        return []
-    print(root.val)
-    return inorderTraversal(root.left) + [root.val] + inorderTraversal(root.right)
+    def inorderTraversal(self, arr):
+        tree = self.build_tree(arr)
+        return self._traverse(tree)
 
 """    count = 0
     order = []
