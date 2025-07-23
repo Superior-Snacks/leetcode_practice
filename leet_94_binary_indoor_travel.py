@@ -1,4 +1,16 @@
-from collections import deque
+
+
+
+#idiot correct is just 
+def inorderTraversal(self, root):
+    if not root:
+        return []
+    return self.inorderTraversal(root.left) + [root.val] + self.inorderTraversal(root.right)
+
+
+
+
+"""from collections import deque
 # Definition for a binary tree node.
 class TreeNode(object):
     def __init__(self, val=0, left=None, right=None):
@@ -36,7 +48,7 @@ class Solution(object):
 
     def inorderTraversal(self, arr):
         tree = self.build_tree(arr)
-        return self._traverse(tree)
+        return self._traverse(tree)"""
 
 """    count = 0
     order = []
