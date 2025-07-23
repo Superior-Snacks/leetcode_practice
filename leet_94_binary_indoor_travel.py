@@ -37,20 +37,6 @@ print("Case 1:", inorderTraversal([1, None, 2, 3]), "Expected: [1, 3, 2]")
 
 # Example 2
 print("Case 2:", inorderTraversal([1, 2, 3, 4, 5, None, 8, None, None, 6, 7, 9]), "Expected: [4, 2, 6, 5, 7, 1, 3, 9, 8]")
-"""
-tree = TreeNode(1)
-tree.left = TreeNode(2)
-tree.right = TreeNode(3)
-tree.left.left = TreeNode(4)
-tree.left.right = TreeNode(5)
-tree.right.left = None
-tree.right.right = TreeNode(8)
-tree.left.left.left = None
-tree.left.left.right = None
-tree.left.right.left = TreeNode(6)
-tree.left.right.right = TreeNode(7)
-tree.right.right.left = TreeNode(9)
-"""
 # Example 3: Empty tree
 #print("Case 3:", inorderTraversal([]), "Expected: []")
 
