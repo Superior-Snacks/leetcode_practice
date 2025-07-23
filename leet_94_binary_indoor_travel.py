@@ -17,6 +17,7 @@ def inorderTraversal(arr, index=0):
     left = inorderTraversal(arr, 2 * index + 1)
     current = [arr[index]]
     right = inorderTraversal(arr, 2 * index + 2)
+    print(f"left {left} current {current} right {right}")
     
     return left + current + right
 
