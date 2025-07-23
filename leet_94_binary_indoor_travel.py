@@ -10,12 +10,17 @@ tree.left = None
 tree.right = TreeNode(2)
 tree.right.left = TreeNode(3)
 
-def inorderTraversal(root):
-
-
-
-
+def inorder_from_list(arr, index=0):
+    if index >= len(arr) or arr[index] is None:
+        return []
     
+    left = inorder_from_list(arr, 2 * index + 1)
+    current = [arr[index]]
+    right = inorder_from_list(arr, 2 * index + 2)
+    
+    return left + current + right
+
+
 """    count = 0
     order = []
     indx = len(root).bit_length() - 1
