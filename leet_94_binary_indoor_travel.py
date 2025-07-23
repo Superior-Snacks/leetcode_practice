@@ -11,7 +11,12 @@ tree.right = TreeNode(2)
 tree.right.left = TreeNode(3)
 
 def inorderTraversal(root):
-    count = 0
+
+
+
+
+    
+"""    count = 0
     order = []
     indx = len(root).bit_length() - 1
     length = len(root)
@@ -31,7 +36,7 @@ def inorderTraversal(root):
                 except:
                     continue
         count += 1
-
+"""
 # Example 1
 print("Case 1:", inorderTraversal([1, None, 2, 3]), "Expected: [1, 3, 2]")
 
