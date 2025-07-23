@@ -16,7 +16,7 @@ def inorderTraversal(arr, index=0):
     except:
         print("gone")
 
-    if index >= len(arr) or arr[index] is None:
+    if index >= len(arr):
         return []
     
     left = inorderTraversal(arr, 2 * index + 1)
