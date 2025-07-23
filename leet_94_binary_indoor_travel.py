@@ -5,10 +5,18 @@ class TreeNode(object):
         self.left = left
         self.right = right
 
-tree = TreeNode(1)
-tree.left = None
-tree.right = TreeNode(2)
-tree.right.left = TreeNode(3)
+def build_tree(arr):
+    if not arr:
+        return None
+
+    nodes = [TreeNode(val) if val is not None else None for val in arr]
+    for i in range(len(arr)):
+        if nodes[i] is not None:
+            left = 2*i + 1
+            right = 2*i + 2
+            if left < len(arr): nodes[i].left = nodes[left]
+            if right < len(arr): nodes[i].right = nodes[right]
+    return nodes[0]
 
 def inorderTraversal(arr, index=0):
 
