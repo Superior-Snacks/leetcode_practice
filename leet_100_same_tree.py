@@ -4,13 +4,15 @@ class TreeNode(object):
         self.val = val
         self.left = left
         self.right = right
-class Solution(object):
-    def isSameTree(self, p, q):
-        """
-        :type p: Optional[TreeNode]
-        :type q: Optional[TreeNode]
-        :rtype: bool
-        """
+
+
+        
+def isSameTree(self, p, q):
+    """
+    :type p: Optional[TreeNode]
+    :type q: Optional[TreeNode]
+    :rtype: bool
+    """
 
 
 # Case 1: Same structure, same values
