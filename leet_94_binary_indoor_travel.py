@@ -21,6 +21,7 @@ def build_tree(arr):
 def inorderTraversal(root):
     if not root:
         return []
+    print(root.val)
     return inorderTraversal(root.left) + [root.val] + inorderTraversal(root.right)
 
 """    count = 0
