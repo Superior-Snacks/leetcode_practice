@@ -71,12 +71,6 @@ class Solution(object):
                     continue
         count += 1
 """
-# Example 1
-sol = Solution()
-print(sol.inorderTraversal([1, None, 2, 3]))  
-# Output: [1, 3, 2]
-
-print(sol.inorderTraversal([1, 2, 3, 4, 5, None, 8, None, None, 6, 7, 9]))
 # Output: [4, 2, 6, 5, 7, 1, 3, 9, 8]
 # Example 3: Empty tree
 #print("Case 3:", inorderTraversal([]), "Expected: []")
