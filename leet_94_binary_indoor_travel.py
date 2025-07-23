@@ -1,4 +1,6 @@
 # Definition for a binary tree node.
+from collections import deque
+
 class TreeNode(object):
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -9,14 +11,25 @@ def build_tree(arr):
     if not arr:
         return None
 
-    nodes = [TreeNode(val) if val is not None else None for val in arr]
-    for i in range(len(arr)):
-        if nodes[i] is not None:
-            left = 2*i + 1
-            right = 2*i + 2
-            if left < len(arr): nodes[i].left = nodes[left]
-            if right < len(arr): nodes[i].right = nodes[right]
-    return nodes[0]
+    root = TreeNode(arr[0])
+    queue = deque([root])
+    i = 1
+
+    while queue and i < len(arr):
+        node = queue.popleft()
+        if node:
+            if i < len(arr):
+                left_val = arr[i]
+                node.left = TreeNode(left_val) if left_val is not None else None
+                queue.append(node.left)
+                i += 1
+            if i < len(arr):
+                right_val = arr[i]
+                node.right = TreeNode(right_val) if right_val is not None else None
+                queue.append(node.right)
+                i += 1
+
+    return root
 
 def inorderTraversal(root):
     if not root:
