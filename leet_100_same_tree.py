@@ -6,7 +6,7 @@ class TreeNode(object):
         self.right = right
 
 
-        
+
 def isSameTree(self, p, q):
     """
     :type p: Optional[TreeNode]
@@ -20,6 +20,8 @@ def isSameTree(self, p, q):
 #   / \     / \
 #  2   3   2   3
 # => True
+tree1 = [1,2,3]
+tree2 = [1,2,3]
 print("Test 1", isSameTree(tree1, tree2), "Expected: True")
 
 # Case 2: One tree has missing left child
@@ -27,6 +29,8 @@ print("Test 1", isSameTree(tree1, tree2), "Expected: True")
 #   /         \
 #  2           2
 # => False
+tree3 = [1,2]
+tree4 = [1,None,2]
 print("Test 2", isSameTree(tree3, tree4), "Expected: False")
 
 # Case 3: Structure same, values different
@@ -34,6 +38,8 @@ print("Test 2", isSameTree(tree3, tree4), "Expected: False")
 #   / \     / \
 #  2   1   1   2
 # => False
+tree5 = [1,2,1]
+tree6 = [1,1,2]
 print("Test 3", isSameTree(tree5, tree6), "Expected: False")
 
 # Edge Case: Both trees empty
