@@ -11,6 +11,10 @@ tree.right = TreeNode(2)
 tree.right.left = TreeNode(3)
 
 def inorderTraversal(arr, index=0):
+    try:
+        print(arr[index])
+    except:
+        print("gone")
 
     if index >= len(arr) or arr[index] is None:
         return []
