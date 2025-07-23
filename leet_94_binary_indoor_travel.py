@@ -18,20 +18,10 @@ def build_tree(arr):
             if right < len(arr): nodes[i].right = nodes[right]
     return nodes[0]
 
-def inorderTraversal(arr, index=0):
-
-    if index >= len(arr) or arr[index] is None:
+def inorderTraversal(root):
+    if not root:
         return []
-    
-    left = inorderTraversal(arr, 2 * index + 1)
-    print("here")
-    current = [arr[index]]
-    print(current)
-    right = inorderTraversal(arr, 2 * index + 2)
-    print(f"left {left} current {current} right {right}")
-    
-    return left + current + right
-
+    return inorderTraversal(root.left) + [root.val] + inorderTraversal(root.right)
 
 """    count = 0
     order = []
