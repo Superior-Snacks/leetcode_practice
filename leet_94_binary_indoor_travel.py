@@ -26,13 +26,10 @@ def inorderTraversal(root):
         for i in range(indx):
             #calck ammount in index
             for j in range(i * 2):
-            print(f"i : {i}")
-            print(f"calck left child{2 * i + 1}")
-            print(f"calck right chold {2 * i + 2}")
-            try:
-                print(root[2 * i + 1])
-            except:
-                continue
+                try:
+                    print(root[2 * i + 1])
+                except:
+                    continue
         count += 1
 
 # Example 1
