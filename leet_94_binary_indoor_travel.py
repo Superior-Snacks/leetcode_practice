@@ -22,7 +22,10 @@ def inorderTraversal(root):
     #Left child index: 2 * i + 1
     #Right child index: 2 * i + 2
     while count < 10:
+        #depth
         for i in range(indx):
+            #calck ammount in index
+            for j in range(i * 2):
             print(f"i : {i}")
             print(f"calck left child{2 * i + 1}")
             print(f"calck right chold {2 * i + 2}")
