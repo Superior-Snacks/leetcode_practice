@@ -21,7 +21,7 @@ def inorderTraversal(root):
     #For node at index i:
     #Left child index: 2 * i + 1
     #Right child index: 2 * i + 2
-    while count < 10:
+    while count < length:
         #depth
         for i in range(indx):
             #calck ammount in index
