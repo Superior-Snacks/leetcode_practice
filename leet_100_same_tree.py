@@ -8,14 +8,17 @@ class TreeNode(object):
 
 
 def isSameTree(p, q):
-    plen = len(p)
-    qlen = len(q)
-    if plen != qlen:
-        return False
-    for i in range(plen):
-        if p[i] != q[i]:
+    try:
+        plen = len(p)
+        qlen = len(q)
+        if plen != qlen:
             return False
-    return True
+        for i in range(plen):
+            if p[i] != q[i]:
+                return False
+        return True
+    except:
+        return False
 
 
 # Case 1: Same structure, same values
