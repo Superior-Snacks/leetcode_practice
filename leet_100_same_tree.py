@@ -28,9 +28,9 @@ def build_tree(arr):
     return root
 
 def isSameTree(p, q):
-    if not p.val and not q.val:
+    if not p and not q:
         return True
-    if not p.val or not q.val:
+    if not p or not q:
         return False
     if p.val != q.val:
         return False
