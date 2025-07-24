@@ -32,6 +32,7 @@ def isSameTree(p, q):
         return True
     if p.val != q.val:
         return False
+    return isSameTree(p.left, q.left) and isSameTree(p.right, q.right)
 
 
 # Case 1: Same structure, same values
