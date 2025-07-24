@@ -8,6 +8,8 @@ class TreeNode(object):
 
 
 def isSameTree(p, q):
+    if (p and q) == None:
+        return True
     try:
         plen = len(p)
         qlen = len(q)
