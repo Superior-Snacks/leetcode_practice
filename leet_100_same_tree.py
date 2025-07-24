@@ -28,6 +28,7 @@ def build_tree(arr):
     return root
 
 def isSameTree(p, q):
+    ...
 
 
 # Case 1: Same structure, same values
