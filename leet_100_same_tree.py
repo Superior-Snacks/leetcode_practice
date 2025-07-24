@@ -13,7 +13,7 @@ def isSameTree(p, q):
     if plen != qlen:
         return False
     
-    for i in 
+    for i in plen:
 
 
 # Case 1: Same structure, same values
