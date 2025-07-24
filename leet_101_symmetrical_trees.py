@@ -52,6 +52,7 @@ print("Test 4:", x.isSymmetric(tree))  # Expected: True (if empty tree is consid
 
 sol = [1, 2, None]
 tree = build_tree(sol)
+print(tree.val)
 print("Test 5:", x.isSymmetric(tree))  # Expected: False
 
 sol = [1, 2, 2, 3, 4, 4, 3, 5, None, None, 5, 5, None, None, 5]
