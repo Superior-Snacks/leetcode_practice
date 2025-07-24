@@ -39,7 +39,7 @@ def isSameTree(p, q):
 tree1 = build_tree([1,2,3])
 tree2 = build_tree([1,2,3])
 print("Test 1", isSameTree(tree1, tree2), "Expected: True")
-
+print(tree1.right.val)
 # Case 2: One tree has missing left child
 #    1       1
 #   /         \
