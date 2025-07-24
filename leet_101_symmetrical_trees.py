@@ -36,28 +36,28 @@ class Solution(object):
 x = Solution()
 sol = [1, 2, 2, 3, 4, 4, 3]
 tree = build_tree(sol)
-print("Test 1:", x.isSymmetric(tree))  # Expected: True
+print("Test 1:", x.isSymmetric(tree), "Expected: True")  # Expected: True
 
 sol = [1, 2, 2, None, 3, None, 3]
 tree = build_tree(sol)
-print("Test 2:", x.isSymmetric(tree))  # Expected: False
+print("Test 2:", x.isSymmetric(tree), "Expected: False")  # Expected: False
 
 sol = [1]
 tree = build_tree(sol)
-print("Test 3:", x.isSymmetric(tree))  # Expected: True
+print("Test 3:", x.isSymmetric(tree), "Expected: True")  # Expected: True
 
 sol = []
 tree = build_tree(sol)
-print("Test 4:", x.isSymmetric(tree))  # Expected: True (if empty tree is considered symmetric)
+print("Test 4:", x.isSymmetric(tree), "Expected: True (if empty tree is considered symmetric)")  # Expected: True (if empty tree is considered symmetric)
 
 sol = [1, 2, None]
 tree = build_tree(sol)
-print("Test 5:", x.isSymmetric(tree))  # Expected: False
+print("Test 5:", x.isSymmetric(tree), "Expected: False")  # Expected: False
 
 sol = [1, 2, 2, 3, 4, 4, 3, 5, None, None, 5, 5, None, None, 5]
 tree = build_tree(sol)
-print("Test 6:", x.isSymmetric(tree))  # Expected: True
+print("Test 6:", x.isSymmetric(tree), "Expected: True")  # Expected: True
 
 sol = [1, 2, 2, 3, None, None, 3]
 tree = build_tree(sol)
-print("Test 7:", x.isSymmetric(tree))  # Expected: False
+print("Test 7:", x.isSymmetric(tree), "Expected: False")  # Expected: False
