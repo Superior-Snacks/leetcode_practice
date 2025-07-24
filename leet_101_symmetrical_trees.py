@@ -33,6 +33,8 @@ class Solution(object):
         :rtype: bool
         """
 
+#check root.left.left == root.right,right and root.left.right == root.right.left
+
 x = Solution()
 sol = [1, 2, 2, 3, 4, 4, 3]
 tree = build_tree(sol)
