@@ -1,26 +1,33 @@
 # Definition for a binary tree node.
+from collections import deque
 class TreeNode(object):
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
 
-
+def build_tree(self, arr):
+    if not arr:
+        return None
+    root = TreeNode(arr[0])
+    queue = deque([root])
+    i = 1
+    while queue and i < len(arr):
+        node = queue.popleft()
+        if node:
+            if i < len(arr):
+                left_val = arr[i]
+                node.left = TreeNode(left_val) if left_val is not None else None
+                queue.append(node.left)
+                i += 1
+            if i < len(arr):
+                right_val = arr[i]
+                node.right = TreeNode(right_val) if right_val is not None else None
+                queue.append(node.right)
+                i += 1
+    return root
 
 def isSameTree(p, q):
-    if (p and q) == None:
-        return True
-    try:
-        plen = len(p)
-        qlen = len(q)
-        if plen != qlen:
-            return False
-        for i in range(plen):
-            if p[i] != q[i]:
-                return False
-        return True
-    except:
-        return False
 
 
 # Case 1: Same structure, same values
