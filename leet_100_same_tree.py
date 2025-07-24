@@ -28,7 +28,10 @@ def build_tree(arr):
     return root
 
 def isSameTree(p, q):
-    ...
+    if not p.val and not q.val:
+        return True
+    if p.val != q.val:
+        return False
 
 
 # Case 1: Same structure, same values
@@ -39,7 +42,6 @@ def isSameTree(p, q):
 tree1 = build_tree([1,2,3])
 tree2 = build_tree([1,2,3])
 print("Test 1", isSameTree(tree1, tree2), "Expected: True")
-print(tree1.right.val)
 # Case 2: One tree has missing left child
 #    1       1
 #   /         \
