@@ -12,8 +12,10 @@ def isSameTree(p, q):
     qlen = len(q)
     if plen != qlen:
         return False
-    
     for i in plen:
+        if p[i] != q[i]:
+            return False
+    return True
 
 
 # Case 1: Same structure, same values
