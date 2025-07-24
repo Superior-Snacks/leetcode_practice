@@ -7,12 +7,7 @@ class TreeNode(object):
 
 
 
-def isSameTree(self, p, q):
-    """
-    :type p: Optional[TreeNode]
-    :type q: Optional[TreeNode]
-    :rtype: bool
-    """
+def isSameTree(p, q):
 
 
 # Case 1: Same structure, same values
