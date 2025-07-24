@@ -30,6 +30,8 @@ def build_tree(arr):
 def isSameTree(p, q):
     if not p.val and not q.val:
         return True
+    if not p.val or not q.val:
+        return False
     if p.val != q.val:
         return False
     return isSameTree(p.left, q.left) and isSameTree(p.right, q.right)
