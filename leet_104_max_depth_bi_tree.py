@@ -29,10 +29,7 @@ def build_tree(arr):
 
 class Solution(object):
     def maxDepth(self, root):
-        """
-        :type root: Optional[TreeNode]
-        :rtype: int
-        """
+        current_high = 0
 
 """
 Given the root of a binary tree, return its maximum depth.
