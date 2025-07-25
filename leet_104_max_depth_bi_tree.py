@@ -39,18 +39,18 @@ Given the root of a binary tree, return its maximum depth.
 
 A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
 """
-
+sol = Solution
 # 1. Empty tree
-print("Test 1:", maxDepth(None), "Expected: 0")
+print("Test 1:", sol.maxDepth(None), "Expected: 0")
 
 # 2. Single node
-print("Test 2:", maxDepth(TreeNode(1)), "Expected: 1")
+print("Test 2:", sol.maxDepth(TreeNode(1)), "Expected: 1")
 
 # 3. Two-level tree
 #        1
 #       /
 #      2
-print("Test 3:", maxDepth(TreeNode(1, TreeNode(2))), "Expected: 2")
+print("Test 3:", sol.maxDepth(TreeNode(1, TreeNode(2))), "Expected: 2")
 
 # 4. Unbalanced tree (right heavy)
 #        1
@@ -58,7 +58,7 @@ print("Test 3:", maxDepth(TreeNode(1, TreeNode(2))), "Expected: 2")
 #          2
 #           \
 #            3
-print("Test 4:", maxDepth(TreeNode(1, None, TreeNode(2, None, TreeNode(3)))), "Expected: 3")
+print("Test 4:", sol.maxDepth(TreeNode(1, None, TreeNode(2, None, TreeNode(3)))), "Expected: 3")
 
 # 5. Balanced tree
 #        1
@@ -66,4 +66,4 @@ print("Test 4:", maxDepth(TreeNode(1, None, TreeNode(2, None, TreeNode(3)))), "E
 #      2   3
 #     / \
 #    4   5
-print("Test 5:", maxDepth(TreeNode(1, TreeNode(2, TreeNode(4), TreeNode(5)), TreeNode(3))), "Expected: 3")
+print("Test 5:", sol.maxDepth(TreeNode(1, TreeNode(2, TreeNode(4), TreeNode(5)), TreeNode(3))), "Expected: 3")
