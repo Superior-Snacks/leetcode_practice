@@ -32,7 +32,10 @@ class Solution(object):
             return True
         l = root.left
         r = root.right
-        print(l.val, r.val)
+        try:
+            print(l.val, r.val)
+        except:
+            print("nonetype")
         return self.checker(l,r)
     
     def checker(self,l,r):
@@ -54,7 +57,7 @@ print("Test 1:", x.isSymmetric(tree), "Expected: True")  # Expected: True
 sol = [1, 2, 2, None, 3, None, 3]
 tree = build_tree(sol)
 print("Test 2:", x.isSymmetric(tree), "Expected: False")  # Expected: False
-"""
+
 sol = [1]
 tree = build_tree(sol)
 print("Test 3:", x.isSymmetric(tree), "Expected: True")  # Expected: True
@@ -74,4 +77,3 @@ print("Test 6:", x.isSymmetric(tree), "Expected: True")  # Expected: True
 sol = [1, 2, 2, 3, None, None, 3]
 tree = build_tree(sol)
 print("Test 7:", x.isSymmetric(tree), "Expected: False")  # Expected: False
-"""
