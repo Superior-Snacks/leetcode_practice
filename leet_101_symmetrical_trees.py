@@ -76,4 +76,4 @@ print("Test 6:", x.isSymmetric(tree), "Expected: True")  # Expected: True
 
 sol = [1, 2, 2, 3, None, None, 3]
 tree = build_tree(sol)
-print("Test 7:", x.isSymmetric(tree), "Expected: False")  # Expected: False
+print("Test 7:", x.isSymmetric(tree), "Expected: True")  # Expected: True #GPT my ass
