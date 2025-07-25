@@ -28,15 +28,10 @@ def build_tree(arr):
 
 
 class Solution(object):
-    def maxDepth(self, root):
+    def maxDepth(self, root, count=0):
         if not root:
-            return 0
-        return self.check(root.left,root.right)
-    def check(self, l,r, count=0):
-        count += 1
-        if not l and not r:
             return count
-        return self.check(l.left,l.right) and self.check(r.left, r.right)
+        return self.maxDepth(root.left, count=count) and self.maxDepth(root.right, count = count)
         
 
 
