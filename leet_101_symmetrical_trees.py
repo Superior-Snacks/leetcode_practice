@@ -32,7 +32,9 @@ class Solution(object):
             return True
         if not l or not r:
             return False
-        if l.val == r.val
+        if (l.val == r.val) and (l.left.val == r.right.val) and (l.right.val == r.left.val):
+            return True
+
 
     def isSymmetric(self, root):
         if not root:
