@@ -36,7 +36,7 @@ class Solution(object):
         count += 1
         if not l and not r:
             return max(count)
-        return self.check(l.left,l.righ) and self.check(r.left, r.right)
+        return self.check(l.left,l.right) and self.check(r.left, r.right)
         
 
 
