@@ -29,6 +29,7 @@ def build_tree(arr):
 
 class Solution(object):
     def maxDepth(self, root, count=0):
+        print("recursive")
         if not root:
             return count
         return self.maxDepth(root.left, count=count) and self.maxDepth(root.right, count = count)
