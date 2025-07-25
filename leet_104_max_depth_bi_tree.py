@@ -29,7 +29,13 @@ def build_tree(arr):
 
 class Solution(object):
     def maxDepth(self, root):
-        current_high = 0
+        l = root.left
+        r = root.right
+        return self.dfs(l,r)
+    
+    def dfs(l, r):
+        ...
+
 
 """
 Given the root of a binary tree, return its maximum depth.
