@@ -34,12 +34,6 @@ class Solution(object):
         l = root.left
         r = root.right
         return self.dfs(l,r)
-    
-    def dfs(self, l, r, count=0):
-        count +=1
-        if not l and not r:
-            return count
-        return self.dfs(l.left, l.right) and self.dfs(r.left, r.right)
 
 
 """
