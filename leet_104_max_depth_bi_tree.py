@@ -38,7 +38,7 @@ class Solution(object):
     def dfs(self, l, r count = 0):
         count +=1
         if not l and not r:
-            return "Found!"
+            return count
         if not l or not r:
             return "deeper"
         return self.dfs(l.left, l.right) and self.dfs(r.left, r.right)
