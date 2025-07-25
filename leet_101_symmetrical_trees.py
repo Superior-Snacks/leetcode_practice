@@ -30,6 +30,9 @@ class Solution(object):
     def isSymmetric(self, root):
         if not root:
             return True
+        l = root.left
+        r = root.right
+        print(l.val, r.val)
 
 #check root.left.left == root.right,right and root.left.right == root.right.left
 
