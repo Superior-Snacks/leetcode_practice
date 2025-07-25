@@ -33,8 +33,12 @@ class Solution(object):
         r = root.right
         return self.dfs(l,r)
     
-    def dfs(l, r):
-        ...
+    def dfs(self, l, r):
+        if not l and not r:
+            return "Found!"
+        if not l or not r:
+            return "deeper"
+        return self.dfs(l.left, l.right) and self.dfs(r.left, r.right)
 
 
 """
