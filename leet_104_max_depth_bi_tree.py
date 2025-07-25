@@ -29,6 +29,8 @@ def build_tree(arr):
 
 class Solution(object):
     def maxDepth(self, root):
+        if not root:
+            return 0
         l = root.left
         r = root.right
         return self.dfs(l,r)
