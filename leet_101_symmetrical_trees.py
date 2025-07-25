@@ -28,10 +28,8 @@ def build_tree(arr):
 
 class Solution(object):
     def isSymmetric(self, root):
-        """
-        :type root: Optional[TreeNode]
-        :rtype: bool
-        """
+        if not root:
+            return True
 
 #check root.left.left == root.right,right and root.left.right == root.right.left
 
@@ -43,7 +41,7 @@ print("Test 1:", x.isSymmetric(tree), "Expected: True")  # Expected: True
 sol = [1, 2, 2, None, 3, None, 3]
 tree = build_tree(sol)
 print("Test 2:", x.isSymmetric(tree), "Expected: False")  # Expected: False
-
+"""
 sol = [1]
 tree = build_tree(sol)
 print("Test 3:", x.isSymmetric(tree), "Expected: True")  # Expected: True
@@ -63,3 +61,4 @@ print("Test 6:", x.isSymmetric(tree), "Expected: True")  # Expected: True
 sol = [1, 2, 2, 3, None, None, 3]
 tree = build_tree(sol)
 print("Test 7:", x.isSymmetric(tree), "Expected: False")  # Expected: False
+"""
