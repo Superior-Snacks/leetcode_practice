@@ -39,31 +39,34 @@ Given the root of a binary tree, return its maximum depth.
 
 A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
 """
-sol = Solution
-# 1. Empty tree
-print("Test 1:", sol.maxDepth(None), "Expected: 0")
+sol = Solution()
 
-# 2. Single node
-print("Test 2:", sol.maxDepth(TreeNode(1)), "Expected: 1")
+# Test 1: Full tree
+arr = [1, 2, 2, 3, 4, 4, 3]
+tree = build_tree(arr)
+print("Test 1:", sol.maxDepth(tree), "Expected: 3")
 
-# 3. Two-level tree
-#        1
-#       /
-#      2
-print("Test 3:", sol.maxDepth(TreeNode(1, TreeNode(2))), "Expected: 2")
+# Test 2: Empty tree
+arr = []
+tree = build_tree(arr)
+print("Test 2:", sol.maxDepth(tree), "Expected: 0")
 
-# 4. Unbalanced tree (right heavy)
-#        1
-#         \
-#          2
-#           \
-#            3
-print("Test 4:", sol.maxDepth(TreeNode(1, None, TreeNode(2, None, TreeNode(3)))), "Expected: 3")
+# Test 3: Single node
+arr = [1]
+tree = build_tree(arr)
+print("Test 3:", sol.maxDepth(tree), "Expected: 1")
 
-# 5. Balanced tree
-#        1
-#       / \
-#      2   3
-#     / \
-#    4   5
-print("Test 5:", sol.maxDepth(TreeNode(1, TreeNode(2, TreeNode(4), TreeNode(5)), TreeNode(3))), "Expected: 3")
+# Test 4: Unbalanced right-heavy tree
+arr = [1, None, 2, None, 3]
+tree = build_tree(arr)
+print("Test 4:", sol.maxDepth(tree), "Expected: 3")
+
+# Test 5: Left-leaning tree
+arr = [1, 2, None, 3, None]
+tree = build_tree(arr)
+print("Test 5:", sol.maxDepth(tree), "Expected: 3")
+
+# Test 6: Balanced binary tree
+arr = [1, 2, 3, 4, 5, 6, 7]
+tree = build_tree(arr)
+print("Test 6:", sol.maxDepth(tree), "Expected: 3")
