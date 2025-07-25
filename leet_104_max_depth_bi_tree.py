@@ -32,6 +32,11 @@ class Solution(object):
         if not root:
             return 0
         return self.check(root.left,root.right)
+    def check(self, l,r, count=0):
+        count += 1
+        if not l and not r:
+            return max(count)
+        return self.check(l.left,l.righ) and self.check(r.left, r.right)
         
 
 
