@@ -44,6 +44,7 @@ sol = Solution()
 # Test 1: Full tree
 arr = [1, 2, 2, 3, 4, 4, 3]
 tree = build_tree(arr)
+print(tree.left.left.val)
 print("Test 1:", sol.maxDepth(tree), "Expected: 3")
 
 # Test 2: Empty tree
