@@ -27,12 +27,15 @@ def build_tree(arr):
     return root
 
 class Solution(object):
+    def checker(l,r):
+        ...
     def isSymmetric(self, root):
         if not root:
             return True
         l = root.left
         r = root.right
         print(l.val, r.val)
+        return checker(l,r)
 
 #check root.left.left == root.right,right and root.left.right == root.right.left
 
