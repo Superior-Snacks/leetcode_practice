@@ -31,6 +31,8 @@ class Solution(object):
     def maxDepth(self, root):
         if not root:
             return 0
+        return self.check(root.left,root.right)
+        
 
 
 """
