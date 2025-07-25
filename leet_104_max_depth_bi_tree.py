@@ -32,7 +32,9 @@ class Solution(object):
         if not root:
             return 0
         left_depth = self.maxDepth(root.left)
+        print(left_depth)
         right_depth = self.maxDepth(root.right)
+        print(right_depth)
         return max(left_depth, right_depth) + 1
         
 
