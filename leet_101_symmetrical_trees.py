@@ -28,7 +28,11 @@ def build_tree(arr):
 
 class Solution(object):
     def checker(l,r):
-        ...
+        if not l and not r:
+            return True
+        if not l or not r:
+            return False
+        if l.val == r.val
 
     def isSymmetric(self, root):
         if not root:
