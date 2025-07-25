@@ -35,7 +35,7 @@ class Solution(object):
     def check(self, l,r, count=0):
         count += 1
         if not l and not r:
-            return max(count)
+            return count
         return self.check(l.left,l.right) and self.check(r.left, r.right)
         
 
