@@ -6,7 +6,7 @@
 #         self.right = right
 class Solution(object):
     def sortedArrayToBST(self, nums):
-        ...
+        print(nums)
 
 
 sol = Solution
