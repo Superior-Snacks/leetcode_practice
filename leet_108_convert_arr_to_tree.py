@@ -6,10 +6,7 @@
 #         self.right = right
 class Solution(object):
     def sortedArrayToBST(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: Optional[TreeNode]
-        """
+        ...
 
 
 sol = Solution
