@@ -5,7 +5,7 @@ class Solution(object):
 
 sol = Solution()
 print(sol.sortedArrayToBST([-10,-3,0,5,9]))       # Mid is 0, expected root = 0
-print(sol.sortedArrayToBST([-11,-8,0,1,100]))
+print(sol.sortedArrayToBST([-11,-8,0,1,10,20]))
 print(sol.sortedArrayToBST([-11,-8,1,8,100]))     # mid is 1 expected root = 0
 print(sol.sortedArrayToBST([1,3]))               # Small even-size input
 print(sol.sortedArrayToBST([1]))                 # One element
