@@ -12,6 +12,7 @@ class Solution(object):
             mid -= 1
         else:
             mid = int(mid)
+        return mid
 
 """
 Given an integer array nums where the elements are sorted in ascending order, 
