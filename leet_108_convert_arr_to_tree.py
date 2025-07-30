@@ -8,6 +8,7 @@ class TreeNode(object):
 class Solution(object):
     def sortedArrayToBST(self, nums):
         mid = len(nums) / 2 #height ballanced means both sides are equally deep
+        print(mid)
 
 """
 Given an integer array nums where the elements are sorted in ascending order, 
