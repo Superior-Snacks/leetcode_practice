@@ -9,7 +9,7 @@ class Solution(object):
     def sortedArrayToBST(self, nums):
         mid = len(nums) / 2 #height ballanced means both sides are equally deep (keep it whole)
         if (mid % 1) == 0: #if the tree is even the leftmost indext is used
-            mid -= 1
+            mid = int(mid) - 1
         else:
             mid = int(mid)
         return mid
