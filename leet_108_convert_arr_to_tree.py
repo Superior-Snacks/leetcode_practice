@@ -21,7 +21,7 @@ class Solution(object):
         root = nums[mid]
         left = nums[:mid]
         right = nums[mid+1:]
-        print(nums)
+        print(root)
         print(left, right)
 
 
