@@ -8,7 +8,7 @@ class TreeNode(object):
 class Solution(object):
     def sortedArrayToBST(self, nums):
         mid = len(nums) / 2 #height ballanced means both sides are equally deep (keep it whole)
-        if (mid % 1) == 0: #if the tree is even the leftmost indext is used
+        if (mid % 1) == 0 and mid > 2: #if the tree is even the leftmost indext is used
             mid = int(mid) - 1
         else:
             mid = int(mid)
