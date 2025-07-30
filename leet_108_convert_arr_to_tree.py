@@ -25,6 +25,7 @@ class Solution(object):
         root = TreeNode(nums[mid])
         root.left = self.build_tree(left)
         root.right = self.build_tree(right)
+        return root
 
     def build_tree(self, arr):
         if not arr:
