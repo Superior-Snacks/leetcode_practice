@@ -20,7 +20,7 @@ class Solution(object):
         print(tree.val)
         root = nums[mid]
         left = nums[:mid]
-        right = nums[mid:]
+        right = nums[mid+1:]
         print(nums)
         print(left, right)
 
