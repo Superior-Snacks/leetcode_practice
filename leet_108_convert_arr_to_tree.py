@@ -22,6 +22,7 @@ class Solution(object):
         root = nums[mid]
         left = nums[:mid]
         right = reversed(nums[mid+1:])
+        print(right)
         root = TreeNode(nums[mid])
         root.left = self.build_tree(left)
         root.right = self.build_tree(right)
