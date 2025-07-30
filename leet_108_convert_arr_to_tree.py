@@ -18,6 +18,8 @@ class Solution(object):
         #can rearrange to fit, prolly not optimal, just go backwards for left side?
         tree = TreeNode(nums[mid])
         print(tree.val)
+        root = nums[mid]
+        for
 
 
 """
