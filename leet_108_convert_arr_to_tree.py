@@ -19,7 +19,10 @@ class Solution(object):
         tree = TreeNode(nums[mid])
         print(tree.val)
         root = nums[mid]
-        for
+        left = nums[:mid]
+        right = nums[mid:]
+        print(nums)
+        print(left, right)
 
 
 """
