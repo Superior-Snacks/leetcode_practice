@@ -26,22 +26,22 @@ class Solution(object):
         print(root)
         print(left, right)
 
-
-        if not left:
+    def build_tree(self, arr):
+        if not arr:
             return None
-        root = TreeNode(left[0])
+        root = TreeNode(arr[0])
         queue = deque([root])
         i = 1
-        while queue and i < len(left):
+        while queue and i < len(arr):
             node = queue.popleft()
             if node:
-                if i < len(left):
-                    left_val = left[i]
+                if i < len(arr):
+                    left_val = arr[i]
                     node.left = TreeNode(left_val) if left_val is not None else None
                     queue.append(node.left)
                     i += 1
-                if i < len(left):
-                    right_val = left[i]
+                if i < len(arr):
+                    right_val = arr[i]
                     node.right = TreeNode(right_val) if right_val is not None else None
                     queue.append(node.right)
                     i += 1
