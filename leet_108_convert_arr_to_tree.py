@@ -14,6 +14,7 @@ class Solution(object):
             mid = int(mid)
         #now add to tree
         for i, j in nums[:mid], nums[mid:]:
+            print(i, j)
 
 """
 Given an integer array nums where the elements are sorted in ascending order, 
