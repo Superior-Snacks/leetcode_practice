@@ -17,6 +17,7 @@ class Solution(object):
         #now add to tree
         tree = TreeNode(nums[mid])
         print(tree.val)
+        
 
 """
 Given an integer array nums where the elements are sorted in ascending order, 
