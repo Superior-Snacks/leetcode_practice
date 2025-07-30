@@ -25,6 +25,9 @@ class Solution(object):
         right = reversed(nums[mid+1:])
         print(root)
         print(left, right)
+        root = TreeNode(nums[mid])
+        root.left = self.build_tree(left)
+        root.right = self.build_tree(right)
 
     def build_tree(self, arr):
         if not arr:
