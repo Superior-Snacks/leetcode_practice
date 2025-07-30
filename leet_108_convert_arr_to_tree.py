@@ -7,7 +7,7 @@ class TreeNode(object):
 
 class Solution(object):
     def sortedArrayToBST(self, nums):
-        print(nums)
+        mid = len(nums)
 
 """
 Given an integer array nums where the elements are sorted in ascending order, 
