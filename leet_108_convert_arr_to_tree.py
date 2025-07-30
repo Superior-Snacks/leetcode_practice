@@ -15,9 +15,10 @@ class Solution(object):
         else:
             mid = int(mid)
         #now add to tree
+        #can rearrange to fit, prolly not optimal, just go backwards for left side?
         tree = TreeNode(nums[mid])
         print(tree.val)
-        
+
 
 """
 Given an integer array nums where the elements are sorted in ascending order, 
