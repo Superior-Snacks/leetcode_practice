@@ -12,7 +12,7 @@ class Solution(object):
             mid = int(mid) - 1
         else:
             mid = int(mid)
-        return mid
+        #now add to tree
 
 """
 Given an integer array nums where the elements are sorted in ascending order, 
