@@ -13,7 +13,7 @@ class Solution(object):
         else:
             mid = int(mid)
         #now add to tree
-        tree = TreeNode()
+        tree = TreeNode(nums[mid])
 
 """
 Given an integer array nums where the elements are sorted in ascending order, 
