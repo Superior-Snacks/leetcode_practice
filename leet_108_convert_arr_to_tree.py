@@ -18,7 +18,6 @@ class Solution(object):
             mid = int(mid)
         #now add to tree
         #can rearrange to fit, prolly not optimal, just go backwards for left side?
-        tree = TreeNode(nums[mid])
         root = nums[mid]
         left = nums[:mid]
         right = nums[mid+1:]
