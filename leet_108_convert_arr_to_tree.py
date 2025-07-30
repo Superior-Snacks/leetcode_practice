@@ -11,41 +11,11 @@ class Solution(object):
     def sortedArrayToBST(self, nums):
         if not nums:
             return None
-        mid = len(nums) / 2 #height ballanced means both sides are equally deep (keep it whole)
-        if (mid % 1) == 0 and mid > 2: #if the tree is even the leftmost indext is used (dose not aply to too small numbersets)
-            mid = int(mid) - 1
-        else:
-            mid = int(mid)
-        #now add to tree
-        #can rearrange to fit, prolly not optimal, just go backwards for left side?
-        root = nums[mid]
-        left = nums[:mid]
-        right = nums[mid+1:]
-        root = TreeNode(nums[mid])
-        root.left = self.build_tree(left)
-        root.right = self.build_tree(right)
-        return root
-
-    def build_tree(self, arr):
-        if not arr:
-            return None
-        root = TreeNode(arr[0])
-        queue = deque([root])
-        i = 1
-        while queue and i < len(arr):
-            node = queue.popleft()
-            if node:
-                if i < len(arr):
-                    left_val = arr[i]
-                    node.left = TreeNode(left_val) if left_val is not None else None
-                    queue.append(node.left)
-                    i += 1
-                if i < len(arr):
-                    right_val = arr[i]
-                    node.right = TreeNode(right_val) if right_val is not None else None
-                    queue.append(node.right)
-                    i += 1
-
+        mid = len(nums) // 2
+        node = TreeNode(nums[mid])
+        node.left = self.sortedArrayToBST(nums[:mid])
+        node.right = self.sortedArrayToBST(nums[mid+1:])
+        return node
 
 """
 Given an integer array nums where the elements are sorted in ascending order, 
