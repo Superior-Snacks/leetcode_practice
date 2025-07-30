@@ -19,12 +19,9 @@ class Solution(object):
         #now add to tree
         #can rearrange to fit, prolly not optimal, just go backwards for left side?
         tree = TreeNode(nums[mid])
-        print(tree.val)
         root = nums[mid]
         left = nums[:mid]
         right = reversed(nums[mid+1:])
-        print(root)
-        print(left, right)
         root = TreeNode(nums[mid])
         root.left = self.build_tree(left)
         root.right = self.build_tree(right)
