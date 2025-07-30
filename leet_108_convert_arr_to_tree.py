@@ -25,22 +25,23 @@ class Solution(object):
         right = reversed(nums[mid+1:])
         print(root)
         print(left, right)
-        def build_tree(arr):
-        if not arr:
+
+
+        if not left:
             return None
-        root = TreeNode(arr[0])
+        root = TreeNode(left[0])
         queue = deque([root])
         i = 1
-        while queue and i < len(arr):
+        while queue and i < len(left):
             node = queue.popleft()
             if node:
-                if i < len(arr):
-                    left_val = arr[i]
+                if i < len(left):
+                    left_val = left[i]
                     node.left = TreeNode(left_val) if left_val is not None else None
                     queue.append(node.left)
                     i += 1
-                if i < len(arr):
-                    right_val = arr[i]
+                if i < len(left):
+                    right_val = left[i]
                     node.right = TreeNode(right_val) if right_val is not None else None
                     queue.append(node.right)
                     i += 1
