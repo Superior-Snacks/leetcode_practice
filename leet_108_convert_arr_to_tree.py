@@ -20,9 +20,10 @@ class Solution(object):
         print(tree.val)
         root = nums[mid]
         left = nums[:mid]
-        right = nums[mid+1:]
+        right = reversed(nums[mid+1:])
         print(root)
         print(left, right)
+        for i in left
 
 
 """
