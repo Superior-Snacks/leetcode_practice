@@ -12,23 +12,24 @@ class Solution(object):
         """
 
 
+sol = Solution
 # Balanced tree
-print("Test 1:", isBalanced([3, 9, 20, None, None, 15, 7]), "Expected: True")
+print("Test 1:", sol.isBalanced([3, 9, 20, None, None, 15, 7]), "Expected: True")
 
 # Unbalanced tree
-print("Test 2:", isBalanced([1, 2, 2, 3, 3, None, None, 4, 4]), "Expected: False")
+print("Test 2:", sol.isBalanced([1, 2, 2, 3, 3, None, None, 4, 4]), "Expected: False")
 
 # Empty tree
-print("Test 3:", isBalanced([]), "Expected: True")
+print("Test 3:", sol.isBalanced([]), "Expected: True")
 
 # Single node
-print("Test 4:", isBalanced([1]), "Expected: True")
+print("Test 4:", sol.isBalanced([1]), "Expected: True")
 
 # Slightly unbalanced (deeper on one side by 2 levels)
-print("Test 5:", isBalanced([1, 2, None, 3]), "Expected: False")
+print("Test 5:", sol.isBalanced([1, 2, None, 3]), "Expected: False")
 
 # Perfectly balanced
-print("Test 6:", isBalanced([1, 2, 3, 4, 5, 6, 7]), "Expected: True")
+print("Test 6:", sol.isBalanced([1, 2, 3, 4, 5, 6, 7]), "Expected: True")
 """
 Given a binary tree, determine if it is height-balanced.
 
