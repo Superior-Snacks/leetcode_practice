@@ -6,10 +6,6 @@
 #         self.right = right
 class Solution(object):
     def isBalanced(self, root):
-        """
-        :type root: Optional[TreeNode]
-        :rtype: bool
-        """
 
 
 sol = Solution
