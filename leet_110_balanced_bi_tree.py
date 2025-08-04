@@ -6,7 +6,7 @@
 #         self.right = right
 class Solution(object):
     def isBalanced(self, root):
-
+        ...
 
 sol = Solution
 # Balanced tree
