@@ -1,9 +1,31 @@
+from collections import deque
 #Definition for a binary tree node.
 class TreeNode(object):
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
+
+def build_tree(arr):
+    if not arr:
+        return None
+    root = TreeNode(arr[0])
+    queue = deque([root])
+    i = 1
+    while queue and i < len(arr):
+        node = queue.popleft()
+        if node:
+            if i < len(arr):
+                left_val = arr[i]
+                node.left = TreeNode(left_val) if left_val is not None else None
+                queue.append(node.left)
+                i += 1
+            if i < len(arr):
+                right_val = arr[i]
+                node.right = TreeNode(right_val) if right_val is not None else None
+                queue.append(node.right)
+                i += 1
+    return root
 """
 ég fæ bi tree, þarf að finna hvrot það er height ballanced það þýðri að hægri hliðin og vinstri eru jafn djúp,
 fer ég bara í gegnum það frá vinstri til hægri og ef dýptin er komin lengra en fyrsta línan þá break-a me true?
