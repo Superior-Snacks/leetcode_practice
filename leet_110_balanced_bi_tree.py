@@ -4,9 +4,14 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+"""
+ég fæ bi tree, þarf að finna hvrot það er height ballanced það þýðri að hægri hliðin og vinstri eru jafn djúp,
+
+"""
 class Solution(object):
     def isBalanced(self, root):
         ...
+        
 
 sol = Solution
 # Balanced tree
