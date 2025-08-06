@@ -32,7 +32,7 @@ fer ég bara í gegnum það frá vinstri til hægri og ef dýptin er komin leng
 """
 class Solution(object):
     def isBalanced(self, root):
-        ...
+        print(root)
         
 
 sol = Solution
