@@ -35,7 +35,7 @@ class Solution(object):
         print(root)
         
 
-sol = Solution
+sol = Solution()
 # Balanced tree
 print("Test 1:", sol.isBalanced(build_tree([3, 9, 20, None, None, 15, 7])), "Expected: True")
 
