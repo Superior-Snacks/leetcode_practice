@@ -29,6 +29,8 @@ def build_tree(arr):
 """
 ég fæ bi tree, þarf að finna hvrot það er height ballanced það þýðri að hægri hliðin og vinstri eru jafn djúp,
 fer ég bara í gegnum það frá vinstri til hægri og ef dýptin er komin lengra en fyrsta línan þá break-a me true?
+
+er það bara recursive left left þar til none svo right?
 """
 class Solution(object):
     def isBalanced(self, root):
