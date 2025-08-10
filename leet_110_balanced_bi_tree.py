@@ -36,6 +36,8 @@ class Solution(object):
     def isBalanced(self, root):
         if not root:
             return True
+        left = self.isBalanced(root.left)
+        right = self.isBalanced(root.right)
         
 
 sol = Solution()
