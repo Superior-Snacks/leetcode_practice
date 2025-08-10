@@ -35,11 +35,12 @@ er það bara recursive left left þar til none svo right?
 class Solution(object):
     def isBalanced(self, root):
         if not root:
-            return True
+            return 0
         left = self.isBalanced(root.left)
         print(left)
         right = self.isBalanced(root.right)
         print(right)
+        return max(left, right) + 1
         
 
 sol = Solution()
