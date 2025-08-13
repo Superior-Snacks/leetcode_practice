@@ -36,11 +36,11 @@ class Solution(object):
     def isBalanced(self, root):
         if not root:
             return 0
-        left_depth = self.isBalanced(root.left)
-        print(left_depth)
-        right_depth = self.isBalanced(root.right)
-        print(right_depth)
-        return max(left_depth, right_depth) + 1
+        left_height = self.isBalanced(root.left)
+        print(left_height)
+        right_height = self.isBalanced(root.right)
+        print(right_height)
+        return max(left_height, right_height) + 1
 sol = Solution()
 # Balanced tree
 print("Test 1:", sol.isBalanced(build_tree([3, 9, 20, None, None, 15, 7])), "Expected: True")
