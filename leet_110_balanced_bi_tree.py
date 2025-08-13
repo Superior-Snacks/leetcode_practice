@@ -34,7 +34,7 @@ er það bara recursive left left þar til none svo right?
 """
 class Solution(object):
     def isBalanced(self, root):
-        ...
+        print(root.val)
 
 sol = Solution()
 # Balanced tree
