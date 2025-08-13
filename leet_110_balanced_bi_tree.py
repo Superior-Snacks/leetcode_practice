@@ -40,7 +40,7 @@ class Solution(object):
         print(left_height)
         right_height = self.isBalanced(root.right)
         print(right_height)
-        if |left_height - right_height| > 1:
+        if abs(left_height - right_height) > 1:
             print("unballanced")
             
 #max(left_height, right_height) + 1
