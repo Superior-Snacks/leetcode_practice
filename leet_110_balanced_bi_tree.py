@@ -41,7 +41,9 @@ class Solution(object):
         right_height = self.isBalanced(root.right)
         print(right_height)
         if abs(left_height - right_height) > 1:
-            print("unballanced")
+            return 0
+        else:
+            return max(left_height, right_height) + 1
             
 #max(left_height, right_height) + 1
 sol = Solution()
