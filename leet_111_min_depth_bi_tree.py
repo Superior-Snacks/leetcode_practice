@@ -26,12 +26,19 @@ def build_tree(arr):
                 queue.append(node.right)
                 i += 1
     return root
+
+
 class Solution(object):
     def minDepth(self, root):
         """
         :type root: Optional[TreeNode]
         :rtype: int
         """
+
+
+
+
+        
 sol = Solution
 print(sol.minDepth(build_tree([3,9,20,None,None,15,7])), "expected:", 2)      # normal balanced tree
 print(sol.minDepth(build_tree([2,None,3,None,4,None,5,None,6])), "expected:", 5) # skewed right
