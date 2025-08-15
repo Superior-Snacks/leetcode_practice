@@ -42,11 +42,9 @@ class Solution(object):
         left_height = self.isBalancedcalc(root.left)
         if left_height == -1:
             return -1
-        print(left_height)
         right_height = self.isBalancedcalc(root.right)
         if right_height == -1:
             return -1
-        print(right_height)
         if abs(left_height - right_height) > 1:
             return -1
         else:
