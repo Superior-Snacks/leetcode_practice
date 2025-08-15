@@ -37,8 +37,12 @@ class Solution(object):
         if not root:
             return 0
         left_height = self.isBalanced(root.left)
+        if left_height == -1:
+            return False
         print(left_height)
         right_height = self.isBalanced(root.right)
+        if right_height == -1:
+            return False
         print(right_height)
         if abs(left_height - right_height) > 1:
             return 0
