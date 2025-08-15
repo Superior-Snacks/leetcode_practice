@@ -57,7 +57,7 @@ sol = Solution()
 # Balanced tree
 print("Test 1:", sol.isBalanced(build_tree([3, 9, 20, None, None, 15, 7])), "Expected: True")
 
-"""# Unbalanced tree
+# Unbalanced tree
 print("Test 2:", sol.isBalanced(build_tree([1, 2, 2, 3, 3, None, None, 4, 4])), "Expected: False")
 
 # Empty tree
@@ -70,7 +70,7 @@ print("Test 4:", sol.isBalanced(build_tree([1])), "Expected: True")
 print("Test 5:", sol.isBalanced(build_tree([1, 2, None, 3])), "Expected: False")
 
 # Perfectly balanced
-print("Test 6:", sol.isBalanced(build_tree([1, 2, 3, 4, 5, 6, 7])), "Expected: True")"""
+print("Test 6:", sol.isBalanced(build_tree([1, 2, 3, 4, 5, 6, 7])), "Expected: True")
 """
 Given a binary tree, determine if it is height-balanced.
 Example 1:
