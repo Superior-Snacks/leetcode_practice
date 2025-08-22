@@ -37,6 +37,7 @@ class Solution(object):
         if qeu == None:
             return depth
         for i in qeu:
+            print(i)
             l = i.left
             r = i.right
             if l or r == None:
