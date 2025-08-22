@@ -39,7 +39,7 @@ class Solution(object):
             depth += 1
             for place in range(level_size):
                 node = que.pop(place)
-                if (node.left and node.right) == None:
+                if (node.left == None) and (node.right == None):
                     return depth
                 else:
                     if node.left:
