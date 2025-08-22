@@ -26,6 +26,8 @@ def build_tree(arr):
                 queue.append(node.right)
                 i += 1
     return root
+
+
 class Solution(object):
     def hasPathSum(self, root, targetSum):
         ...
