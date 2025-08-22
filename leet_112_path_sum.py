@@ -32,6 +32,41 @@ class Solution(object):
     def hasPathSum(self, root, targetSum):
         ...
 
+
+
+sol = Solution()
+# basic examples from the prompt
+print("T1", sol.hasPathSum(build_tree([5,4,8,11,None,13,4,7,2,None,None,None,1]), 22), "expected:", True)
+print("T2", sol.hasPathSum(build_tree([1,2,3]), 5), "expected:", False)
+print("T3", sol.hasPathSum(build_tree([]), 0), "expected:", False)
+# single-node trees
+print("T4", sol.hasPathSum(build_tree([7]), 7), "expected:", True)    # single node equals target
+print("T5", sol.hasPathSum(build_tree([7]), 8), "expected:", False)   # single node not equal
+# internal node equals target but is NOT a leaf — should be False
+print("T6", sol.hasPathSum(build_tree([5,5,None]), 5), "expected:", False)
+# multiple leaves, only one matches
+print("T7", sol.hasPathSum(build_tree([1,2,3,4,5]), 8), "expected:", True)  
+print("T8_fix", sol.hasPathSum(build_tree([1,2,3,4,5]), 9), "expected:", False)
+# zeros involved
+print("T9", sol.hasPathSum(build_tree([0,0,0,0,None,None,0]), 0), "expected:", True)   
+print("T10", sol.hasPathSum(build_tree([0,1,2]), 0), "expected:", False)               
+# negative numbers
+print("T11", sol.hasPathSum(build_tree([-2,None,-3]), -5), "expected:", True)  
+print("T12", sol.hasPathSum(build_tree([1,-2,-3,1,3,-2,None,-1]), -1), "expected:", True)
+# skewed trees (deep like a linked list)
+print("T13", sol.hasPathSum(build_tree([1,2,None,3,None,4,None,5]), 15), "expected:", True)  
+print("T14", sol.hasPathSum(build_tree([1,2,None,3,None,4,None,5]), 16), "expected:", False)
+# multiple valid paths exist — any one makes it True
+print("T15", sol.hasPathSum(build_tree([5,4,8,11,None,13,4,7,2,None,None,5,1]), 18), "expected:", True) 
+# target negative with mixed values
+print("T16", sol.hasPathSum(build_tree([2,-1,-2,None,None,-3,1]), -3), "expected:", True)  
+# large absolute values
+print("T17_fix", sol.hasPathSum(build_tree([1000,None,0,None,0]), 1000), "expected:", True)  
+# empty target on non-empty tree
+print("T18", sol.hasPathSum(build_tree([1,0,0]), 0), "expected:", False)  
+# balanced vs unbalanced shapes
+print("T19", sol.hasPathSum(build_tree([3,9,20,None,None,15,7]), 30), "expected:", True)  
+print("T20", sol.hasPathSum(build_tree([3,9,20,None,None,15,7]), 12), "expected:", True)  
 """
 Given the root of a binary tree and an integer targetSum, 
 return true if the tree has a root-to-leaf path such that adding up all the values along the path equals targetSum.
