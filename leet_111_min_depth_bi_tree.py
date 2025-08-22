@@ -40,6 +40,11 @@ class Solution(object):
             for node in range(que,level_size):
                 if (node.left and node.right) == None:
                     return depth
+                else:
+                    if node.left:
+                        que.append(node.left)
+                    if node.right:
+                        que.append(node.right)
 
 
 
