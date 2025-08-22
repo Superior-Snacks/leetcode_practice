@@ -35,7 +35,7 @@ class Solution(object):
 
 
 
-sol = Solution
+sol = Solution()
 print(sol.minDepth(build_tree([3,9,20,None,None,15,7])), "expected:", 2)         # normal balanced tree
 print(sol.minDepth(build_tree([2,None,3,None,4,None,5,None,6])), "expected:", 5) # skewed right
 print(sol.minDepth(build_tree([])), "expected:", 0)                              # empty tree
