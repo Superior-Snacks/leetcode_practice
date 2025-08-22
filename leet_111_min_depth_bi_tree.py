@@ -35,7 +35,9 @@ class Solution(object):
         depth = 0
         que = [root]
         while len(que) != 0:
-
+            level_size = len(que)
+            depth += 1
+            for nodes in range(que,level_size):
 
 
 
