@@ -39,7 +39,7 @@ class Solution(object):
         for i in qeu:
             l = i.left
             r = i.right
-            if l or i == None:
+            if l or r == None:
                 return depth
 
 
