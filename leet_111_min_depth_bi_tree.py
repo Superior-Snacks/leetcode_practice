@@ -30,10 +30,7 @@ def build_tree(arr):
 
 class Solution(object):
     def minDepth(self, root):
-        try:
-            print(root.val)
-        except:
-            print("piss")
+        qeu = []
 
 
 
