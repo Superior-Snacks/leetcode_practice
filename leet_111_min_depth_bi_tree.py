@@ -31,6 +31,7 @@ def build_tree(arr):
 class Solution(object):
     def minDepth(self, root):
         qeu = [root]
+        self.searchBFS(qeu)
     def searchBFS(self, qeu):
         depth = 0
         if qeu == None:
