@@ -32,7 +32,9 @@ class Solution(object):
     def minDepth(self, root):
         if root == None:
             return 0
-
+        depth = 0
+        que = [root]
+        while len(que) != 0:
 
 sol = Solution()
 print(sol.minDepth(build_tree([3,9,20,None,None,15,7])), "expected:", 2)         # normal balanced tree
