@@ -36,6 +36,10 @@ class Solution(object):
         que = [root]
         while len(que) != 0:
 
+
+
+
+
 sol = Solution()
 print(sol.minDepth(build_tree([3,9,20,None,None,15,7])), "expected:", 2)         # normal balanced tree
 print(sol.minDepth(build_tree([2,None,3,None,4,None,5,None,6])), "expected:", 5) # skewed right
