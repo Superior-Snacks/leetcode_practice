@@ -30,8 +30,8 @@ def build_tree(arr):
 
 class Solution(object):
     def minDepth(self, root):
-        ...
-
+        if root == None:
+            return 0
 
 
 sol = Solution()
