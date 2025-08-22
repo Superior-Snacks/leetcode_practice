@@ -30,8 +30,7 @@ def build_tree(arr):
 
 class Solution(object):
     def minDepth(self, root):
-        ...
-
+        print(root.val)
 
 
 
