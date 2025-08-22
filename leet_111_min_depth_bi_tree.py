@@ -46,6 +46,7 @@ class Solution(object):
                         que.append(node.left)
                     if node.right:
                         que.append(node.right)
+            que = que[level_size:]
 
 
 
