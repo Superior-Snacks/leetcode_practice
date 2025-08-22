@@ -58,7 +58,7 @@ print(sol.minDepth(build_tree([])), "expected:", 0)                             
 print(sol.minDepth(build_tree([1])), "expected:", 1)                             # single node
 print(sol.minDepth(build_tree([1,2])), "expected:", 2)                           # root + left child
 print(sol.minDepth(build_tree([1,None,2])), "expected:", 2)                      # root + right child
-print(sol.minDepth(build_tree([1,2,3,4,None,None,None])), "expected:", 3)        # only one leaf deep on one side
+print(sol.minDepth(build_tree([1, 2, 3, 4, None, 5, None])), "expected:", 3)        # only one leaf deep on one side
 """
 111. Minimum Depth of Binary Tree
 Given a binary tree, find its minimum depth.
