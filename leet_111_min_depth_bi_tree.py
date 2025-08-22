@@ -37,7 +37,9 @@ class Solution(object):
         while len(que) != 0:
             level_size = len(que)
             depth += 1
-            for nodes in range(que,level_size):
+            for node in range(que,level_size):
+                if (node.left and node.right) == None:
+                    return depth
 
 
 
