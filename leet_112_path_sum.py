@@ -6,11 +6,7 @@
 #         self.right = right
 class Solution(object):
     def hasPathSum(self, root, targetSum):
-        """
-        :type root: Optional[TreeNode]
-        :type targetSum: int
-        :rtype: bool
-        """
+        ...
 
 """
 Given the root of a binary tree and an integer targetSum, 
