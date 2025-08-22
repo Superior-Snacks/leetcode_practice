@@ -41,6 +41,9 @@ class Solution(object):
             r = i.right
             if l or r == None:
                 return depth
+            else:
+                qeu.append(l)
+                qeu.append(r)
 
 
 
