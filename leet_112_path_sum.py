@@ -33,6 +33,8 @@ class Solution(object):
         return self.path_check(root, targetSum) == targetSum
     
     def path_check(self, root, remain_before):
+        if (root.left == None) and (root.right == None) and remain_before == 0:
+
         
 
 
