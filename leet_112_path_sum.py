@@ -31,6 +31,8 @@ def build_tree(arr):
 class Solution(object):
     def hasPathSum(self, root, targetSum):
         print(targetSum)
+        if root == None:
+            return False
 
 
 
