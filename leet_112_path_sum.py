@@ -40,6 +40,9 @@ class Solution(object):
         if not root.left and not root.right and remain_after == 0:
             return True
         
+        return (self.path_check(root.left, remain_after) or
+                self.path_check(root.right, remain_after))
+        
 
         
 
