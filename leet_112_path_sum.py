@@ -30,17 +30,10 @@ def build_tree(arr):
 
 class Solution(object):
     def hasPathSum(self, root, targetSum):
-        print(targetSum)
-        if root == None:
-            return False
-        if targetSum == test += self.go_down(root):
-            return True
-        else:
-            return False
-        
-    def go_down(self, root):
-        print(root)
-
+        return self.path_check(root) == targetSum
+    
+    def path_check(self, root):
+        ...
 
 sol = Solution()
 # basic examples from the prompt
