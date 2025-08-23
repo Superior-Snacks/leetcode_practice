@@ -33,7 +33,23 @@ class Solution(object):
         return self.path_check(root) == targetSum
     
     def path_check(self, root):
-        ...
+        
+
+
+"""
+        if not root:
+            return 0
+        left_height = self.isBalancedcalc(root.left)
+        if left_height == -1:
+            return -1
+        right_height = self.isBalancedcalc(root.right)
+        if right_height == -1:
+            return -1
+        if abs(left_height - right_height) > 1:
+            return -1
+        else:
+            return max(left_height, right_height) + 1
+"""
 
 sol = Solution()
 # basic examples from the prompt
