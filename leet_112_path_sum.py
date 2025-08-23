@@ -33,7 +33,13 @@ class Solution(object):
         print(targetSum)
         if root == None:
             return False
-
+        if targetSum == test += self.go_down(root):
+            return True
+        else:
+            return False
+        
+    def go_down(self, root):
+        print(root)
 
 
 sol = Solution()
