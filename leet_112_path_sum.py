@@ -34,7 +34,9 @@ class Solution(object):
     
     def path_check(self, root):
         if not root:
-            return False
+            return None
+        else:
+            return 5
         
 
 
