@@ -33,6 +33,8 @@ class Solution(object):
         return self.path_check(root) == targetSum
     
     def path_check(self, root):
+        if not root:
+            return False
         
 
 
