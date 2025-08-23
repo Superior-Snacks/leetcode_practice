@@ -35,8 +35,8 @@ class Solution(object):
     def path_check(self, root):
         if not root:
             return None
-        else:
-            return 5
+        left = self.path_check(root.left)
+        right = self.path_check(root.right)
         
 
 
