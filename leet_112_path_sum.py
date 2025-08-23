@@ -35,6 +35,10 @@ class Solution(object):
     def path_check(self, root, remain_before):
         if not root:
             return False
+        remain_after = remain_before - root.val
+
+        if not root.left and not root.right and remain_after == 0:
+            return True
         
 
         
