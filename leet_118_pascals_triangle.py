@@ -7,8 +7,21 @@ class Solution(object):
         
 
 
+sol=Solution()
+print(sol.generate(1))  
+# Expected: [[1]]
 
+print(sol.generate(2))  
+# Expected: [[1], [1,1]]
 
+print(sol.generate(5))  
+# Expected: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
+
+print(sol.generate(6))  
+# Expected: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1],[1,5,10,10,5,1]]
+
+print(sol.generate(10))  
+# Expected last row = [1,9,36,84,126,126,84,36,9,1]
 """
 Given an integer numRows, return the first numRows of Pascal's triangle.
 
