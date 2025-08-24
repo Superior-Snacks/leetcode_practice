@@ -1,3 +1,14 @@
+class Solution(object):
+    def generate(self, numRows):
+        """
+        :type numRows: int
+        :rtype: List[List[int]]
+        """
+        
+
+
+
+
 """
 Given an integer numRows, return the first numRows of Pascal's triangle.
 
