@@ -2,7 +2,7 @@ class Solution(object):
     def generate(self, numRows):
         if numRows == 1:
             return [[1]]
-        
+
         triangle = self.generate(numRows - 1)   # smaller problem
         prev_row = triangle[-1]            # last row from the smaller triangle
 
