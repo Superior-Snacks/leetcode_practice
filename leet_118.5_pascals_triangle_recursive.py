@@ -1,16 +1,6 @@
 class Solution(object):
     def generate(self, numRows):
-        curr = []
-        res = [[1]]
-        if numRows == 1:
-            return res
-        for i in range(1, numRows):
-            curr = [1]
-            for j in range(1,len(res[-1])):
-                curr.append(res[-1][j-1] + res[-1][j])
-            curr.append(1)
-            res.append(curr)
-        return res
+        ...
 
 sol=Solution()
 print(sol.generate(1), "done")  
