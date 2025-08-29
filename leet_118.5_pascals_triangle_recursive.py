@@ -3,6 +3,8 @@ class Solution(object):
         return self.collect()
     
     def collect(self, arr):
+        ...
+
 
 sol=Solution()
 print(sol.generate(1), "done")  
