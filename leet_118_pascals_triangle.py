@@ -1,13 +1,11 @@
 class Solution(object):
     def generate(self, numRows):
-        prev = [1,2,1]
+        prev = []
         curr = []
-        res = []
+        res = [[1]]
         if numRows == 1:
             return [1]
-        elif numRows == 2:
-            return [1,1]
-        for i in range(3,numRows):
+        for i in range(1, numRows):
             #rows
             curr = [1]
             for j in range(1,len(prev)):
