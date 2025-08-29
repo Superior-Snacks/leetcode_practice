@@ -6,9 +6,8 @@ class Solution(object):
             return res
         for i in range(1, numRows):
             curr = [1]
-            prev = res[-1]
-            for j in range(1,len(prev)):
-                curr.append(prev[j-1] + prev[j])
+            for j in range(1,len(res[-1])):
+                curr.append(res[-1][j-1] + res[-1][j])
             curr.append(1)
             res.append(curr)
         return res
