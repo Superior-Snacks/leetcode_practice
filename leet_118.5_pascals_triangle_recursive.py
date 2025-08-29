@@ -8,7 +8,7 @@ class Solution(object):
 
         # build the new row
         new_row = [1]
-        for j in range(1, len(prev_row)):
+        for j in range(1, len(prev_row) - 1):
             new_row.append(prev_row[j-1] + prev_row[j])
             new_row.append(1)
 
