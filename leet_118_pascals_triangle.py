@@ -1,6 +1,6 @@
 class Solution(object):
     def generate(self, numRows):
-        prev = [1]
+        prev = [1,2,1]
         curr = []
         if numRows == 1:
             return [1]
@@ -8,8 +8,9 @@ class Solution(object):
             return [1,1]
         for i in range(3,numRows):
             #rows
-            #for j in len(prev):
-            print(i)
+            curr = [1]
+            for j in len(prev):
+                curr.append(prev[j-1], prev[j])
 
 
 sol=Solution()
