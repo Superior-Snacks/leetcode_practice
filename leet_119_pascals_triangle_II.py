@@ -1,4 +1,10 @@
-
+class Solution(object):
+    def getRow(self, rowIndex):
+        """
+        :type rowIndex: int
+        :rtype: List[int]
+        """
+        
 
 
 """Given an integer rowIndex, return the rowIndexth (0-indexed) row of the Pascal's triangle.
