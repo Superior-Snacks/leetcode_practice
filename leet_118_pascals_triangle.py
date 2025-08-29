@@ -1,12 +1,12 @@
 class Solution(object):
     def generate(self, numRows):
-        prev = []
         curr = []
         res = [[1]]
         if numRows == 1:
             return res
         for i in range(1, numRows):
             curr = [1]
+            prev = res[-1]
             for j in range(1,len(prev)):
                 curr.append(prev[j-1] + prev[j])
             curr.append(1)
