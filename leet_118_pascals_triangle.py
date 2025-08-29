@@ -9,8 +9,8 @@ class Solution(object):
         for i in range(3,numRows):
             #rows
             curr = [1]
-            for j in len(prev):
-                curr.append(prev[j-1], prev[j])
+            for j in range(1,len(prev)):
+                curr.append(prev[j-1] + prev[j])
             curr.append(1)
             print(curr)
 
