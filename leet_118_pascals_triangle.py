@@ -10,7 +10,6 @@ class Solution(object):
             for j in range(1,len(prev)):
                 curr.append(prev[j-1] + prev[j])
             curr.append(1)
-            prev = curr
             res.append(curr)
         return res
 
