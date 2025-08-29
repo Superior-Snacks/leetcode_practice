@@ -4,14 +4,12 @@ class Solution(object):
         curr = []
         res = [[1]]
         if numRows == 1:
-            return [1]
+            return res
         for i in range(1, numRows):
-            #rows
             curr = [1]
             for j in range(1,len(prev)):
                 curr.append(prev[j-1] + prev[j])
             curr.append(1)
-            print(curr)
             prev = curr
             res.append(curr)
         return res
