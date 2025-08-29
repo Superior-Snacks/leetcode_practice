@@ -1,6 +1,6 @@
 class Solution(object):
     def generate(self, numRows):
-        return self.collect()
+        return len(self.collect()) == numRows
     
     def collect(self, arr):
         ...
