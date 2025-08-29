@@ -4,7 +4,7 @@ class Solution(object):
         curr = []
         for i in range(numRows):
             #rows
-            for j in prev:
+            for j in len(prev):
 
 sol=Solution()
 print(sol.generate(1))  
