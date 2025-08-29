@@ -14,6 +14,7 @@ class Solution(object):
             curr.append(1)
             print(curr)
             prev = curr
+        return curr
 
 sol=Solution()
 print(sol.generate(1), "done")  
