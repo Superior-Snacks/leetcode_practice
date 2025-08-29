@@ -8,7 +8,8 @@ class Solution(object):
             return [1,1]
         for i in range(3,numRows):
             #rows
-            for j in len(prev):
+            #for j in len(prev):
+            print(i)
 
 
 sol=Solution()
