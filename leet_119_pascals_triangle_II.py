@@ -7,14 +7,14 @@ class Solution(object):
         
 
 
-
-print(getRow(0))   # [1]
-print(getRow(1))   # [1, 1]
-print(getRow(2))   # [1, 2, 1]
-print(getRow(3))   # [1, 3, 3, 1]
-print(getRow(4))   # [1, 4, 6, 4, 1]
-print(getRow(5))   # [1, 5, 10, 10, 5, 1]
-print(getRow(10))  # [1, 10, 45, 120, 210, 252, 210, 120, 45, 10, 1]
+sol = Solution()
+print(sol.getRow(0))   # [1]
+print(sol.getRow(1))   # [1, 1]
+print(sol.getRow(2))   # [1, 2, 1]
+print(sol.getRow(3))   # [1, 3, 3, 1]
+print(sol.getRow(4))   # [1, 4, 6, 4, 1]
+print(sol.getRow(5))   # [1, 5, 10, 10, 5, 1]
+print(sol.getRow(10))  # [1, 10, 45, 120, 210, 252, 210, 120, 45, 10, 1]
 
 """Given an integer rowIndex, return the rowIndexth (0-indexed) row of the Pascal's triangle.
 
