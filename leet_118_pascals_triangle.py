@@ -11,7 +11,8 @@ class Solution(object):
             curr = [1]
             for j in len(prev):
                 curr.append(prev[j-1], prev[j])
-
+            curr.append(1)
+            print(curr)
 
 sol=Solution()
 print(sol.generate(1))  
