@@ -2,6 +2,7 @@ class Solution(object):
     def generate(self, numRows):
         prev = [1,2,1]
         curr = []
+        res = []
         if numRows == 1:
             return [1]
         elif numRows == 2:
@@ -14,7 +15,8 @@ class Solution(object):
             curr.append(1)
             print(curr)
             prev = curr
-        return curr
+            res.append(curr)
+        return res
 
 sol=Solution()
 print(sol.generate(1), "done")  
