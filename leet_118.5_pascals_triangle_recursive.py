@@ -1,6 +1,8 @@
 class Solution(object):
     def generate(self, numRows):
-        def collect(arr):
+        return self.collect()
+    
+    def collect(self, arr):
 
 sol=Solution()
 print(sol.generate(1), "done")  
