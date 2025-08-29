@@ -6,7 +6,7 @@ class Solution(object):
             return [1]
         elif numRows == 2:
             return [1,1]
-        for i in range(numRows):
+        for i in range(3,numRows):
             #rows
             for j in len(prev):
 
