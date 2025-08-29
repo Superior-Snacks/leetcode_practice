@@ -1,9 +1,21 @@
 class Solution(object):
     def generate(self, numRows):
-        return len(self.collect()) == numRows
-    
-    def collect(self, arr):
-        ...
+        if numRows == 1:
+            return [[1]]
+        
+        triangle = self.generate(numRows - 1)   # smaller problem
+        prev_row = triangle[-1]            # last row from the smaller triangle
+
+        # build the new row
+        new_row = [1]
+        for j in range(1, prev_row):
+            new_row.append(prev_row[j-1] + prev_row[j])
+            new_row.append(1)
+
+        # add it to the triangle
+        triangle.append(new_row)
+
+        return triangle
 
 
 sol=Solution()
