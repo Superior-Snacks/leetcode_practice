@@ -1,7 +1,7 @@
 class Solution(object):
     def generate(self, numRows):
+        prev = []
         for i in range(numRows):
-            print(i)
 
 sol=Solution()
 print(sol.generate(1))  
