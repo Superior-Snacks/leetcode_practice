@@ -2,9 +2,14 @@ class Solution(object):
     def generate(self, numRows):
         prev = [1]
         curr = []
+        if numRows == 1:
+            return [1]
+        elif numRows == 2:
+            return [1,1]
         for i in range(numRows):
             #rows
             for j in len(prev):
+
 
 sol=Solution()
 print(sol.generate(1))  
