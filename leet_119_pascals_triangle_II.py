@@ -5,11 +5,9 @@ class Solution(object):
             return index
         for i in range(1, rowIndex + 1):
             index.append(1)
-            size = len(index)
-            print(f"i is {i} and size {size}")
-            for j in range(i-1, size):
+            for j in range(i-1, 0, -1):
                 index[j] = index[j] + index[j-1]
-                print(index)
+        return index
             
         
 
