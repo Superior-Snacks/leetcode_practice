@@ -6,9 +6,10 @@ class Solution(object):
             return prev
         for i in range(rowIndex):
             curr = [1]
-            for j in range(len(prev)):
+            for j in range(1, len(prev)):
                 curr.append(prev[j-1] + prev[j])
             curr.append(1)
+            prev = curr
         return curr
             
         
