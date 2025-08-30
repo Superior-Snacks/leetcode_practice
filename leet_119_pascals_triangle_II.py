@@ -2,9 +2,9 @@ class Solution(object):
     def getRow(self, rowIndex):
         curr = []
         prev = [1]
-        for i in range(len(rowIndex)):
-            if rowIndex == 0:
-                return prev
+        if rowIndex == 0:
+            return prev
+        for i in range(rowIndex):
             
         
 
