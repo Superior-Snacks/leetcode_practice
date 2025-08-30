@@ -7,7 +7,7 @@ class Solution(object):
             index.append(1)
             size = len(index)
             print(f"i is {i} and size {size}")
-            for j in range(i-1, size - 1):
+            for j in range(i-1, size):
                 index[j] = index[j] + index[j-1]
                 print(index)
             
