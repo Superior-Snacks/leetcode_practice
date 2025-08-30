@@ -3,6 +3,8 @@ class Solution(object):
         curr = []
         prev = [1]
         for i in range(len(rowIndex)):
+            if rowIndex == 0:
+                return prev
             
         
 
