@@ -5,8 +5,10 @@ class Solution(object):
             return index
         for i in range(1, rowIndex + 1):
             index.append(1)
-            for j in 
-            index[j] = index[j] + index[j-1]
+            size = len(index)
+            for j in range(i-1, size):
+                index[j] = index[j] + index[j-1]
+                print(index)
             
         
 
