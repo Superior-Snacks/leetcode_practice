@@ -5,6 +5,10 @@ class Solution(object):
         if rowIndex == 0:
             return prev
         for i in range(rowIndex):
+            curr = [1]
+            for j in range(len(prev)):
+                curr.append(prev[j-1] + prev[j])
+            curr.append(1)
             
         
 
