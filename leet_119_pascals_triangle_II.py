@@ -9,6 +9,7 @@ class Solution(object):
             for j in range(len(prev)):
                 curr.append(prev[j-1] + prev[j])
             curr.append(1)
+        return curr
             
         
 
