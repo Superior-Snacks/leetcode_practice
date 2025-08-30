@@ -51,3 +51,18 @@ Constraints:
  
 
 Follow up: Could you optimize your algorithm to use only O(rowIndex) extra space?"""
+
+
+"""class Solution(object):
+    def getRow(self, rowIndex):
+        curr = []
+        prev = [1]
+        if rowIndex == 0:
+            return prev
+        for i in range(rowIndex):
+            curr = [1]
+            for j in range(1, len(prev)):
+                curr.append(prev[j-1] + prev[j])
+            curr.append(1)
+            prev = curr
+        return curr"""
