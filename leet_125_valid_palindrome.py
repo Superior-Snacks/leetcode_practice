@@ -5,8 +5,15 @@ class Solution(object):
         :rtype: bool
         """
         
-
-
+sol = Solution()
+print(sol.isPalindrome("A man, a plan, a canal: Panama"), "expected:", True)
+print(sol.isPalindrome("race a car"), "expected:", False)
+print(sol.isPalindrome(" "), "expected:", True)
+print(sol.isPalindrome("No lemon, no melon"), "expected:", True)
+print(sol.isPalindrome("12321"), "expected:", True)
+print(sol.isPalindrome("123ab321"), "expected:", False)
+print(sol.isPalindrome("!!!"), "expected:", True)
+print(sol.isPalindrome("a."), "expected:", True)
 
 """
 A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
