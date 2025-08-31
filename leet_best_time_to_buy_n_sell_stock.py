@@ -8,7 +8,7 @@ class Solution(object):
                 hi = (prices[i], i)
             elif (prices[i] < lo[0]):
                 lo = (prices[i], i)
-            if (hi - lo) > highest:
+            if (hi[0] - lo[0]) > highest:
                 highest = hi - lo
         return highest
 """
