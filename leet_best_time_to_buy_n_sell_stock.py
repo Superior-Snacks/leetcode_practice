@@ -1,7 +1,13 @@
 class Solution(object):
     def maxProfit(self, prices):
-        ...
-        
+        lo = prices[-1]
+        hi = 0
+        for i in len(prices):
+            if (prices[i] > lo) and (prices[i] > hi):
+                hi = prices[i]
+            elif (prices[i] < lo):
+                lo = prices[i]
+
 
 sol = Solution()
 print(sol.maxProfit([1]), "expected:", 0)
