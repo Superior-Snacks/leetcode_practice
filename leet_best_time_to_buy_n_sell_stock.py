@@ -6,6 +6,9 @@ class Solution(object):
             if prices[i] < lo:
                 lo = prices
             else:
+                if prices[i] - lo == highest:
+                    highest = prices[i] - lo
+        return highest
                 
     
 
