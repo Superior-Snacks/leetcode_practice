@@ -5,9 +5,9 @@ class Solution(object):
         hi = 0
         for i in range(len(prices)):
             if (prices[i] > lo) and (prices[i] > hi):
-                hi = prices[i]
+                hi = (prices[i], i)
             elif (prices[i] < lo):
-                lo = prices[i]
+                lo = (prices[i], i)
             if (hi - lo) > highest:
                 highest = hi - lo
         return highest
