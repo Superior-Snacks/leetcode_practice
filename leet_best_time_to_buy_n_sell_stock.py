@@ -8,10 +8,7 @@ class Solution(object):
                 hi = prices[i]
             elif (prices[i] < lo):
                 lo = prices[i]
-        if hi != 0:
-            return hi - lo
-        else:
-            return 0
+        return highest
 """
 find low hi, 
 """
