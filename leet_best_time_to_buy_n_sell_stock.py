@@ -4,9 +4,9 @@ class Solution(object):
         lo = prices[0]
         for i in range(len(prices)):
             if prices[i] < lo:
-                lo = prices
+                lo = prices[i]
             else:
-                if prices[i] - lo == highest:
+                if (prices[i] - lo) > highest:
                     highest = prices[i] - lo
         return highest
                 
