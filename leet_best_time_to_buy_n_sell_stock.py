@@ -11,6 +11,7 @@ class Solution(object):
                 lo = (prices[i], i)
             if ((hi[0] - lo[0]) > highest) and hi[1] > lo[1]:
                 highest = hi[0] - lo[0]
+                print(f"new best {hi} - {lo}")
         return highest
 """
 find low hi, 
