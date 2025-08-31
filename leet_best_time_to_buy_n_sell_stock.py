@@ -3,6 +3,7 @@ class Solution(object):
         lo = prices[-1]
         hi = 0
         for i in range(len(prices)):
+            print(f"lo is {lo}")
             if (prices[i] > lo) and (prices[i] > hi):
                 hi = prices[i]
                 print(f"hi is {hi}")
