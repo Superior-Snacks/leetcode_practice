@@ -8,6 +8,8 @@ class Solution(object):
                 hi = prices[i]
             elif (prices[i] < lo):
                 lo = prices[i]
+            if (hi - lo) > highest:
+                highest = hi - lo
         return highest
 """
 find low hi, 
