@@ -9,7 +9,7 @@ class Solution(object):
             elif (prices[i] < lo[0]):
                 lo = (prices[i], i)
             if (hi[0] - lo[0]) > highest:
-                highest = hi - lo
+                highest = hi[0] - lo[0]
         return highest
 """
 find low hi, 
