@@ -4,6 +4,7 @@ class Solution(object):
         lo = (prices[0], 0)
         hi = (0, 0)
         for i in range(len(prices)):
+            print(f"hi{hi} lo{lo}")
             if (prices[i] > lo[0]) and (prices[i] > hi[0]):
                 hi = (prices[i], i)
             elif (prices[i] < lo[0]):
