@@ -7,7 +7,10 @@ class Solution(object):
                 hi = prices[i]
             elif (prices[i] < lo):
                 lo = prices[i]
-
+        if hi != 0:
+            return hi - lo
+        else:
+            return 0
 
 sol = Solution()
 print(sol.maxProfit([1]), "expected:", 0)
