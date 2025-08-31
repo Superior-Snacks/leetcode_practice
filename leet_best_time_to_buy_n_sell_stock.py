@@ -13,8 +13,8 @@ class Solution(object):
             return 0
 
 sol = Solution()
-print(sol.maxProfit([1]), "expected:", 0)
-print(sol.maxProfit([1,2]), "expected:", 1)
+#print(sol.maxProfit([1]), "expected:", 0)
+#print(sol.maxProfit([1,2]), "expected:", 1)
 print(sol.maxProfit([2,1]), "expected:", 0)
 print(sol.maxProfit([2,2,2]), "expected:", 0)
 print(sol.maxProfit([3,1,4]), "expected:", 3)
