@@ -1,5 +1,6 @@
 class Solution(object):
     def maxProfit(self, prices):
+        highest = 0
         lo = prices[0]
         hi = 0
         for i in range(len(prices)):
@@ -11,7 +12,9 @@ class Solution(object):
             return hi - lo
         else:
             return 0
-
+"""
+find low hi, 
+"""
 sol = Solution()
 print(sol.maxProfit([1]), "expected:", 0)
 print(sol.maxProfit([1,2]), "expected:", 1)
