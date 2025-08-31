@@ -10,7 +10,7 @@ class Solution(object):
                 print(f"hi change {hi}")
             elif (prices[i] < lo[0]):
                 lo = (prices[i], i)
-                hi[0] = lo
+                hi = (prices[i], i)
                 print(f"lo change {lo}")
             if ((hi[0] - lo[0]) > highest) and hi[1] > lo[1]:
                 highest = hi[0] - lo[0]
