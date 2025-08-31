@@ -1,7 +1,12 @@
 class Solution(object):
     def maxProfit(self, prices):
+        highest = 0
         lo = prices[0]
         for i in range(len(prices)):
+            if prices[i] < lo:
+                lo = prices
+            else:
+                
     
 
 
