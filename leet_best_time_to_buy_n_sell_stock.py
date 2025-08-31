@@ -14,7 +14,7 @@ class Solution(object):
         return highest
     
 
-    
+
 sol = Solution()
 print(sol.maxProfit([1]), "expected:", 0)
 print(sol.maxProfit([1,2]), "expected:", 1)
@@ -58,4 +58,23 @@ Constraints:
 
 1 <= prices.length <= 105
 0 <= prices[i] <= 104
+"""
+
+
+"""
+first pass
+class Solution(object):
+    def maxProfit(self, prices):
+        highest = 0
+        lo = (prices[0], 0)
+        hi = (0, 0)
+        for i in range(len(prices)):
+            if (prices[i] > lo[0]) and (prices[i] >= hi[0]):
+                hi = (prices[i], i)
+            elif (prices[i] < lo[0]):
+                lo = (prices[i], i)
+                hi = (prices[i], i)
+            if ((hi[0] - lo[0]) > highest) and hi[1] > lo[1]:
+                highest = hi[0] - lo[0]
+        return highest
 """
