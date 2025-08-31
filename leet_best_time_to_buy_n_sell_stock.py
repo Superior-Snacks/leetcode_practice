@@ -5,6 +5,7 @@ class Solution(object):
         for i in range(len(prices)):
             if (prices[i] > lo) and (prices[i] > hi):
                 hi = prices[i]
+                print(f"hi is {hi}")
             elif (prices[i] < lo):
                 lo = prices[i]
         if hi != 0:
