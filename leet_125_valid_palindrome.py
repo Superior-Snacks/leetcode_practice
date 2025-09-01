@@ -1,8 +1,8 @@
 class Solution(object):
     def isPalindrome(self, s):
         for i in range(len(s) // 2):
-            print(f"front{s[i]}")
-            print(f"back{s[-i]}")
+            print(f"front: {s[i]}")
+            print(f"back: {s[-i]}")
         
 sol = Solution()
 print(sol.isPalindrome("A man, a plan, a canal: Panama"), "expected:", True)
