@@ -1,7 +1,8 @@
 class Solution(object):
     def isPalindrome(self, s):
         for i in range(len(s)):
-            
+            if s[i] != s[-i]:
+                return False
         
 sol = Solution()
 print(sol.isPalindrome("A man, a plan, a canal: Panama"), "expected:", True)
