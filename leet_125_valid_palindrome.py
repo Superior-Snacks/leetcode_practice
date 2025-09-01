@@ -1,8 +1,8 @@
 class Solution(object):
     def isPalindrome(self, s):
         for i in range(len(s) // 2):
-            print(s[i])
-            print(s[-i])
+            print(f"front{s[i]}")
+            print(f"back{s[-i]}")
             if s[i] != s[-i]:
                 return False
         
