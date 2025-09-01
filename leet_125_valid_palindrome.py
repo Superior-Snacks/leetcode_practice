@@ -1,9 +1,13 @@
 class Solution(object):
     def isPalindrome(self, s):
-        for i in range(len(s) // 2):
+        p = s.replace(" ", "")
+        print(p)
+        for i in range(len(s.replace(" ", "")) // 2):
             print(f"front: {s[i]}")
             print(f"back: {s[-i]}")
-        
+            if s[i].isalpha():
+                print(True)
+
 sol = Solution()
 print(sol.isPalindrome("A man, a plan, a canal: Panama"), "expected:", True)
 print(sol.isPalindrome("race a car"), "expected:", False)
