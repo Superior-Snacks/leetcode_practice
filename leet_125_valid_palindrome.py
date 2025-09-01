@@ -3,8 +3,6 @@ class Solution(object):
         for i in range(len(s) // 2):
             print(f"front{s[i]}")
             print(f"back{s[-i]}")
-            if s[i] != s[-i]:
-                return False
         
 sol = Solution()
 print(sol.isPalindrome("A man, a plan, a canal: Panama"), "expected:", True)
