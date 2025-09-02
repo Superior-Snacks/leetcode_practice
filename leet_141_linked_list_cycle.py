@@ -14,18 +14,12 @@ def build_linked_list(arr):
         current = current.next
     return head
 
-
-
-
-
 class Solution(object):
     def hasCycle(self, head):
         """
         :type head: ListNode
         :rtype: bool
         """
-
-
 
 sol = Solution()
 
