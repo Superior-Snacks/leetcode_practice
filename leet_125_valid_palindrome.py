@@ -10,7 +10,7 @@ class Solution(object):
                 l += 1
 
             if not r.isalnum() or not r.is_integer():
-                r += 1
+                r -= 1
 
         for i in range(len(s) // 2):
             print(f"front: {s[i]}")
