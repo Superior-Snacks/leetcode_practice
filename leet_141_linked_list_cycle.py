@@ -4,8 +4,10 @@ class ListNode(object):
         self.val = x
         self.next = None
 
-def build_linked_list(arr, pos):
-    ...
+def build_linked_list(arr):
+
+
+
 
 class Solution(object):
     def hasCycle(self, head):
