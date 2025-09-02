@@ -3,6 +3,8 @@ class Solution(object):
         s = s.replace(" ", "")
         print(s)
         count = 0
+        r = 0
+        l = -1
         while count != len(s):
 
         for i in range(len(s) // 2):
