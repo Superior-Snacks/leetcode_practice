@@ -3,7 +3,7 @@ class Solution(object):
         s = s.replace(" ", "")
         print(s)
         count = 0
-        r = 0
+        r = len(s) - 1
         l = 0
         while count != len(s):
             if s[count + r].isalnum():
