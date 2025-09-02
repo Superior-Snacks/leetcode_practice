@@ -1,3 +1,11 @@
+class Solution(object):
+    def singleNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+     
+
 
 """
 Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
