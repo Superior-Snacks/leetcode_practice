@@ -3,13 +3,13 @@ class Solution(object):
         r = len(s) - 1
         l = 0
         while l < r:
-            if not s[l].isalnum() or not s[l].is_integer():
+            if not s[l].isalnum():
                 l += 1
-                break
+                continue
 
-            if not s[r].isalnum() or not s[r].is_integer():
+            if not s[r].isalnum():
                 r -= 1
-                break
+                continue
             
             if s[l].lower() != s[r].lower():
                 return False
