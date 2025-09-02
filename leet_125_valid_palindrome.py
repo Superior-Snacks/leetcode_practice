@@ -6,8 +6,9 @@ class Solution(object):
         r = len(s) - 1
         l = 0
         while l < r:
-            if s[count + r].isalnum():
-                left = s[l - count]
+            if not l.isalnum() or not l.is_integer():
+
+            if not r.isalnum() or not r.is_integer():
             
 
         for i in range(len(s) // 2):
