@@ -6,6 +6,8 @@ class Solution(object):
         r = 0
         l = -1
         while count != len(s):
+            right =s[count + r]
+            left = s[l - count]
 
         for i in range(len(s) // 2):
             print(f"front: {s[i]}")
