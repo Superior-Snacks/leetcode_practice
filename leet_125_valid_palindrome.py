@@ -4,10 +4,11 @@ class Solution(object):
         print(s)
         count = 0
         r = 0
-        l = 
+        l = 0
         while count != len(s):
-            right =s[count + r]
-            left = s[l - count]
+            if s[count + r].isalnum():
+                left = s[l - count]
+            
 
         for i in range(len(s) // 2):
             print(f"front: {s[i]}")
