@@ -5,6 +5,10 @@ class ListNode(object):
         self.next = None
 
 def build_linked_list(arr):
+    li = ListNode()
+    for i in arr:
+        li.val =
+
 
 
 
