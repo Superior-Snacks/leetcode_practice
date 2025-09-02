@@ -13,12 +13,13 @@ class Solution(object):
             if not r.isalnum() or not r.is_integer():
                 r -= 1
                 break
+            
+            if l.lower() != r.lower():
+                return False
 
-        for i in range(len(s) // 2):
-            print(f"front: {s[i]}")
-            print(f"back: {s[-i]}")
-            if s[i].isalpha():
-                print(True)
+            l += 1
+            r -= 1
+        return True
 
 sol = Solution()
 print(sol.isPalindrome("A man, a plan, a canal: Panama"), "expected:", True)
