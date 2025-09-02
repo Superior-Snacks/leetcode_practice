@@ -5,9 +5,14 @@ class ListNode(object):
         self.next = None
 
 def build_linked_list(arr):
-    li = ListNode()
-    for i in arr:
-        li.val =
+    if not arr:
+        return None
+    head = ListNode(arr[0])
+    current = head
+    for val in arr[1:]:
+        current.next = ListNode(val)
+        current = current.next
+    return head
 
 
 
