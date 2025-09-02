@@ -5,7 +5,7 @@ class Solution(object):
         count = 0
         r = len(s) - 1
         l = 0
-        while count != len(s):
+        while l < r:
             if s[count + r].isalnum():
                 left = s[l - count]
             
