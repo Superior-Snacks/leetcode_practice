@@ -1,8 +1,11 @@
 class Solution(object):
     def isPalindrome(self, s):
-        p = s.replace(" ", "")
-        print(p)
-        for i in range(len(s.replace(" ", "")) // 2):
+        s = s.replace(" ", "")
+        print(s)
+        count = 0
+        while count != len(s):
+
+        for i in range(len(s) // 2):
             print(f"front: {s[i]}")
             print(f"back: {s[-i]}")
             if s[i].isalpha():
