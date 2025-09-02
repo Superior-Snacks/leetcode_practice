@@ -6,15 +6,15 @@ class Solution(object):
         r = len(s) - 1
         l = 0
         while l < r:
-            if not l.isalnum() or not l.is_integer():
+            if not s[l].isalnum() or not s[l].is_integer():
                 l += 1
                 break
 
-            if not r.isalnum() or not r.is_integer():
+            if not s[r].isalnum() or not s[r].is_integer():
                 r -= 1
                 break
             
-            if l.lower() != r.lower():
+            if s[l].lower() != s[r].lower():
                 return False
 
             l += 1
