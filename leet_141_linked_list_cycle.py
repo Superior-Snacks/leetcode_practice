@@ -11,6 +11,29 @@ class Solution(object):
         :rtype: bool
         """
 
+
+
+sol = Solution()
+
+# Example 1: cycle at pos=1
+head = build_linked_list([3,2,0,-4], pos=1)
+print(sol.hasCycle(head), "expected: True")
+
+# Example 2: cycle at pos=0
+head = build_linked_list([1,2], pos=0)
+print(sol.hasCycle(head), "expected: True")
+
+# Example 3: no cycle
+head = build_linked_list([1], pos=-1)
+print(sol.hasCycle(head), "expected: False")
+
+# Edge case: empty list
+head = build_linked_list([], pos=-1)
+print(sol.hasCycle(head), "expected: False")
+
+# Edge case: single node self-cycle
+head = build_linked_list([1], pos=0)
+print(sol.hasCycle(head), "expected: True")
 """
 Given head, the head of a linked list, determine if the linked list has a cycle in it.
 
