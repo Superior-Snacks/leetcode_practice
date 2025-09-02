@@ -4,7 +4,7 @@ class Solution(object):
         print(s)
         count = 0
         r = 0
-        l = -1
+        l = 
         while count != len(s):
             right =s[count + r]
             left = s[l - count]
