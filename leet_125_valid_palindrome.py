@@ -8,9 +8,11 @@ class Solution(object):
         while l < r:
             if not l.isalnum() or not l.is_integer():
                 l += 1
+                break
 
             if not r.isalnum() or not r.is_integer():
                 r -= 1
+                break
 
         for i in range(len(s) // 2):
             print(f"front: {s[i]}")
