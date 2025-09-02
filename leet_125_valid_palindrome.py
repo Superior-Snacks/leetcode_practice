@@ -1,8 +1,5 @@
 class Solution(object):
     def isPalindrome(self, s):
-        s = s.replace(" ", "")
-        print(s)
-        count = 0
         r = len(s) - 1
         l = 0
         while l < r:
