@@ -8,12 +8,15 @@ def build_linked_list(arr, pos):
     if not arr:
         return None
     head = ListNode(arr[0])
+    fix = head
     current = head
     for val in arr[1:]:
         current.next = ListNode(val)
         current = current.next
     current.next = ListNode(pos) #get node at pos pos
     for i in range(pos):
+        fix = fix.next
+
     return head
 
 class Solution(object):
