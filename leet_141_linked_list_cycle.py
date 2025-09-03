@@ -10,17 +10,19 @@ def build_linked_list(arr, pos):
     head = ListNode(arr[0])
     fix = head
     current = head
+    
+    # build the chain
     for val in arr[1:]:
         current.next = ListNode(val)
         current = current.next
-    #get node at pos pos
-    for i in range(pos):
-        print("count")
-        fix = fix.next
-    current.next = fix
-    current = current.next
-    print(fix.val)
-
+    
+    # only connect if pos >= 0
+    if pos >= 0:
+        fix = head
+        for _ in range(pos):
+            fix = fix.next
+        current.next = fix
+    
     return head
 
 class Solution(object):
