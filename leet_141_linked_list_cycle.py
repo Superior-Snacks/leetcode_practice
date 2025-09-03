@@ -4,7 +4,7 @@ class ListNode(object):
         self.val = x
         self.next = None
 
-def build_linked_list(arr):
+def build_linked_list(arr, pos):
     if not arr:
         return None
     head = ListNode(arr[0])
