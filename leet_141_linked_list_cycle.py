@@ -17,7 +17,8 @@ def build_linked_list(arr, pos):
     for i in range(pos):
         print("count")
         fix = fix.next
-    current
+    current.next = fix
+    current = current.next
     print(fix.val)
 
     return head
