@@ -12,6 +12,8 @@ def build_linked_list(arr, pos):
     for val in arr[1:]:
         current.next = ListNode(val)
         current = current.next
+    current.next = ListNode(pos) #get node at pos pos
+    for i in range(pos):
     return head
 
 class Solution(object):
