@@ -9,7 +9,7 @@ def build_linked_list(arr, pos):
         return None
     head = ListNode(arr[0])
     current = head
-    for val in arr[1:-1]:
+    for val in arr[1:]:
         current.next = ListNode(val)
         current = current.next
     return head
@@ -17,8 +17,6 @@ def build_linked_list(arr, pos):
 class Solution(object):
     def hasCycle(self, head):
         """
-        :type head: ListNode
-        :rtype: bool
         """
 
 sol = Solution()
