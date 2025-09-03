@@ -15,7 +15,9 @@ def build_linked_list(arr, pos):
         current = current.next
     #get node at pos pos
     for i in range(pos):
+        print("count")
         fix = fix.next
+    current
     print(fix.val)
 
     return head
