@@ -29,7 +29,6 @@ class Solution(object):
     def hasCycle(self, head):
         current_slow = head
         current_fast = head
-        temp = []
         while current_fast != None:
             current_slow = current_slow.next
             current_fast = current_fast.next.next
