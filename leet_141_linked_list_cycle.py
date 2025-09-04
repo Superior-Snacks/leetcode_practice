@@ -32,7 +32,7 @@ class Solution(object):
         temp = []
         while current_fast != None:
             current_slow = current_slow.next
-            current_fast = current_fast.nex.next
+            current_fast = current_fast.next.next
             if current_slow == current_fast:
                 return True
         return False
