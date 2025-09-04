@@ -30,7 +30,7 @@ class Solution(object):
         current_slow = head
         current_fast = head
         temp = []
-        while current != None:
+        while current_fast != None:
             if current.next in temp:
                 return True
             else:
