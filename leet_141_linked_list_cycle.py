@@ -31,7 +31,10 @@ class Solution(object):
         current_fast = head
         while current_fast != None:
             current_slow = current_slow.next
-            current_fast = current_fast.next.next
+            try:
+                current_fast = current_fast.next.next
+            except:
+                return False
             if current_slow == current_fast:
                 return True
         return False
