@@ -31,11 +31,8 @@ class Solution(object):
         current_fast = head
         temp = []
         while current_fast != None:
-            if current.next in temp:
-                return True
-            else:
-                current = current.next
-                temp.append(current)
+            current_slow = current_slow.next
+            current_fast = current_fast.nex.next
         return False
             
 
