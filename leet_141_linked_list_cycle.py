@@ -35,6 +35,7 @@ class Solution(object):
             else:
                 current = current.next
                 temp.append(current)
+        return False
             
 
 
