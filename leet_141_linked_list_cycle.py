@@ -27,7 +27,8 @@ def build_linked_list(arr, pos):
 
 class Solution(object):
     def hasCycle(self, head):
-        current = head
+        current_slow = head
+        current_fast = head
         temp = []
         while current != None:
             if current.next in temp:
