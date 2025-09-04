@@ -27,8 +27,10 @@ def build_linked_list(arr, pos):
 
 class Solution(object):
     def hasCycle(self, head):
-        while head != None:
+        current = head
+        while current != None:
             
+
 
 sol = Solution()
 
