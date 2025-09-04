@@ -29,12 +29,9 @@ class Solution(object):
     def hasCycle(self, head):
         current_slow = head
         current_fast = head
-        while current_fast != None:
+        while current_fast and current_fast.next != None:
             current_slow = current_slow.next
-            try:
-                current_fast = current_fast.next.next
-            except:
-                return False
+            current_fast = current_fast.next.next
             if current_slow == current_fast:
                 return True
         return False
