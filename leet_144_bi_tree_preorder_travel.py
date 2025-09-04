@@ -29,12 +29,7 @@ def build_tree(arr):
 
 class Solution(object):
     def preorderTraversal(self, root):
-        """
-        :type root: Optional[TreeNode]
-        :rtype: List[int]
-        """
-        
-
+        ...
 
 sol = Solution()
 print(sol.preorderTraversal(build_tree([1,None,2,3])), "expected: [1,2,3]")
