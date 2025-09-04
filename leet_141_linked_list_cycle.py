@@ -88,3 +88,19 @@ pos is -1 or a valid index in the linked-list.
 
 Follow up: Can you solve it using O(1) (i.e. constant) memory?
 """
+
+
+"""
+fyrsta tilraun
+class Solution(object):
+    def hasCycle(self, head):
+        current = head
+        temp = []
+        while current != None:
+            if current.next in temp:
+                return True
+            else:
+                current = current.next
+                temp.append(current)
+        return False
+"""
