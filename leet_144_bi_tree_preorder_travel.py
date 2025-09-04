@@ -36,6 +36,14 @@ class Solution(object):
         """
         
 
+
+sol = Solution()
+print(sol.preorderTraversal(build_tree([1,None,2,3])), "expected: [1,2,3]")
+print(sol.preorderTraversal(build_tree([1,2,3,4,5,None,8,None,None,6,7,9])), "expected: [1,2,4,5,6,7,3,8,9]")
+print(sol.preorderTraversal(build_tree([])), "expected: []")
+print(sol.preorderTraversal(build_tree([1])), "expected: [1]")
+print(sol.preorderTraversal(build_tree([1,2,None,3])), "expected: [1,2,3]")  # skewed left tree
+print(sol.preorderTraversal(build_tree([1,None,2,None,3])), "expected: [1,2,3]")  # skewed right tree
 """
 Given the root of a binary tree, return the preorder traversal of its nodes' values.
 
