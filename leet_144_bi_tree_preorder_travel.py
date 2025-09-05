@@ -29,9 +29,6 @@ def build_tree(arr):
 
 class Solution(object):
     def preorderTraversal(self, root):
-        if root == None:
-            return []
-        return [root.val] + self.preorderTraversal(root.left) + self.preorderTraversal(root.right)
 
 
 
@@ -70,4 +67,13 @@ The number of nodes in the tree is in the range [0, 100].
 -100 <= Node.val <= 100
 
 Follow up: Recursive solution is trivial, could you do it iteratively?
+"""
+
+"""
+works
+class Solution(object):
+    def preorderTraversal(self, root):
+        if root == None:
+            return []
+        return [root.val] + self.preorderTraversal(root.left) + self.preorderTraversal(root.right)
 """
