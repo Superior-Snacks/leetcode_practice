@@ -40,11 +40,11 @@ class Solution(object):
             node = stack.pop()       # take the top item out
             result.append(node.val)# add this node’s value to result
 
-            # if node has a right child:
-                # push right child onto stack
+            if node.right:# if node has a right child:
+                stack.append(node.right)# push right child onto stack
 
-            # if node has a left child:
-                # push left child onto stack
+            if node.left:# if node has a left child:
+                stack.append(node.left)# push left child onto stack
 
         return result
         
