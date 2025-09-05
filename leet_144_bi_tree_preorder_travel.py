@@ -29,6 +29,25 @@ def build_tree(arr):
 
 class Solution(object):
     def preorderTraversal(self, root):
+        result = []
+        if not root:
+            return result   # handle empty tree
+
+        stack = []          # start with a stack
+        stack.append(root)  # put the root in
+
+        while stack:        # while something is in the stack
+            node = stack.pop()       # take the top item out
+            # add this node’s value to result
+
+            # if node has a right child:
+                # push right child onto stack
+
+            # if node has a left child:
+                # push left child onto stack
+
+        return result
+        
 
 
 
