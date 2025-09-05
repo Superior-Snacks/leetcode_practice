@@ -28,6 +28,14 @@ def build_tree(arr):
     return root
 
 
+class Solution(object):
+    def postorderTraversal(self, root):
+        """
+        :type root: Optional[TreeNode]
+        :rtype: List[int]
+        """
+
+
 """
 Given the root of a binary tree, return the postorder traversal of its nodes' values.
 
