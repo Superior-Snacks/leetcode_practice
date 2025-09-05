@@ -32,6 +32,7 @@ class Solution(object):
         result = []
         if not root:
             return None
+        result.append(root.val)
         result.extend(self.preorderTraversal(root.left))
         result.extend(self.preorderTraversal(root.right))
         return result
