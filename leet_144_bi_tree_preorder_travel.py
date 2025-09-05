@@ -37,6 +37,8 @@ class Solution(object):
             left = self.preorderTraversal(root.left)
             right = self.preorderTraversal(root.right)
         return result
+    
+    
 sol = Solution()
 print(sol.preorderTraversal(build_tree([1,None,2,3])), "expected: [1,2,3]")
 print(sol.preorderTraversal(build_tree([1,2,3,4,5,None,8,None,None,6,7,9])), "expected: [1,2,4,5,6,7,3,8,9]")
