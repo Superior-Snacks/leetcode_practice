@@ -32,9 +32,8 @@ class Solution(object):
         result = []
         if not root:
             return None
-        result.append(root.val)
-        self.preorderTraversal(root.left)
-        self.preorderTraversal(root.right)
+        result.extend(self.preorderTraversal(root.left))
+        result.extend(self.preorderTraversal(root.right))
         return result
     
 
