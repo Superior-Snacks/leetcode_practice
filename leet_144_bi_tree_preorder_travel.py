@@ -28,12 +28,14 @@ def build_tree(arr):
     return root
 
 class Solution(object):
+    result = []
     def preorderTraversal(self, root):
         if root == None:
             return None
         else:
-            left = self.preorderTraversal(root.left)
-            right = self.preorderTraversal(root.right)
+            result.append(root)
+        left = self.preorderTraversal(root.left)
+        right = self.preorderTraversal(root.right)
     
 
 sol = Solution()
