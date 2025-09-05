@@ -36,6 +36,12 @@ class Solution(object):
         """
 
 
+sol = Solution()
+print(sol.postorderTraversal(build_tree([1,None,2,3])), "expected: [3,2,1]")
+print(sol.postorderTraversal(build_tree([1,2,3,4,5,None,8,None,None,6,7,9])), "expected: [4,6,7,5,2,9,8,3,1]")
+print(sol.postorderTraversal(build_tree([])), "expected: []")
+print(sol.postorderTraversal(build_tree([1])), "expected: [1]")
+
 """
 Given the root of a binary tree, return the postorder traversal of its nodes' values.
 
