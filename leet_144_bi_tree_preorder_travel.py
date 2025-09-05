@@ -35,6 +35,7 @@ class Solution(object):
         result.append(root)
         self.preorderTraversal(root.left)
         self.preorderTraversal(root.right)
+        return result
     
 
 sol = Solution()
