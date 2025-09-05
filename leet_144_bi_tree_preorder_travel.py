@@ -30,7 +30,7 @@ def build_tree(arr):
 class Solution(object):
     def preorderTraversal(self, root):
         if root == None:
-            return None
+
     
 
 sol = Solution()
