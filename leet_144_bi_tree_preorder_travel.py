@@ -38,7 +38,7 @@ class Solution(object):
 
         while stack:        # while something is in the stack
             node = stack.pop()       # take the top item out
-            # add this node’s value to result
+            result.append(node.val)# add this node’s value to result
 
             # if node has a right child:
                 # push right child onto stack
