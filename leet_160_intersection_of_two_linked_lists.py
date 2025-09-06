@@ -14,16 +14,51 @@ class Solution(object):
 
 sol = Solution()
 
+sol = Solution()
+
+# Example 1
+headA1 = create_linked_list([4,1,8,4,5])
+headB1 = create_linked_list([5,6,1])
+attach_lists(headA1, headB1, skipA=2, skipB=2)
 print(sol.getIntersectionNode(headA1, headB1).val, "expected 8")
+
+# Example 2
+headA2 = create_linked_list([1,9,1,2,4])
+headB2 = create_linked_list([3])
+attach_lists(headA2, headB2, skipA=3, skipB=0)
 print(sol.getIntersectionNode(headA2, headB2).val, "expected 2")
+
+# Example 3 (no intersection)
+headA3 = create_linked_list([2,6,4])
+headB3 = create_linked_list([1,5])
 print(sol.getIntersectionNode(headA3, headB3), "expected None")
 
-# edge cases
-print(sol.getIntersectionNode(headA4, headB4).val, "expected 1")   # intersect at head
-print(sol.getIntersectionNode(headA5, headB5), "expected None")    # both length 1, no intersect
-print(sol.getIntersectionNode(headA6, headB6).val, "expected 9")   # very uneven lengths
-print(sol.getIntersectionNode(headA7, headB7), "expected None")    # long lists, no intersect
-print(sol.getIntersectionNode(headA8, headB8).val, "expected 3")   # intersection tail
+# Intersect at head
+headA4 = create_linked_list([1,2,3])
+headB4 = headA4   # both point to the same head
+print(sol.getIntersectionNode(headA4, headB4).val, "expected 1")
+
+# Single-node lists, no intersection
+headA5 = create_linked_list([7])
+headB5 = create_linked_list([7])  # different node object
+print(sol.getIntersectionNode(headA5, headB5), "expected None")
+
+# Uneven lengths, late intersection
+headA6 = create_linked_list([0,0,0,0,0,9,10,11])
+headB6 = create_linked_list([7])
+attach_lists(headA6, headB6, skipA=5, skipB=0)
+print(sol.getIntersectionNode(headA6, headB6).val, "expected 9")
+
+# Long disjoint lists
+headA7 = create_linked_list(list(range(1, 1001)))
+headB7 = create_linked_list(list(range(1001, 2001)))
+print(sol.getIntersectionNode(headA7, headB7), "expected None")
+
+# Intersection at tail
+headA8 = create_linked_list([8,2,3])
+headB8 = create_linked_list([6,7,5])
+attach_lists(headA8, headB8, skipA=2, skipB=2)
+print(sol.getIntersectionNode(headA8, headB8).val, "expected 3")
 """
 Given the heads of two singly linked-lists headA and headB, 
 return the node at which the two lists intersect. If the two linked lists have no intersection at all, return null.
