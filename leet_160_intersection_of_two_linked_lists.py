@@ -12,7 +12,7 @@ def create_linked_list(head):
         head1.next = i
         head1 = head1
 
-    print(head1.val)
+    print(head1.val, "error")
     return head1
 
 def attach_lists(headA, headB, skipA, skipB):
