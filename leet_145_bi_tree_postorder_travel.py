@@ -30,9 +30,7 @@ def build_tree(arr):
 
 class Solution(object):
     def postorderTraversal(self, root):
-        if root == None:
-            return []
-        return self.postorderTraversal(root.left) + self.postorderTraversal(root.right) + [root.val]
+        result = []
 
         
 
