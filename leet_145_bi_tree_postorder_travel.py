@@ -66,3 +66,12 @@ Constraints:
 The number of the nodes in the tree is in the range [0, 100].
 -100 <= Node.val <= 100
 """
+
+"""
+works but not classy
+class Solution(object):
+    def postorderTraversal(self, root):
+        if root == None:
+            return []
+        return self.postorderTraversal(root.left) + self.postorderTraversal(root.right) + [root.val]
+"""
