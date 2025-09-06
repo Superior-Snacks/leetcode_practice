@@ -4,17 +4,14 @@ class ListNode(object):
         self.val = x
         self.next = None
 
-def create_linked_list(headA, headB):
-    head1 = ListNode(headA[0])
-    head2 = ListNode(headB[0])
+def create_linked_list(head):
+    head1 = ListNode(head[0])
 
-    for i, j in headA[1:] and headB[1:]:
+    for i in head[1:]:
         head1.next = i
         head1 = head1
-        head2.next = j
-        head2 = head2
 
-    return head1, head2
+    return head1
 
 def attach_lists(headA, headB, skipA, skipB):
     ...
