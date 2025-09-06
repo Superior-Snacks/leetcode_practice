@@ -7,7 +7,7 @@ class ListNode(object):
 def create_linked_list( headA, headB):
     ...
 
-def attach_list(headA, headB):
+def attach_lists(headA, headB):
     ...
 
 class Solution(object):
