@@ -31,6 +31,16 @@ def build_tree(arr):
 class Solution(object):
     def postorderTraversal(self, root):
         result = []
+        if not root:
+            return result
+        
+        stack = [root.val]
+        current = root
+        while stack:
+            if current.left:
+                current = current.left
+                stack.append[current]
+            
 
         
 
