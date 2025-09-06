@@ -7,6 +7,9 @@ class ListNode(object):
 def create_linked_list( headA, headB):
     ...
 
+def attach_list(headA, headB):
+    ...
+
 class Solution(object):
     def getIntersectionNode(self, headA, headB):
         """
