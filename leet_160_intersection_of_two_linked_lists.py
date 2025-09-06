@@ -11,6 +11,7 @@ def create_linked_list(head):
         head1.next = i
         head1 = head1
 
+    print(head1.val)
     return head1
 
 def attach_lists(headA, headB, skipA, skipB):
