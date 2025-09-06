@@ -8,7 +8,7 @@ def create_linked_list(headA, headB):
     head1 = ListNode(headA[0])
     head2 = ListNode(headB[0])
 
-    for i, j in headA and headB:
+    for i, j in headA[1:] and headB[1:]:
         head1.next = i
 
 def attach_lists(headA, headB, skipA, skipB):
