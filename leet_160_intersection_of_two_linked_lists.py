@@ -14,6 +14,8 @@ def create_linked_list(headA, headB):
         head2.next = j
         head2 = head2
 
+    return head1, head2
+
 def attach_lists(headA, headB, skipA, skipB):
     ...
 
