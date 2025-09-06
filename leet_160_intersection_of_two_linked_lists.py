@@ -1,8 +1,11 @@
 # Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+class ListNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+def create_linked_list( headA, headB):
+    ...
 
 class Solution(object):
     def getIntersectionNode(self, headA, headB):
@@ -11,8 +14,6 @@ class Solution(object):
         :rtype: ListNode
         """
 
-
-sol = Solution()
 
 sol = Solution()
 
