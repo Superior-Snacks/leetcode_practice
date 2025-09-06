@@ -12,7 +12,18 @@ class Solution(object):
         """
 
 
+sol = Solution()
 
+print(sol.getIntersectionNode(headA1, headB1).val, "expected 8")
+print(sol.getIntersectionNode(headA2, headB2).val, "expected 2")
+print(sol.getIntersectionNode(headA3, headB3), "expected None")
+
+# edge cases
+print(sol.getIntersectionNode(headA4, headB4).val, "expected 1")   # intersect at head
+print(sol.getIntersectionNode(headA5, headB5), "expected None")    # both length 1, no intersect
+print(sol.getIntersectionNode(headA6, headB6).val, "expected 9")   # very uneven lengths
+print(sol.getIntersectionNode(headA7, headB7), "expected None")    # long lists, no intersect
+print(sol.getIntersectionNode(headA8, headB8).val, "expected 3")   # intersection tail
 """
 Given the heads of two singly linked-lists headA and headB, return the node at which the two lists intersect. If the two linked lists have no intersection at all, return null.
 
