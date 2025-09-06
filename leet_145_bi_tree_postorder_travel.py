@@ -45,7 +45,7 @@ class Solution(object):
             if node.left:# if node has a left child:
                 stack.append(node.left)# push left child onto stack
         flipp = result[0]
-        return result[1:] + flipp
+        return result[1:].append(flipp)
             
 
         
