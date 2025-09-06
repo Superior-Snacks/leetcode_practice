@@ -34,7 +34,7 @@ class Solution(object):
         if not root:
             return result
         
-        stack = [root.val]
+        stack = [root]
         while stack:        # while something is in the stack
             node = stack.pop()       # take the top item out
             result.append(node.val)# add this node’s value to result
@@ -44,6 +44,8 @@ class Solution(object):
 
             if node.left:# if node has a left child:
                 stack.append(node.left)# push left child onto stack
+        flipp = result[0]
+        return result[1:] + flipp
             
 
         
