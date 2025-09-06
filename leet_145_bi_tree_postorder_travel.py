@@ -35,11 +35,15 @@ class Solution(object):
             return result
         
         stack = [root.val]
-        current = root
-        while stack:
-            if current.left:
-                current = current.left
-                stack.append[current]
+        while stack:        # while something is in the stack
+            node = stack.pop()       # take the top item out
+            result.append(node.val)# add this node’s value to result
+
+            if node.right:# if node has a right child:
+                stack.append(node.right)# push right child onto stack
+
+            if node.left:# if node has a left child:
+                stack.append(node.left)# push left child onto stack
             
 
         
