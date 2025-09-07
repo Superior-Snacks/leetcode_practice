@@ -37,21 +37,9 @@ class Solution(object):
         the lists may be un even, takes too much memory?
         can I do a check simmilar to the loop check? -no because there is no loop
         """
-        i = 0
-        foundA = []
-        currA = headA
-        currB = headB
-        while True:
-            print(f"A is {currA.val}")
-            print(f"B is {currB.val}")
-            foundA.append(currA)
-            print(f"THIS IS B: {currB}")
-            if currB in foundA:
-                return currB.val
-            else:
-                currA = currA.next
-                currB = currB.next
-            print(foundA)
+        pa = headA
+        pb = headB
+            
             
 
 
