@@ -37,6 +37,7 @@ class Solution(object):
         the lists may be un even, takes too much memory?
         can I do a check simmilar to the loop check? -no because there is no loop
         """
+        done = False
         pa = headA
         pb = headB
         while True:
@@ -47,6 +48,7 @@ class Solution(object):
                     pa = pa.next
                 else: #swich
                     pa = headB
+                    done = True
                 if pb.next:
                     pb = pb.next
                 else: #swich
