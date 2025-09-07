@@ -44,11 +44,14 @@ class Solution(object):
             if pa == pb:
                 return pa.val
             else:
-                if pa.next and not done:
+                if pa.next:
                     pa = pa.next
                 else: #swich
-                    pa = headB
-                    done = True
+                    if not done:
+                        pa = headB
+                        done = True
+                    else:
+                        return None
                 if pb.next:
                     pb = pb.next
                 else: #swich
