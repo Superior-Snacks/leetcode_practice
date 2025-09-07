@@ -4,9 +4,10 @@ class Solution(object):
         result = ""
         while num != 0:
             print(num)
-            num = ((num - 1) / 26)
-            rem = num % 26
+            rem = ((num - 1) % 26)
+            
             result += chr(ord("A") + rem)
+            num = num // 26
             print(result)
             print(num)
         return result
