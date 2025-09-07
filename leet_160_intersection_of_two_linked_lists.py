@@ -45,8 +45,12 @@ class Solution(object):
             else:
                 if pa.next:
                     pa = pa.next
+                else: #swich
+                    pa = headB
                 if pb.next:
                     pb = pb.next
+                else: #swich
+                    pb = headA
             
             
 
