@@ -38,8 +38,13 @@ class Solution(object):
         can I do a check simmilar to the loop check? -no because there is no loop
         """
         i = 0
-        found_a = []
+        foundA = []
+        currA = headA
+        currB = headB
         while True:
+            foundA.append(currA)
+            if currB in foundA:
+                return currB.val
 
             
 
