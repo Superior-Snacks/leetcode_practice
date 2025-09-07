@@ -34,23 +34,16 @@ class Solution(object):
         done = False
         pa = headA
         pb = headB
-        while True:
-            if pa == pb:
-                return pa.val
+        while pa != pb:
+            if pa:
+                pa = pa.next
             else:
-                if pa.next:
-                    pa = pa.next
-                else: #swich
-                    if not done:
-                        pa = headB
-                        done = True
-                    else:
-                        return None
-                if pb.next:
-                    pb = pb.next
-                else: #swich
-                    pb = headA
-            
+                pa = headB
+            if pb:
+                pb = pb.next
+            else: #swich
+                pb = headA
+        return pa.val
             
 
 
