@@ -45,7 +45,9 @@ class Solution(object):
             foundA.append(currA)
             if currB in foundA:
                 return currB.val
-
+            else:
+                currA = currA.next
+                currB = currB.next
             
 
 
