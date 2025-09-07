@@ -44,7 +44,7 @@ class Solution(object):
             if pa == pb:
                 return pa.val
             else:
-                if pa.next:
+                if pa.next and not done:
                     pa = pa.next
                 else: #swich
                     pa = headB
