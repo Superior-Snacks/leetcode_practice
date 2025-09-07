@@ -39,6 +39,14 @@ class Solution(object):
         """
         pa = headA
         pb = headB
+        while True:
+            if pa == pb:
+                return pa.val
+            else:
+                if pa.next:
+                    pa = pa.next
+                if pb.next:
+                    pb = pb.next
             
             
 
