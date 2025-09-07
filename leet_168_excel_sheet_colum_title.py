@@ -3,13 +3,10 @@ class Solution(object):
         num = columnNumber
         result = ""
         while num != 0:
-            print(num)
-            rem = ((num - 1) % 26)
-            
-            result += chr(ord("A") + rem)
+            num -= 1
+            rem = (num % 26)
+            result = chr(ord("A") + rem) + result
             num = num // 26
-            print(result)
-            print(num)
         return result
         
 
