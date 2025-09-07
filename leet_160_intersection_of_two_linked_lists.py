@@ -37,8 +37,10 @@ class Solution(object):
         the lists may be un even, takes too much memory?
         can I do a check simmilar to the loop check? -no because there is no loop
         """
+        i = 0
         found_a = []
         while True:
+
             
 
 
