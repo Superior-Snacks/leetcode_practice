@@ -1,8 +1,9 @@
 class Solution(object):
     def convertToTitle(self, columnNumber):
-        num = (columnNumber - 1) % 26
-        result = chr(ord("A") + num)
-        print(result)
+        while num != 0:
+            num = (columnNumber - 1) % 26
+            result = chr(ord("A") + num)
+            print(result)
         
 
 sol = Solution()
