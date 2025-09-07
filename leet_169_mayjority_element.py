@@ -5,7 +5,12 @@ class Solution(object):
         :rtype: int
         """
         
-
+sol = Solution()
+print(sol.majorityElement([3,2,3]), "expected: 3")
+print(sol.majorityElement([2,2,1,1,1,2,2]), "expected: 2")
+print(sol.majorityElement([1]), "expected: 1")
+print(sol.majorityElement([1,1,2]), "expected: 1")
+print(sol.majorityElement([6,5,5]), "expected: 5")
 """
 Given an array nums of size n, return the majority element.
 
