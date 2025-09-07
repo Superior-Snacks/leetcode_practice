@@ -43,7 +43,7 @@ class Solution(object):
                 pb = pb.next
             else: #swich
                 pb = headA
-        return pa.val
+        return pa
             
 
 
