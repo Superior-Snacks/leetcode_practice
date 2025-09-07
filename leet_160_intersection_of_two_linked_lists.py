@@ -6,8 +6,9 @@ class ListNode(object):
 
 def create_linked_list(head):
     head1 = ListNode(head[0])
+    curr = head1
     for i in head[1:]:
-        head1.next = i
+        curr.next = ListNode(i)
         head1 = head1
     return head1
 
