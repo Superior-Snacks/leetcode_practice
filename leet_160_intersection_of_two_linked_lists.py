@@ -32,9 +32,15 @@ def attach_lists(headA, headB, skipA, skipB):
 class Solution(object):
     def getIntersectionNode(self, headA, headB):
         """
-        :type head1, head1: ListNode
-        :rtype: ListNode
+        how to go about this? go down the list and compare if the .next is the same? 
+        do I need to keep track of the list in a new list?
+        the lists may be un even, takes too much memory?
+        can I do a check simmilar to the loop check? -no because there is no loop
         """
+        found_a = []
+        while True:
+            
+
 
 
 sol = Solution()
