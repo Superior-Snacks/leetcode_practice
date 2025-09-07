@@ -45,11 +45,13 @@ class Solution(object):
             print(f"A is {currA.val}")
             print(f"B is {currB.val}")
             foundA.append(currA)
+            print(f"THIS IS B: {currB}")
             if currB in foundA:
                 return currB.val
             else:
                 currA = currA.next
                 currB = currB.next
+            print(foundA)
             
 
 
