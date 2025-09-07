@@ -31,13 +31,12 @@ def attach_lists(headA, headB, skipA, skipB):
 
 class Solution(object):
     def getIntersectionNode(self, headA, headB):
-        done = False
         pa = headA
         pb = headB
         while pa != pb:
             if pa:
                 pa = pa.next
-            else:
+            else: #swich
                 pa = headB
             if pb:
                 pb = pb.next
