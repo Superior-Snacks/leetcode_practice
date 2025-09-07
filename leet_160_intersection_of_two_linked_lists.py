@@ -13,7 +13,21 @@ def create_linked_list(head):
     return head1
 
 def attach_lists(headA, headB, skipA, skipB):
-    ...
+    """
+    Attaches listB to listA at given skips to simulate intersection.
+    skipA: number of nodes before intersect in A
+    skipB: number of nodes before intersect in B
+    """
+    a_ptr = headA
+    for _ in range(skipA):
+        a_ptr = a_ptr.next
+
+    b_ptr = headB
+    for _ in range(skipB):
+        b_ptr = b_ptr.next
+
+    # link listB's skipB-th node to listA's skipA-th node
+    b_ptr.next = a_ptr
 
 class Solution(object):
     def getIntersectionNode(self, headA, headB):
