@@ -1,5 +1,20 @@
+class Solution(object):
+    def convertToTitle(self, columnNumber):
+        """
+        :type columnNumber: int
+        :rtype: str
+        """
+        
 
-
+sol = Solution()
+print(sol.convertToTitle(1), "expected: A")
+print(sol.convertToTitle(26), "expected: Z")
+print(sol.convertToTitle(27), "expected: AA")
+print(sol.convertToTitle(28), "expected: AB")
+print(sol.convertToTitle(52), "expected: AZ")
+print(sol.convertToTitle(701), "expected: ZY")
+print(sol.convertToTitle(702), "expected: ZZ")
+print(sol.convertToTitle(703), "expected: AAA")
 """
 Given an integer columnNumber, return its corresponding column title as it appears in an Excel sheet.
 
