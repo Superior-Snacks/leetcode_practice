@@ -9,7 +9,7 @@ def create_linked_list(head):
     curr = head1
     for i in head[1:]:
         curr.next = ListNode(i)
-        head1 = head1
+        curr = curr.next
     return head1
 
 def attach_lists(headA, headB, skipA, skipB):
