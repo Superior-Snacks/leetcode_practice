@@ -42,6 +42,8 @@ class Solution(object):
         currA = headA
         currB = headB
         while True:
+            print(f"A is {currA.val}")
+            print(f"B is {currB.val}")
             foundA.append(currA)
             if currB in foundA:
                 return currB.val
