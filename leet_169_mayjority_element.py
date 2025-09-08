@@ -1,9 +1,7 @@
 class Solution(object):
     def majorityElement(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+        for i in len(nums):
+            
         
 sol = Solution()
 print(sol.majorityElement([3,2,3]), "expected: 3")
