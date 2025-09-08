@@ -1,6 +1,6 @@
 # Write your MySQL query statement below
 class Solution():
-    def personAddress():
+    def personAddress(self,person,adress):
         ...
 
 
