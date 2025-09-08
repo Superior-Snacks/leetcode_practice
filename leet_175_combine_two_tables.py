@@ -1,4 +1,8 @@
 # Write your MySQL query statement below
+class Solution():
+    def personAdress():
+        ...
+
 
 sol = Solution()
 print(sol.personAddress(
