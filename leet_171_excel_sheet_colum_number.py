@@ -5,7 +5,8 @@ class Solution(object):
         while title:
             char = title[-1]
             title = title[:-1]
-            count += ord(char) - 1 * 26
+            print(f"number {char} is ascci {ord(char)}")
+            count += ord(char) - 1 ^ 26
         return count
 """
         num = columnNumber
