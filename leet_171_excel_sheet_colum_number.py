@@ -1,9 +1,11 @@
 class Solution(object):
     def titleToNumber(self, columnTitle):
-        """
-        :type columnTitle: str
-        :rtype: int
-        """
+        title = columnTitle
+        count = 0
+        while title:
+            char = title.pop
+            count += ord(char) - 1 * 26
+        return count
 """
         num = columnNumber
         result = ""
