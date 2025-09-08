@@ -4,11 +4,12 @@ class Solution(object):
         collection = {}
         for i in nums:
             if i not in collection:
-                collection[i] = i
+                collection[i] = 1
             else:
                 collection[i] += 1
                 if collection[i] > bar:
                     return i
+        return collection.items()
 
 
 
