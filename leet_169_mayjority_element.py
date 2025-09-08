@@ -7,9 +7,9 @@ class Solution(object):
                 collection[i] = 1
             else:
                 collection[i] += 1
-            if collection[i] > bar:
-                return i
-
+        if collection[i] > bar:
+            return i
+        return next(iter(collection))
 
 
 
