@@ -1,11 +1,8 @@
 class Solution(object):
     def titleToNumber(self, columnTitle):
-        title = columnTitle
         count = 0
-        while title:
-            char = title[0]
-            count += (ord(char) - ord("A") + 1) * 26 ** (len(title) - 1)
-            title = title[1:]
+        for char in columnTitle:
+            count = count * 26 + (ord(char) - ord("A") + 1)
         return count
 """
         num = columnNumber
@@ -57,4 +54,16 @@ Constraints:
 1 <= columnTitle.length <= 7
 columnTitle consists only of uppercase English letters.
 columnTitle is in the range ["A", "FXSHRXW"]
+"""
+
+"""
+class Solution(object):
+    def titleToNumber(self, columnTitle):
+        title = columnTitle
+        count = 0
+        while title:
+            char = title[0]
+            count += (ord(char) - ord("A") + 1) * 26 ** (len(title) - 1)
+            title = title[1:]
+        return count
 """
