@@ -4,7 +4,16 @@ class Solution(object):
         :type columnTitle: str
         :rtype: int
         """
-
+"""
+        num = columnNumber
+        result = ""
+        while num != 0:
+            num -= 1
+            rem = (num % 26)
+            result = chr(ord("A") + rem) + result
+            num = num // 26
+        return result
+"""
 
 sol = Solution()
 print(sol.titleToNumber("A"), "expected:", 1)
