@@ -3,7 +3,8 @@ class Solution(object):
         title = columnTitle
         count = 0
         while title:
-            char = title.pop
+            char = title[-1]
+            title = title[:-1]
             count += ord(char) - 1 * 26
         return count
 """
