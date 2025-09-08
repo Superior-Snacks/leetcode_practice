@@ -1,7 +1,12 @@
 class Solution(object):
     def majorityElement(self, nums):
+        collection = []
         for i in len(nums):
-            
+            if i not in collection:
+
+
+
+
         
 sol = Solution()
 print(sol.majorityElement([3,2,3]), "expected: 3")
