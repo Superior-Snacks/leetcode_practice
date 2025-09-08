@@ -1,15 +1,9 @@
 class Solution(object):
     def majorityElement(self, nums):
-        bar = len(nums) // 2
-        collection = {}
+        count = 0
+        curr = None
         for i in nums:
-            if i not in collection:
-                collection[i] = 1
-            else:
-                collection[i] += 1
-        if collection[i] > bar:
-            return i
-        return next(iter(collection))
+
 
 
 
