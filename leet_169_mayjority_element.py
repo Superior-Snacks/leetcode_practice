@@ -1,8 +1,8 @@
 class Solution(object):
     def majorityElement(self, nums):
-        bar = nums // 2
+        bar = len(nums) // 2
         collection = {}
-        for i in len(nums):
+        for i in range(len(nums)):
             if i not in collection:
                 collection[i] = i
             else:
