@@ -40,3 +40,19 @@ n == nums.length
  
 Follow-up: Could you solve the problem in linear time and in O(1) space?
 """
+
+"""
+first attempt
+class Solution(object):
+    def majorityElement(self, nums):
+        bar = len(nums) // 2
+        collection = {}
+        for i in nums:
+            if i not in collection:
+                collection[i] = 1
+            else:
+                collection[i] += 1
+        if collection[i] > bar:
+            return i
+        return next(iter(collection))
+"""
