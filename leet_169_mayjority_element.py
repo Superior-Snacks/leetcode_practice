@@ -1,8 +1,6 @@
 class Solution(object):
     def majorityElement(self, nums):
-        collection = []
         for i in len(nums):
-            if i not in collection:
 
 
 
