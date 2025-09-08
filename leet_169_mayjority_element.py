@@ -2,14 +2,13 @@ class Solution(object):
     def majorityElement(self, nums):
         bar = len(nums) // 2
         collection = {}
-        for i in range(len(nums)):
+        for i in nums:
             if i not in collection:
                 collection[i] = i
             else:
                 collection[i] += 1
                 if collection[i] > bar:
                     return i
-            
 
 
 
