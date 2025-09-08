@@ -4,7 +4,6 @@ class Solution(object):
         count = 0
         while title:
             char = title[0]
-            print(f"number {char} is ascci {ord(char) - ord("A") + 1}")
             count += (ord(char) - ord("A") + 1) * 26 ** (len(title) - 1)
             title = title[1:]
         return count
