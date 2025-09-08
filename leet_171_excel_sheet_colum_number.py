@@ -3,10 +3,13 @@ class Solution(object):
         title = columnTitle
         count = 0
         while title:
-            char = title[-1]
-            title = title[:-1]
+            m = len(title) - 1
+            print(m)
+            print(26^m)
+            char = title[0]
             print(f"number {char} is ascci {ord(char) - ord("A") + 1}")
-            count += (ord(char) - ord("A") + 1) * 26 ^ (len(title) - 1)
+            count += (ord(char) - ord("A") + 1) * (26 ** m)
+            title = title[1:]
         return count
 """
         num = columnNumber
