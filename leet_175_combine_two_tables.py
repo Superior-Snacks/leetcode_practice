@@ -43,7 +43,9 @@ def personAddress():
     """
     # 4) run SQL (example LEFT JOIN)
     cur.execute("""
-    SELECT
+    SELECT p.firstName, p.lastName, a.city, a.state
+    FROM Person p
+    LEFT JOIN Address a ON p.personId = a.personId
     """)
     rows = cur.fetchall()
 
