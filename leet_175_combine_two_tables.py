@@ -1,6 +1,6 @@
 # Write your MySQL query statement below
 import sqlite3
-def personAddress(self,person,adress):
+def personAddress():
     # 1) connect (use ':memory:' for an in-memory DB)
     conn = sqlite3.connect(':memory:')
     cur = conn.cursor()
