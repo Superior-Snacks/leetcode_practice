@@ -32,12 +32,18 @@ def personAddress():
         [(1, 2, 'New York City', 'New York'), (2, 3, 'Leetcode', 'California')]
     )
     conn.commit()
-
+    """
+    Output: 
++-----------+----------+---------------+----------+
+| firstName | lastName | city          | state    |
++-----------+----------+---------------+----------+
+| Allen     | Wang     | Null          | Null     |
+| Bob       | Alice    | New York City | New York |
++-----------+----------+---------------+----------+
+    """
     # 4) run SQL (example LEFT JOIN)
     cur.execute("""
-    SELECT p.firstName, p.lastName, a.city, a.state
-    FROM Person p
-    LEFT JOIN Address a ON p.personId = a.personId
+    SELECT
     """)
     rows = cur.fetchall()
 
