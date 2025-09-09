@@ -1,7 +1,9 @@
 # Write your MySQL query statement below
+import sqlite3
 class Solution():
     def personAddress(self,person,adress):
         ...
+        print()
 
 
 sol = Solution()
