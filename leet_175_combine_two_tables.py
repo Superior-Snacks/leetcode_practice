@@ -1,56 +1,55 @@
 # Write your MySQL query statement below
 import sqlite3
-class Solution():
-    def personAddress(self,person,adress):
-        # 1) connect (use ':memory:' for an in-memory DB)
-        conn = sqlite3.connect(':memory:')
-        cur = conn.cursor()
+def personAddress(self,person,adress):
+    # 1) connect (use ':memory:' for an in-memory DB)
+    conn = sqlite3.connect(':memory:')
+    cur = conn.cursor()
 
-        # 2) create tables
-        cur.execute("""
-        CREATE TABLE Person (
-        personId   INTEGER PRIMARY KEY,
-        lastName   TEXT,
-        firstName  TEXT
-        )
-        """)
-        cur.execute("""
-        CREATE TABLE Address (
-        addressId  INTEGER PRIMARY KEY,
-        personId   INTEGER,
-        city       TEXT,
-        state      TEXT
-        )
-        """)
+    # 2) create tables
+    cur.execute("""
+    CREATE TABLE Person (
+    personId   INTEGER PRIMARY KEY,
+    lastName   TEXT,
+    firstName  TEXT
+    )
+    """)
+    cur.execute("""
+    CREATE TABLE Address (
+    addressId  INTEGER PRIMARY KEY,
+    personId   INTEGER,
+    city       TEXT,
+    state      TEXT
+    )
+    """)
 
-        # 3) insert data (ALWAYS parameterize!)
-        cur.executemany(
-            "INSERT INTO Person (personId, lastName, firstName) VALUES (?, ?, ?)",
-            [(1, 'Wang', 'Allen'), (2, 'Alice', 'Bob')]
-        )
-        cur.executemany(
-            "INSERT INTO Address (addressId, personId, city, state) VALUES (?, ?, ?, ?)",
-            [(1, 2, 'New York City', 'New York'), (2, 3, 'Leetcode', 'California')]
-        )
-        conn.commit()
+    # 3) insert data (ALWAYS parameterize!)
+    cur.executemany(
+        "INSERT INTO Person (personId, lastName, firstName) VALUES (?, ?, ?)",
+        [(1, 'Wang', 'Allen'), (2, 'Alice', 'Bob')]
+    )
+    cur.executemany(
+        "INSERT INTO Address (addressId, personId, city, state) VALUES (?, ?, ?, ?)",
+        [(1, 2, 'New York City', 'New York'), (2, 3, 'Leetcode', 'California')]
+    )
+    conn.commit()
 
-        # 4) run SQL (example LEFT JOIN)
-        cur.execute("""
-        SELECT p.firstName, p.lastName, a.city, a.state
-        FROM Person p
-        LEFT JOIN Address a ON p.personId = a.personId
-        """)
-        rows = cur.fetchall()
+    # 4) run SQL (example LEFT JOIN)
+    cur.execute("""
+    SELECT p.firstName, p.lastName, a.city, a.state
+    FROM Person p
+    LEFT JOIN Address a ON p.personId = a.personId
+    """)
+    rows = cur.fetchall()
 
-        # 5) use results in Python
-        for r in rows:
-            print(r)
+    # 5) use results in Python
+    for r in rows:
+        print(r)
 
-        cur.close()
-        conn.close()
+    cur.close()
+    conn.close()
 
 
-sol = Solution()
+personAddress()
 """print(sol.personAddress(
     person=[{"personId": 1, "lastName": "Wang", "firstName": "Allen"},
             {"personId": 2, "lastName": "Alice", "firstName": "Bob"}],
