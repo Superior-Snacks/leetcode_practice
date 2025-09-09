@@ -51,7 +51,7 @@ class Solution():
 
 
 sol = Solution()
-print(sol.personAddress(
+"""print(sol.personAddress(
     person=[{"personId": 1, "lastName": "Wang", "firstName": "Allen"},
             {"personId": 2, "lastName": "Alice", "firstName": "Bob"}],
     address=[{"addressId": 1, "personId": 2, "city": "New York City", "state": "New York"},
@@ -67,7 +67,7 @@ print(sol.personAddress(
     person=[{"personId": 1, "lastName": "Doe", "firstName": "Jane"},
             {"personId": 2, "lastName": "Roe", "firstName": "Richard"}],
     address=[{"addressId": 5, "personId": 1, "city": "Chicago", "state": "Illinois"}]
-), "expected: [[Jane, Doe, Chicago, Illinois], [Richard, Roe, Null, Null]]")
+), "expected: [[Jane, Doe, Chicago, Illinois], [Richard, Roe, Null, Null]]")"""
 """
 SQL Schema
 Pandas Schema
