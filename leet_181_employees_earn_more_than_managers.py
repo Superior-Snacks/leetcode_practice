@@ -24,7 +24,6 @@ def run_query(sql_query, data):
     conn.close()
     return rows
 
-
 # Example usage:
 if __name__ == "__main__":
     sql = """
