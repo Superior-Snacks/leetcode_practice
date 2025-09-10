@@ -1,5 +1,4 @@
 import sqlite3
-
 def run_query(sql_query, data):
     # connect to an in-memory SQLite database
     conn = sqlite3.connect(":memory:")
