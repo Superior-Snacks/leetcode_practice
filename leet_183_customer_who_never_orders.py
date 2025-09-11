@@ -34,10 +34,6 @@ def run_query(sql_query, customers, orders):
 if __name__ == "__main__":
     # put your query here (needs to alias the output column as 'Customers')
     sql = """
-    SELECT name AS Customers
-    FROM customers c
-    LEFT JOIN orders o ON c.id = o.customerId
-    WHERE o.id IS NULL;
     """
 
     # Example test cases
