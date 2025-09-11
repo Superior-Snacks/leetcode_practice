@@ -13,7 +13,7 @@ def run_query(sql_query, data):
     """)
 
     # insert test data
-    cur.executemany("INSERT INTO Employee (id, name, salary, managerId) VALUES (?, ?, ?, ?)", data)
+    cur.executemany("INSERT INTO person (id, email) VALUES (?, ?)", data)
 
     # run your SQL query
     cur.execute(sql_query)
