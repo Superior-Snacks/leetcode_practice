@@ -6,11 +6,9 @@ def run_query(sql_query, data):
 
     # create table
     cur.execute("""
-        CREATE TABLE Employee (
+        CREATE TABLE person (
             id INTEGER PRIMARY KEY,
-            name TEXT,
-            salary INTEGER,
-            managerId INTEGER
+            email TEXT,
         )
     """)
 
