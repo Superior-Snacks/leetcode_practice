@@ -26,11 +26,6 @@ def run_query(sql_query, data):
 if __name__ == "__main__":
     sql = """
     -- paste your solution here
-    SELECT E.name AS Employee
-    FROM Employee E
-    JOIN Employee M
-      ON E.managerId = M.id
-    WHERE E.salary > M.salary;
     """
     test1 = [
         [[1, "a@b.com"], [2, "c@d.com"], [3, "a@b.com"]]
