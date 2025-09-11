@@ -8,7 +8,7 @@ def run_query(sql_query, data):
     cur.execute("""
         CREATE TABLE person (
             id INTEGER PRIMARY KEY,
-            email TEXT,
+            email TEXT
         )
     """)
 
