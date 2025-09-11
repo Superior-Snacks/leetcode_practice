@@ -26,6 +26,10 @@ def run_query(sql_query, data):
 if __name__ == "__main__":
     sql = """
     -- paste your solution here
+    SELECT email
+    FROM person
+    GROUP BY email
+    HAVING COUNT(email) > 1;
     """
 
     test1 = [(1, "a@b.com"), (2, "c@d.com"), (3, "a@b.com")]
