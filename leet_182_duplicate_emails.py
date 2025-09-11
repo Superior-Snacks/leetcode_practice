@@ -27,20 +27,16 @@ if __name__ == "__main__":
     sql = """
     -- paste your solution here
     """
-    test1 = [
-        [[1, "a@b.com"], [2, "c@d.com"], [3, "a@b.com"]]
-    ]
+
+    test1 = [(1, "a@b.com"), (2, "c@d.com"), (3, "a@b.com")]
     print("Test1:", run_query(sql, test1))   # expected ['a@b.com']
 
-    test2 = [
-        [[1, "x@y.com"], [2, "z@y.com"], [3, "x@y.com"], [4, "z@y.com"], [5, "w@y.com"]]
-    ]
+    test2 = [(1, "x@y.com"), (2, "z@y.com"), (3, "x@y.com"),
+             (4, "z@y.com"), (5, "w@y.com")]
     print("Test2:", run_query(sql, test2))   # expected ['x@y.com','z@y.com']
 
-    test3 = [
-        [[1, "only@one.com"]]
-    ]
-    print("Test3:", run_query(sql, test3))   # "expected []"
+    test3 = [(1, "only@one.com")]
+    print("Test3:", run_query(sql, test3))   # expected []
 
     """
     Table: Person
