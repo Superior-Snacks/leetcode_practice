@@ -6,6 +6,7 @@ class Solution(object):
         for i in range(32):
             bit = n & 1
             result = (result << 1) | bit 
+            n >>= 1
             print(result)
         return f"old: {n} new: {result}"     
 
