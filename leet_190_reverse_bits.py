@@ -1,9 +1,8 @@
 class Solution(object):
     def reverseBits(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+        result = None
+        bit = n & 1
+        print(bit)
         
 
 sol = Solution()
