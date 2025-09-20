@@ -45,7 +45,6 @@ correct but can be better
 class Solution(object):
     def reverseBits(self, n):
         result = 0
-        bit = n & 1
         for i in range(32):
             bit = n & 1
             result = (result << 1) | bit 
