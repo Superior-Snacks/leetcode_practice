@@ -6,7 +6,13 @@ class Solution(object):
         """
         
 
-
+sol = Solution()
+print(sol.reverseBits(43261596), "expected 964176192")
+print(sol.reverseBits(2147483644), "expected 1073741822")
+print(sol.reverseBits(0), "expected 0")
+print(sol.reverseBits(1), "expected 2147483648")   # lowest bit becomes highest
+print(sol.reverseBits(2), "expected 1073741824")   # second lowest bit to second highest
+print(sol.reverseBits(4294967295), "expected 4294967295") # all 1s stay same
 """
 Reverse bits of a given 32 bits signed integer.
 
