@@ -1,9 +1,6 @@
 class Solution(object):
     def hammingWeight(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+        return (bin(n).count('1'))
         
 sol = Solution()
 print(sol.hammingWeight(11), "expected 3")          # 1011 → 3 ones
