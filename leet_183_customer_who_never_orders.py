@@ -34,6 +34,10 @@ def run_query(sql_query, customers, orders):
 if __name__ == "__main__":
     # put your query here (needs to alias the output column as 'Customers')
     sql = """
+    SELECT customer
+    FROM orders
+    GROUP BY order
+    HAVING COUNT(order) == 0;
     """
 
     # Example test cases
