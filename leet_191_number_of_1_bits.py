@@ -5,7 +5,12 @@ class Solution(object):
         :rtype: int
         """
         
-
+sol = Solution()
+print(sol.hammingWeight(11), "expected 3")          # 1011 → 3 ones
+print(sol.hammingWeight(128), "expected 1")         # 10000000 → 1 one
+print(sol.hammingWeight(2147483645), "expected 30") # large number with 30 ones
+print(sol.hammingWeight(1), "expected 1")           # edge case: smallest input
+print(sol.hammingWeight(2**31 - 1), "expected 31")  # all bits set except sign
 """
 Given a positive integer n, write a function that returns the number of set bits in its binary representation (also known as the Hamming weight).
 
