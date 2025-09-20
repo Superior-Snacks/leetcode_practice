@@ -3,7 +3,10 @@ class Solution(object):
         result = None
         bit = n & 1
         print(bit)
-        
+        for i in range(32):
+            bit = n & 1
+            result += bit 
+            print(result)        
 
 sol = Solution()
 print(sol.reverseBits(43261596), "expected 964176192")
