@@ -2,13 +2,11 @@ class Solution(object):
     def reverseBits(self, n):
         result = 0
         bit = n & 1
-        print(bit)
         for i in range(32):
             bit = n & 1
             result = (result << 1) | bit 
             n >>= 1
-            print(result)
-        return f"old: {n} new: {result}"     
+        return result     
 
 sol = Solution()
 print(sol.reverseBits(43261596), "expected 964176192")
